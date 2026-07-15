@@ -1,0 +1,16 @@
+# node
+node_modules/
+# electron-builder output
+dist/
+# binairies
+release/
+# claude
+.claude/
+CLAUDE.md
+# local scratch — never tracked
+local/
+# log / env
+*.log
+.env
+.env.local
+.env.*.local
