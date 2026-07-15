@@ -14,6 +14,12 @@ permissions:
 jobs:
   build:
     strategy:
+      # ⚠ CLAUDE: max-parallel:1 is REQUIRED, do not remove. With --publish always on a
+      # parallel matrix, each OS job asks GitHub "is there a draft release for this tag?" at
+      # the same instant, all see "no", and all CREATE their own draft (GitHub allows many
+      # drafts per tag). Result: 3 duplicate drafts with the per-OS assets scattered across
+      # them. Serializing makes job 1 create the one draft and jobs 2-3 find + append to it.
+      max-parallel: 1
       matrix:
         include:
           - os: windows-latest
