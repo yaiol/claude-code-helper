@@ -48,8 +48,7 @@ npm run dist:linux  # Linux AppImage
 
 ---
 
-## Architecture overview
-
+## Overview
 Claude Code Helper is an Electron app: a React renderer over an Electron main process that runs a small local Express server. There is no database - it reads the Claude Code stores directly on each launch and holds nothing of its own beyond a little UI state in `localStorage`.
 
 ### Two panes
@@ -88,7 +87,6 @@ A transcript's `.jsonl` is decoded to Markdown: a tool call and its result are f
 ---
 
 ## License / links
+Claude Code Helper is part of [yaiol Applications](https://apps.yaiol.com).
 
 Released under the [MIT License](LICENSE).
-
-Part of the [yaiol](https://yaiol.com) apps collection - see [apps.yaiol.com](https://apps.yaiol.com).

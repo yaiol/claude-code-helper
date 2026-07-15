@@ -50,3 +50,23 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_OPTIONS: --max-old-space-size=6144
+
+  # Rename the draft release from electron-builder's bare "1.0.0" to "<productName> <version>"
+  # (= info.json app.name + app.version), e.g. "Claude Code Helper 1.0.0". Runs ONCE after the
+  # whole matrix. ⚠ CLAUDE: look the release up by LISTING (it's a draft — GitHub's by-tag
+  # endpoint skips drafts, so `gh release edit <tag>` can't find it), then PATCH its name.
+  name-release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set release title to "<productName> <version>"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          title="$(node -p "require('./package.json').productName") $version"
+          id=$(gh api "repos/${GITHUB_REPOSITORY}/releases" --jq ".[] | select(.tag_name==\"${GITHUB_REF_NAME}\") | .id" | head -n1)
+          if [ -z "$id" ]; then echo "No release found for tag ${GITHUB_REF_NAME}"; exit 1; fi
+          gh api -X PATCH "repos/${GITHUB_REPOSITORY}/releases/$id" -f name="$title"
+          echo "Set release $id title to: $title"
