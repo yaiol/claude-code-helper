@@ -14,12 +14,6 @@ permissions:
 jobs:
   build:
     strategy:
-      # ⚠ CLAUDE: max-parallel:1 is REQUIRED, do not remove. With --publish always on a
-      # parallel matrix, each OS job asks GitHub "is there a draft release for this tag?" at
-      # the same instant, all see "no", and all CREATE their own draft (GitHub allows many
-      # drafts per tag). Result: 3 duplicate drafts with the per-OS assets scattered across
-      # them. Serializing makes job 1 create the one draft and jobs 2-3 find + append to it.
-      max-parallel: 1
       matrix:
         include:
           - os: windows-latest
@@ -45,28 +39,51 @@ jobs:
           ELECTRON_SKIP_BINARY_DOWNLOAD: 1
           NODE_OPTIONS: --max-old-space-size=4096
 
-      - name: Build & publish
-        run: npm run ${{ matrix.script }} -- --publish always
+      # App-specific prep before the build — e.g. fetch large vendored binaries (pandoc) that are
+      # deliberately NOT committed to git. --if-present makes it a no-op for apps with no ci:prepare
+      # script, so this stays a single generic workflow.
+      - name: Prepare (fetch vendored binaries if any)
+        run: npm run ci:prepare --if-present
+
+      # Build ONLY — no publish. electron-builder must not create the GitHub Release (see the
+      # top-of-file note); it just writes installers + update metadata into release/.
+      - name: Build
+        run: npm run ${{ matrix.script }} -- --publish never
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_OPTIONS: --max-old-space-size=6144
 
-  # Rename the draft release from electron-builder's bare "1.0.0" to "<productName> <version>"
-  # (= info.json app.name + app.version), e.g. "Claude Code Helper 1.0.0". Runs ONCE after the
-  # whole matrix. ⚠ CLAUDE: look the release up by LISTING (it's a draft — GitHub's by-tag
-  # endpoint skips drafts, so `gh release edit <tag>` can't find it), then PATCH its name.
-  name-release:
+      - name: Upload installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: installers-${{ matrix.os }}
+          path: |
+            release/*.exe
+            release/*.dmg
+            release/*.AppImage
+            release/*.blockmap
+            release/latest*.yml
+          if-no-files-found: ignore
+
+  # ONE release job: gather every OS's installers and create a single draft GitHub Release,
+  # titled "<productName> <version>" (= info.json app.name + app.version), e.g. "Claude Code
+  # Helper 1.0.0". This is the ONLY place a release is created.
+  release:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Set release title to "<productName> <version>"
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          pattern: installers-*
+          merge-multiple: true
+      - name: Create the draft GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           version="${GITHUB_REF_NAME#v}"
           title="$(node -p "require('./package.json').productName") $version"
-          id=$(gh api "repos/${GITHUB_REPOSITORY}/releases" --jq ".[] | select(.tag_name==\"${GITHUB_REF_NAME}\") | .id" | head -n1)
-          if [ -z "$id" ]; then echo "No release found for tag ${GITHUB_REF_NAME}"; exit 1; fi
-          gh api -X PATCH "repos/${GITHUB_REPOSITORY}/releases/$id" -f name="$title"
-          echo "Set release $id title to: $title"
+          # Release body = the top CHANGELOG.md block (first "## …" heading through the line before the next).
+          awk '/^## /{n++} n==1{print} n==2{exit}' CHANGELOG.md > RELEASE_NOTES.md
+          [ -s RELEASE_NOTES.md ] || printf 'Release %s\n' "${GITHUB_REF_NAME}" > RELEASE_NOTES.md
+          gh release create "${GITHUB_REF_NAME}" --draft --title "$title" --notes-file RELEASE_NOTES.md dist/*
