@@ -83,7 +83,7 @@
       "createStartMenuShortcut": true,
       "menuCategory": "yaiol",
       "shortcutName": "Claude Code Helper",
-      "uninstallDisplayName": "yaiol Claude Helper"
+      "uninstallDisplayName": "yaiol Claude Code Helper"
     },
     "publish": [
       {
