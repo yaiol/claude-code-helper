@@ -9,7 +9,7 @@ import { Settings, HelpCircle, Sun, Moon, X, ScrollText, RefreshCw, Search, Fold
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import pkg from '../package.json';
-import { useT, LANGUAGES } from './i18n';
+import { useT, LANGUAGES } from './i18n-gen';
 import { checkForUpdate } from './lib/update-check';
 import { UpdateBanner } from './lib/ui-update-banner';
 import { AppHeader } from './lib/ui-header';

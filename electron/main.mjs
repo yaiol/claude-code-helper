@@ -8,6 +8,8 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import pkg from "../package.json" with { type: "json" };
 import * as sessions from "./sessions.js";
+import { mark, dumpStartupTiming } from "./startup-timing.mjs";
+mark("electron boot + module imports");
 
 // ESM has no __dirname - derive it from import.meta.url.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -84,6 +86,7 @@ function startServer(callback) {
 
   findFreePort(4000, (port) => {
     api.listen(port, () => {
+      mark("express listening");
       console.log(`${APP_NAME} API on http://localhost:${port}`);
       if (callback) callback(port);
     });
@@ -113,6 +116,8 @@ function createWindow(port) {
   } else {
     mainWindow.loadFile(path.join(__dirname, "../dist/index.html"), { query });
   }
+  mark("BrowserWindow created");
+  mainWindow.webContents.once('did-finish-load', () => { mark("renderer did-finish-load"); dumpStartupTiming({ appName: APP_NAME, isDev, userDataPath: app.getPath("userData") }); });
   mainWindow.webContents.on('did-finish-load', () => mainWindow.setTitle(isDev ? `${APP_NAME} (Dev)` : APP_NAME));
 
   // ⚠ CLAUDE: Ctrl+Shift+I is dead because Menu.setApplicationMenu(null) removes the default shortcut.
@@ -133,7 +138,7 @@ function createWindow(port) {
   mainWindow.webContents.setWindowOpenHandler(({ url }) => { shell.openExternal(url); return { action: 'deny' }; });
 }
 
-app.whenReady().then(() => {
+app.whenReady().then(() => { mark("app.whenReady");
   Menu.setApplicationMenu(null);
   startServer((port) => createWindow(port));
 });
