@@ -1,4 +1,4 @@
-// app-icon tag for icons-cockpit (do not remove): data-icon="yaiol:claude-code-helper" -> res/icons/custom/apps/claude-code-helper.svg
+// data-icon="yaiol:claude-code-helper"
 process.noDeprecation = true;
 import { app, BrowserWindow, Menu, dialog, shell } from "electron";
 import path from "path";
