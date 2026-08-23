@@ -85,7 +85,8 @@
       "createStartMenuShortcut": true,
       "menuCategory": "yaiol",
       "shortcutName": "Claude Code Helper",
-      "uninstallDisplayName": "yaiol Claude Code Helper"
+      "uninstallDisplayName": "yaiol Claude Code Helper",
+      "artifactName": "${productName} Setup ${buildVersion}.${ext}"
     },
     "publish": [
       {
@@ -93,6 +94,7 @@
         "owner": "yaiol",
         "repo": "claude-code-helper"
       }
-    ]
+    ],
+    "buildNumber": "1"
   }
 }

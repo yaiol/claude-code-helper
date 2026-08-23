@@ -21,6 +21,11 @@ const STORAGE_PREFIX = pkg.storagePrefix;
 // ─── App identity - single source of truth ──────────────────────────────────
 const APP_NAME    = pkg.productName;
 const APP_VERSION = pkg.version;
+// The full build IDENTITY shown to the user: the release version plus the build counter (the 4th
+// segment a buffered commit bumps), or just the release version on a clean release build.
+// ⚠ CLAUDE: APP_VERSION itself stays plain 3-part semver and must NOT absorb this - the update
+// check compares it against the published beacon, and a 4-part string is not semver. Display only.
+const APP_VERSION_BUILD = pkg.build?.buildNumber ? `${pkg.version}.${pkg.build.buildNumber}` : pkg.version;
 
 // GitHub source - owner is constant (yaiol); repo name is the app id (pkg.name,
 // the single source of truth), NOT package.json `repository`.
@@ -203,7 +208,7 @@ export default function App() {
     <div className="app-root">
       {/* ── Update banner - notify-only, dismissible. See ../CLAUDE.md → "Update feed". ── */}
       <UpdateBanner info={updateInfo} appId={pkg.name} lang={lang} storagePrefix={STORAGE_PREFIX} t={t} onClose={() => setUpdateInfo(null)} />
-      <AppHeader appName={APP_NAME} appVersion={APP_VERSION}>
+      <AppHeader appName={APP_NAME} appVersion={APP_VERSION_BUILD}>
         <span className="bar-spacer" />
         <div className="barh-grp">
           <button
@@ -483,7 +488,7 @@ function SettingsDialog({ t, lang, setLang, theme, setTheme, onClose }) {
             <div className="dlg-about">
               <img src={yaiolLogo} alt="Yaiol" style={{ width: 120, height: 'auto', flexShrink: 0 }} />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
-                <div className="dlg-about-id">{APP_NAME} <b>v{APP_VERSION}</b> by yaiol</div>
+                <div className="dlg-about-id">{APP_NAME} <b>v{APP_VERSION_BUILD}</b> by yaiol</div>
                 <div className="dlg-about-desc">{t('msgDlgSettingsAboutDesc')}</div>
               </div>
             </div>
