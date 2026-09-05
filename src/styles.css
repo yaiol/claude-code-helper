@@ -114,7 +114,6 @@ body {
 .ch-thread { max-width: 860px; margin: 0 auto; padding: 22px 24px 40px; }
 .ch-msg { display: flex; margin: 14px 0; }
 .ch-msg-user { justify-content: flex-end; }
-.ch-msg-assistant { justify-content: flex-start; }
 
 /* User: rounded tinted bubble, hugged to the right, capped width */
 .ch-msg-user .ch-bubble {
@@ -124,8 +123,22 @@ body {
   border-radius: 16px;
   padding: 2px 16px;
 }
-/* Assistant: no bubble - plain full-width text, like Claude's response column */
+/* Assistant: no bubble - plain full-width text, like Claude's response column.
+   Column layout so the copy action row sits BELOW the content (end of message -
+   same placement as ai-chat-clipper's inline buttons in the sites' action bars). */
+.ch-msg-assistant { flex-direction: column; }
 .ch-msg-assistant .ch-bubble { width: 100%; }
+
+/* Per-answer copy - a shared .btn.icon, PLACEMENT only: in-flow row at the end of
+   the answer, hover-revealed (space stays reserved, so nothing shifts). */
+.ch-msg-copy { align-self: flex-start; margin-top: 4px; opacity: 0; transition: opacity .12s; }
+.ch-msg:hover .ch-msg-copy, .ch-msg-copy:focus-visible, .ch-msg-copy.active { opacity: 1; }
+
+/* Per-table copy - same pattern: the decorateTables() wrapper positions a shared
+   .btn.icon over the table's top-right corner, revealed on table hover. */
+.ch-tblwrap { position: relative; width: fit-content; max-width: 100%; }
+.ch-tblcopy { position: absolute; top: 2px; right: 2px; opacity: 0; transition: opacity .12s; }
+.ch-tblwrap:hover .ch-tblcopy, .ch-tblcopy:focus-visible, .ch-tblcopy.active { opacity: 1; }
 /* Trim leading/trailing paragraph margins so bubbles sit tight */
 .ch-bubble > :first-child { margin-top: 0; }
 .ch-bubble > :last-child  { margin-bottom: 0; }

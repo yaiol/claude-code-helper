@@ -1,7 +1,7 @@
 {
   "name": "claude-code-helper",
   "productName": "Claude Code Helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "Claude Helper",
   "private": true,
@@ -31,6 +31,7 @@
     "marked": "^18.0.10"
   },
   "devDependencies": {
+    "@svgr/plugin-svgo": "^8.1.0",
     "@vitejs/plugin-react": "^6.1.0",
     "concurrently": "^10.0.5",
     "electron": "^43.4.1",
@@ -40,6 +41,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "vite": "^8.2.2",
+    "vite-plugin-svgr": "^5.2.0",
     "wait-on": "^9.1.0"
   },
   "build": {
@@ -85,7 +87,8 @@
       "createStartMenuShortcut": true,
       "menuCategory": "yaiol",
       "shortcutName": "Claude Code Helper",
-      "uninstallDisplayName": "yaiol Claude Code Helper"
+      "uninstallDisplayName": "yaiol Claude Code Helper",
+      "artifactName": "${productName} Setup ${buildVersion}.${ext}"
     },
     "publish": [
       {

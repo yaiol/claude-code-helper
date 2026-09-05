@@ -5,7 +5,7 @@
 //   language via the i18n key workflow. Full procedure: see CLAUDE-i18n.md.
 //   Never paste translations by hand. The scripts ARE the work.
 import React, { useEffect, useMemo, useState } from 'react';
-import { Settings, HelpCircle, Sun, Moon, X, ScrollText, RefreshCw, Search, FolderOpen, Copy, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react';
+import { Settings, HelpCircle, Sun, Moon, X, ScrollText, RefreshCw, Search, FolderOpen, Copy, Check, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import pkg from '../package.json';
@@ -43,6 +43,51 @@ function renderMarkdown(md) {
   return DOMPurify.sanitize(marked.parse(md || ''), { ADD_TAGS: ['details', 'summary'] });
 }
 
+// Per-table copy button, injected POST-sanitize (like the `open` toggle) so DOMPurify never
+// strips it. Inline lucide Copy/Check markup - the button lives inside dangerouslySetInnerHTML,
+// out of React's reach, so it can't be a component.
+const SVG_TBL_COPY  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+const SVG_TBL_CHECK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+
+// Wrap every rendered <table> in a hover container carrying a copy button.
+function decorateTables(html, tip) {
+  if (!html.includes('<table')) return html;
+  const tpl = document.createElement('template');
+  tpl.innerHTML = html;
+  tpl.content.querySelectorAll('table').forEach(table => {
+    const wrap = document.createElement('div');
+    wrap.className = 'ch-tblwrap';
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn icon ch-tblcopy';
+    btn.title = tip;
+    btn.setAttribute('aria-label', tip);
+    btn.innerHTML = SVG_TBL_COPY;
+    table.replaceWith(wrap);
+    wrap.append(btn, table);
+  });
+  return tpl.innerHTML;
+}
+
+// Two clipboard flavors: text/html pastes as a real table (Excel, Word, Docs),
+// text/plain is TSV for editors. Fallback to TSV-only if ClipboardItem is refused.
+function tableToTsv(table) {
+  return [...table.rows]
+    .map(r => [...r.cells].map(c => c.innerText.replace(/\s+/g, ' ').trim()).join('\t'))
+    .join('\n');
+}
+async function copyTable(table) {
+  const tsv = tableToTsv(table);
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html':  new Blob([table.outerHTML], { type: 'text/html' }),
+      'text/plain': new Blob([tsv], { type: 'text/plain' }),
+    })]);
+  } catch {
+    await navigator.clipboard.writeText(tsv).catch(() => {});
+  }
+}
+
 function fmtDate(ts) {
   if (!ts) return '';
   try { return new Date(ts).toLocaleString(); } catch { return ''; }
@@ -67,6 +112,7 @@ export default function App() {
   const [transcript,      setTranscript]      = useState(null);   // { markdown, messages, meta, title, cwd }
   const [transcriptState, setTranscriptState] = useState('idle'); // idle | loading | error | ready
   const [toolsExpanded,   setToolsExpanded]   = useState(false);  // false = tool blocks folded to one-line summaries
+  const [copiedMsg,       setCopiedMsg]       = useState(null);   // index of the answer just copied (brief check feedback)
   const [showActive,      setShowActive]      = useState(true);   // category filters (session-local, like `filter`)
   const [showArchived,    setShowArchived]    = useState(true);
   const [showLost,        setShowLost]        = useState(true);
@@ -116,6 +162,7 @@ export default function App() {
   async function selectSession(s) {
     setSelectedId(s.cliSessionId);
     setTranscript(null);
+    setCopiedMsg(null);
     setTranscriptState('loading');
     try {
       const res = await fetch(`${API}/transcript?id=${encodeURIComponent(s.cliSessionId)}`);
@@ -139,6 +186,27 @@ export default function App() {
 
   function copyMarkdown() {
     if (transcript?.markdown) navigator.clipboard.writeText(transcript.markdown).catch(() => {});
+  }
+
+  function copyMessage(md, i) {
+    navigator.clipboard.writeText(md).then(() => {
+      setCopiedMsg(i);
+      setTimeout(() => setCopiedMsg(c => (c === i ? null : c)), 1200);
+    }).catch(() => {});
+  }
+
+  // Delegated handler for the injected per-table copy buttons (they live inside
+  // dangerouslySetInnerHTML, so React can't attach a handler to them directly).
+  function onThreadClick(e) {
+    const btn = e.target.closest?.('.ch-tblcopy');
+    if (!btn) return;
+    const table = btn.parentElement?.querySelector('table');
+    if (!table) return;
+    copyTable(table).then(() => {
+      btn.innerHTML = SVG_TBL_CHECK;
+      btn.classList.add('active');
+      setTimeout(() => { btn.innerHTML = SVG_TBL_COPY; btn.classList.remove('active'); }, 1200);
+    });
   }
 
   function exportMarkdown() {
@@ -383,14 +451,25 @@ export default function App() {
                 {transcriptState === 'loading' && <div className="ch-empty">{t('msgTranscriptLoading')}</div>}
                 {transcriptState === 'error' && <div className="ch-empty ch-empty-err">{t('msgTranscriptError')}</div>}
                 {transcriptState === 'ready' && (
-                  <div className="ch-thread">
+                  <div className="ch-thread" onClick={onThreadClick}>
                     {(transcript.messages || []).map((m, i) => {
                       // Inject `open` post-sanitize so the toolbar toggle expands every <details> at once.
                       let html = renderMarkdown(m.md);
                       if (toolsExpanded) html = html.replaceAll('<details ', '<details open ');
+                      html = decorateTables(html, t('tipTranscriptCopyTable'));
                       return (
                         <div key={i} className={`ch-msg ch-msg-${m.role}`}>
                           <div className="ch-md ch-bubble" dangerouslySetInnerHTML={{ __html: html }} />
+                          {m.role === 'assistant' && (
+                            <button
+                              className={'btn icon ch-msg-copy' + (copiedMsg === i ? ' active' : '')}
+                              onClick={() => copyMessage(m.md, i)}
+                              title={t('tipTranscriptCopyMsg')}
+                              aria-label={t('tipTranscriptCopyMsg')}
+                            >
+                              {copiedMsg === i ? <Check /> : <Copy />}
+                            </button>
+                          )}
                         </div>
                       );
                     })}

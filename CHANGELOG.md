@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 — 2026-09-06
+
+- Copy any single answer from a transcript, without exporting the whole session
+- Copy any table in a transcript as a real table — it pastes with rows and columns intact into a spreadsheet or document, or as tab-separated text in an editor
+- Rewrite the README with a logo, release and download badges, a per-platform install table, and links to the online manual and release notes
+
 ## 1.0.2 — 2026-08-23
 
 - Open the "What's new", "Download" and help pages in your own interface language, instead of only English, French, Spanish or German

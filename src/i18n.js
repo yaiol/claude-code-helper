@@ -62,6 +62,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Could not decode this transcript",
     tipTranscriptReveal:                    "Show transcript file in folder",
     tipTranscriptCopy:                      "Copy as Markdown",
+    tipTranscriptCopyMsg:                   "Copy this answer as Markdown",
+    tipTranscriptCopyTable:                 "Copy table",
     tipTranscriptExport:                    "Export as Markdown file",
     tipTranscriptToolExpand:                "Expand or collapse tool details",
 
@@ -126,6 +128,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Impossible de décoder cette transcription",
     tipTranscriptReveal:                    "Afficher le fichier de transcription dans le dossier",
     tipTranscriptCopy:                      "Copier en Markdown",
+    tipTranscriptCopyMsg:                   "Copier la réponse en Markdown",
+    tipTranscriptCopyTable:                 "Copier le tableau",
     tipTranscriptExport:                    "Exporter en tant que fichier Markdown",
     tipTranscriptToolExpand:                "Développer ou réduire les détails de l'outil",
 
@@ -189,6 +193,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Dieses Transkript konnte nicht dekodiert werden",
     tipTranscriptReveal:                    "Transkriptdatei im Ordner anzeigen",
     tipTranscriptCopy:                      "Als Markdown kopieren",
+    tipTranscriptCopyMsg:                   "Antwort als Markdown kopieren",
+    tipTranscriptCopyTable:                 "Tabelle kopieren",
     tipTranscriptExport:                    "Als Markdown-Datei exportieren",
     tipTranscriptToolExpand:                "Werkzeugdetails ein- oder ausblenden",
 
@@ -252,6 +258,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "No se pudo decodificar esta transcripción",
     tipTranscriptReveal:                    "Mostrar archivo de transcripción en la carpeta",
     tipTranscriptCopy:                      "Copiar como Markdown",
+    tipTranscriptCopyMsg:                   "Copiar respuesta como Markdown",
+    tipTranscriptCopyTable:                 "Copiar tabla",
     tipTranscriptExport:                    "Exportar como archivo Markdown",
     tipTranscriptToolExpand:                "Expandir o contraer los detalles de la herramienta",
 
@@ -315,6 +323,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Não foi possível decodificar esta transcrição",
     tipTranscriptReveal:                    "Mostrar arquivo de transcrição na pasta",
     tipTranscriptCopy:                      "Copiar como Markdown",
+    tipTranscriptCopyMsg:                   "Copiar resposta como Markdown",
+    tipTranscriptCopyTable:                 "Copiar tabela",
     tipTranscriptExport:                    "Exportar como arquivo Markdown",
     tipTranscriptToolExpand:                "Expandir ou recolher os detalhes da ferramenta",
 
@@ -378,6 +388,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Não foi possível descodificar esta transcrição",
     tipTranscriptReveal:                    "Mostrar ficheiro de transcrição na pasta",
     tipTranscriptCopy:                      "Copiar como Markdown",
+    tipTranscriptCopyMsg:                   "Copiar resposta como Markdown",
+    tipTranscriptCopyTable:                 "Copiar tabela",
     tipTranscriptExport:                    "Exportar como ficheiro Markdown",
     tipTranscriptToolExpand:                "Expandir ou recolher os detalhes da ferramenta",
 
@@ -441,6 +453,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Impossibile decodificare questa trascrizione",
     tipTranscriptReveal:                    "Mostra il file di trascrizione nella cartella",
     tipTranscriptCopy:                      "Copia come Markdown",
+    tipTranscriptCopyMsg:                   "Copia risposta come Markdown",
+    tipTranscriptCopyTable:                 "Copia tabella",
     tipTranscriptExport:                    "Esporta come file Markdown",
     tipTranscriptToolExpand:                "Espandi o comprimi i dettagli dello strumento",
 
@@ -504,6 +518,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Dit transcript kon niet worden gedecodeerd",
     tipTranscriptReveal:                    "Transcriptbestand in map weergeven",
     tipTranscriptCopy:                      "Kopiëren als Markdown",
+    tipTranscriptCopyMsg:                   "Antwoord als Markdown kopiëren",
+    tipTranscriptCopyTable:                 "Tabel kopiëren",
     tipTranscriptExport:                    "Exporteren als Markdown-bestand",
     tipTranscriptToolExpand:                "Gereedschapsdetails uitvouwen of samenvouwen",
 
@@ -567,6 +583,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Не удалось декодировать этот транскрипт",
     tipTranscriptReveal:                    "Показать файл транскрипта в папке",
     tipTranscriptCopy:                      "Копировать как Markdown",
+    tipTranscriptCopyMsg:                   "Скопировать ответ как Markdown",
+    tipTranscriptCopyTable:                 "Скопировать таблицу",
     tipTranscriptExport:                    "Экспортировать как файл Markdown",
     tipTranscriptToolExpand:                "Развернуть или свернуть сведения об инструменте",
 
@@ -630,6 +648,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Не вдалося декодувати цей транскрипт",
     tipTranscriptReveal:                    "Показати файл транскрипту в папці",
     tipTranscriptCopy:                      "Копіювати як Markdown",
+    tipTranscriptCopyMsg:                   "Скопіювати відповідь як Markdown",
+    tipTranscriptCopyTable:                 "Скопіювати таблицю",
     tipTranscriptExport:                    "Експортувати як файл Markdown",
     tipTranscriptToolExpand:                "Розгорнути або згорнути відомості про інструмент",
 
@@ -693,6 +713,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nie można było zdekodować tej transkrypcji",
     tipTranscriptReveal:                    "Pokaż plik transkrypcji w folderze",
     tipTranscriptCopy:                      "Kopiuj jako Markdown",
+    tipTranscriptCopyMsg:                   "Kopiuj odpowiedź jako Markdown",
+    tipTranscriptCopyTable:                 "Kopiuj tabelę",
     tipTranscriptExport:                    "Eksportuj jako plik Markdown",
     tipTranscriptToolExpand:                "Rozwiń lub zwiń szczegóły narzędzia",
 
@@ -756,6 +778,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nu s-a putut decodifica această transcriere",
     tipTranscriptReveal:                    "Afișează fișierul de transcriere în folder",
     tipTranscriptCopy:                      "Copiază ca Markdown",
+    tipTranscriptCopyMsg:                   "Copiază răspunsul ca Markdown",
+    tipTranscriptCopyTable:                 "Copiază tabelul",
     tipTranscriptExport:                    "Exportă ca fișier Markdown",
     tipTranscriptToolExpand:                "Extindeți sau restrângeți detaliile instrumentului",
 
@@ -819,6 +843,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Kunde inte avkoda detta transkript",
     tipTranscriptReveal:                    "Visa transkriptfil i mapp",
     tipTranscriptCopy:                      "Kopiera som Markdown",
+    tipTranscriptCopyMsg:                   "Kopiera svar som Markdown",
+    tipTranscriptCopyTable:                 "Kopiera tabell",
     tipTranscriptExport:                    "Exportera som Markdown-fil",
     tipTranscriptToolExpand:                "Expandera eller dölj verktygsdetaljer",
 
@@ -882,6 +908,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Kunne ikke dekode denne transkripsjonen",
     tipTranscriptReveal:                    "Vis transkripsjonsfil i mappe",
     tipTranscriptCopy:                      "Kopier som Markdown",
+    tipTranscriptCopyMsg:                   "Kopier svar som Markdown",
+    tipTranscriptCopyTable:                 "Kopier tabell",
     tipTranscriptExport:                    "Eksporter som Markdown-fil",
     tipTranscriptToolExpand:                "Utvid eller skjul verktøydetaljer",
 
@@ -945,6 +973,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Bu transkript çözümlenemedi",
     tipTranscriptReveal:                    "Transkript dosyasını klasörde göster",
     tipTranscriptCopy:                      "Markdown olarak kopyala",
+    tipTranscriptCopyMsg:                   "Yanıtı Markdown olarak kopyala",
+    tipTranscriptCopyTable:                 "Tabloyu kopyala",
     tipTranscriptExport:                    "Markdown dosyası olarak dışa aktar",
     tipTranscriptToolExpand:                "Araç ayrıntılarını genişlet veya daralt",
 
@@ -1008,6 +1038,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nije moguće dekodirati ovaj transkript",
     tipTranscriptReveal:                    "Prikaži datoteku transkripta u mapi",
     tipTranscriptCopy:                      "Kopiraj kao Markdown",
+    tipTranscriptCopyMsg:                   "Kopiraj odgovor kao Markdown",
+    tipTranscriptCopyTable:                 "Kopiraj tablicu",
     tipTranscriptExport:                    "Izvezi kao Markdown datoteku",
     tipTranscriptToolExpand:                "Proširi ili sažmi pojedinosti alata",
 
@@ -1071,6 +1103,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Δεν ήταν δυνατή η αποκωδικοποίηση αυτής της μεταγραφής",
     tipTranscriptReveal:                    "Εμφάνιση αρχείου μεταγραφής στο φάκελο",
     tipTranscriptCopy:                      "Αντιγραφή ως Markdown",
+    tipTranscriptCopyMsg:                   "Αντιγραφή απάντησης ως Markdown",
+    tipTranscriptCopyTable:                 "Αντιγραφή πίνακα",
     tipTranscriptExport:                    "Εξαγωγή ως αρχείο Markdown",
     tipTranscriptToolExpand:                "Ανάπτυξη ή σύμπτυξη λεπτομερειών εργαλείου",
 
@@ -1134,6 +1168,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "לא ניתן היה לפענח תמליל זה",
     tipTranscriptReveal:                    "הצג קובץ תמליל בתיקייה",
     tipTranscriptCopy:                      "העתק כ-Markdown",
+    tipTranscriptCopyMsg:                   "העתק תשובה כ-Markdown",
+    tipTranscriptCopyTable:                 "העתק טבלה",
     tipTranscriptExport:                    "ייצוא כקובץ Markdown",
     tipTranscriptToolExpand:                "הרחב או כווץ פרטי כלי",
 
@@ -1197,6 +1233,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "تعذر فك تشفير هذا النص",
     tipTranscriptReveal:                    "إظهار ملف النص في المجلد",
     tipTranscriptCopy:                      "نسخ كـ Markdown",
+    tipTranscriptCopyMsg:                   "انسخ الإجابة كـ Markdown",
+    tipTranscriptCopyTable:                 "انسخ الجدول",
     tipTranscriptExport:                    "تصدير كملف Markdown",
     tipTranscriptToolExpand:                "توسيع أو طي تفاصيل الأداة",
 
@@ -1260,6 +1298,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "امکان رمزگشایی این رونوشت وجود نداشت",
     tipTranscriptReveal:                    "نمایش فایل رونوشت در پوشه",
     tipTranscriptCopy:                      "کپی به عنوان Markdown",
+    tipTranscriptCopyMsg:                   "کپی پاسخ به عنوان Markdown",
+    tipTranscriptCopyTable:                 "کپی جدول",
     tipTranscriptExport:                    "خروجی گرفتن به عنوان فایل Markdown",
     tipTranscriptToolExpand:                "بسط یا جمع کردن جزئیات ابزار",
 
@@ -1323,6 +1363,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "无法解码此文本",
     tipTranscriptReveal:                    "在文件夹中显示文本文件",
     tipTranscriptCopy:                      "复制为 Markdown",
+    tipTranscriptCopyMsg:                   "复制答案为 Markdown",
+    tipTranscriptCopyTable:                 "复制表格",
     tipTranscriptExport:                    "导出为 Markdown 文件",
     tipTranscriptToolExpand:                "展开或折叠工具详情",
 
@@ -1386,6 +1428,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "無法解碼此文字",
     tipTranscriptReveal:                    "在資料夾中顯示文字檔案",
     tipTranscriptCopy:                      "複製為 Markdown",
+    tipTranscriptCopyMsg:                   "複製答案為 Markdown",
+    tipTranscriptCopyTable:                 "複製表格",
     tipTranscriptExport:                    "匯出為 Markdown 檔案",
     tipTranscriptToolExpand:                "展開或摺疊工具詳細資訊",
 
@@ -1449,6 +1493,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "この文字起こしをデコードできませんでした",
     tipTranscriptReveal:                    "フォルダーで文字起こしファイルを表示",
     tipTranscriptCopy:                      "Markdownとしてコピー",
+    tipTranscriptCopyMsg:                   "回答をMarkdownとしてコピー",
+    tipTranscriptCopyTable:                 "テーブルをコピー",
     tipTranscriptExport:                    "Markdownファイルとしてエクスポート",
     tipTranscriptToolExpand:                "ツールの詳細を展開または折りたたむ",
 
@@ -1512,6 +1558,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "이 스크립트를 디코딩할 수 없습니다",
     tipTranscriptReveal:                    "폴더에서 스크립트 파일 표시",
     tipTranscriptCopy:                      "Markdown으로 복사",
+    tipTranscriptCopyMsg:                   "답변을 Markdown으로 복사",
+    tipTranscriptCopyTable:                 "테이블 복사",
     tipTranscriptExport:                    "Markdown 파일로 내보내기",
     tipTranscriptToolExpand:                "도구 세부 정보 확장 또는 축소",
 
@@ -1575,6 +1623,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Không thể giải mã bản ghi này",
     tipTranscriptReveal:                    "Hiển thị tệp bản ghi trong thư mục",
     tipTranscriptCopy:                      "Sao chép dưới dạng Markdown",
+    tipTranscriptCopyMsg:                   "Sao chép câu trả lời dưới dạng Markdown",
+    tipTranscriptCopyTable:                 "Sao chép bảng",
     tipTranscriptExport:                    "Xuất dưới dạng tệp Markdown",
     tipTranscriptToolExpand:                "Mở rộng hoặc thu gọn chi tiết công cụ",
 
@@ -1638,6 +1688,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "ไม่สามารถถอดรหัสสคริปต์นี้ได้",
     tipTranscriptReveal:                    "แสดงไฟล์สคริปต์ในโฟลเดอร์",
     tipTranscriptCopy:                      "คัดลอกเป็น Markdown",
+    tipTranscriptCopyMsg:                   "คัดลอกคำตอบเป็น Markdown",
+    tipTranscriptCopyTable:                 "คัดลอกตาราง",
     tipTranscriptExport:                    "ส่งออกเป็นไฟล์ Markdown",
     tipTranscriptToolExpand:                "ขยายหรือยุบรายละเอียดเครื่องมือ",
 
@@ -1701,6 +1753,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Tidak dapat mendekode transkrip ini",
     tipTranscriptReveal:                    "Tampilkan file transkrip di folder",
     tipTranscriptCopy:                      "Salin sebagai Markdown",
+    tipTranscriptCopyMsg:                   "Salin jawaban sebagai Markdown",
+    tipTranscriptCopyTable:                 "Salin tabel",
     tipTranscriptExport:                    "Ekspor sebagai file Markdown",
     tipTranscriptToolExpand:                "Perluas atau ciutkan detail alat",
 
@@ -1764,6 +1818,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "No s'ha pogut descodificar aquesta transcripció",
     tipTranscriptReveal:                    "Mostra el fitxer de transcripció a la carpeta",
     tipTranscriptCopy:                      "Copia com a Markdown",
+    tipTranscriptCopyMsg:                   "Copia resposta com a Markdown",
+    tipTranscriptCopyTable:                 "Copia taula",
     tipTranscriptExport:                    "Exporta com a fitxer Markdown",
     tipTranscriptToolExpand:                "Expandeix o contrau els detalls de l'eina",
 
@@ -1827,6 +1883,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nepodařilo se dekódovat tento přepis",
     tipTranscriptReveal:                    "Zobrazit soubor přepisu ve složce",
     tipTranscriptCopy:                      "Kopírovat jako Markdown",
+    tipTranscriptCopyMsg:                   "Zkopírovat odpověď jako Markdown",
+    tipTranscriptCopyTable:                 "Zkopírovat tabulku",
     tipTranscriptExport:                    "Exportovat jako soubor Markdown",
     tipTranscriptToolExpand:                "Rozbalit nebo sbalit podrobnosti nástroje",
 
@@ -1890,6 +1948,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Kunne ikke afkode dette transskript",
     tipTranscriptReveal:                    "Vis transskriptfil i mappe",
     tipTranscriptCopy:                      "Kopier som Markdown",
+    tipTranscriptCopyMsg:                   "Kopiér svar som Markdown",
+    tipTranscriptCopyTable:                 "Kopiér tabel",
     tipTranscriptExport:                    "Eksporter som Markdown-fil",
     tipTranscriptToolExpand:                "Udvid eller skjul værktøjsdetaljer",
 
@@ -1953,6 +2013,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Litterointia ei voitu purkaa",
     tipTranscriptReveal:                    "Näytä litterointitiedosto kansiossa",
     tipTranscriptCopy:                      "Kopioi Markdownina",
+    tipTranscriptCopyMsg:                   "Kopioi vastaus Markdownina",
+    tipTranscriptCopyTable:                 "Kopioi taulukko",
     tipTranscriptExport:                    "Vie Markdown-tiedostona",
     tipTranscriptToolExpand:                "Laajenna tai kutista työkalun tiedot",
 
@@ -2016,6 +2078,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Tidak dapat menyahkod transkrip ini",
     tipTranscriptReveal:                    "Tunjukkan fail transkrip dalam folder",
     tipTranscriptCopy:                      "Salin sebagai Markdown",
+    tipTranscriptCopyMsg:                   "Salin jawapan sebagai Markdown",
+    tipTranscriptCopyTable:                 "Salin jadual",
     tipTranscriptExport:                    "Eksport sebagai fail Markdown",
     tipTranscriptToolExpand:                "Kembangkan atau runtuhkan butiran alat",
 
@@ -2079,6 +2143,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Չհաջողվեց վերծանել այս գրառումը",
     tipTranscriptReveal:                    "Ցույց տալ գրառման ֆայլը թղթապանակում",
     tipTranscriptCopy:                      "Պատճենել որպես Markdown",
+    tipTranscriptCopyMsg:                   "Պատճենել պատասխանը որպես Markdown",
+    tipTranscriptCopyTable:                 "Պատճենել աղյուսակը",
     tipTranscriptExport:                    "Արտահանել որպես Markdown ֆայլ",
     tipTranscriptToolExpand:                "Ընդլայնել կամ ծալել գործիքի մանրամասները",
 
@@ -2142,6 +2208,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Не може да се декодира този препис",
     tipTranscriptReveal:                    "Покажи файла с препис в папката",
     tipTranscriptCopy:                      "Копирай като Markdown",
+    tipTranscriptCopyMsg:                   "Копирай отговора като Markdown",
+    tipTranscriptCopyTable:                 "Копирай таблица",
     tipTranscriptExport:                    "Експортиране като Markdown файл",
     tipTranscriptToolExpand:                "Разгъване или свиване на подробностите за инструмента",
 
@@ -2205,6 +2273,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Non se puido decodificar esta transcrición",
     tipTranscriptReveal:                    "Mostrar ficheiro de transcrición no cartafol",
     tipTranscriptCopy:                      "Copiar como Markdown",
+    tipTranscriptCopyMsg:                   "Copiar resposta como Markdown",
+    tipTranscriptCopyTable:                 "Copiar táboa",
     tipTranscriptExport:                    "Exportar como ficheiro Markdown",
     tipTranscriptToolExpand:                "Expandir ou contraer os detalles da ferramenta",
 
@@ -2268,6 +2338,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nem sikerült dekódolni az átiratot",
     tipTranscriptReveal:                    "Átiratfájl megjelenítése mappában",
     tipTranscriptCopy:                      "Másolás Markdownként",
+    tipTranscriptCopyMsg:                   "Válasz másolása Markdownként",
+    tipTranscriptCopyTable:                 "Táblázat másolása",
     tipTranscriptExport:                    "Exportálás Markdown fájlként",
     tipTranscriptToolExpand:                "Eszköz részleteinek kibontása vagy összecsukása",
 
@@ -2331,6 +2403,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nepavyko dekoduoti šio nuorašo",
     tipTranscriptReveal:                    "Rodyti nuorašo failą aplanke",
     tipTranscriptCopy:                      "Kopijuoti kaip Markdown",
+    tipTranscriptCopyMsg:                   "Kopijuoti atsakymą kaip Markdown",
+    tipTranscriptCopyTable:                 "Kopijuoti lentelę",
     tipTranscriptExport:                    "Eksportuoti kaip Markdown failą",
     tipTranscriptToolExpand:                "Išskleisti arba sutraukti įrankio detales",
 
@@ -2394,6 +2468,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Не можеше да се декодира овој транскрипт",
     tipTranscriptReveal:                    "Прикажи ја датотеката со транскрипт во папката",
     tipTranscriptCopy:                      "Копирај како Markdown",
+    tipTranscriptCopyMsg:                   "Копирај одговор како Markdown",
+    tipTranscriptCopyTable:                 "Копирај табела",
     tipTranscriptExport:                    "Извези како Markdown датотека",
     tipTranscriptToolExpand:                "Прошири или стесни детали за алатката",
 
@@ -2457,6 +2533,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Није могуће декодирати овај транскрипт",
     tipTranscriptReveal:                    "Прикажи датотеку транскрипта у фасцикли",
     tipTranscriptCopy:                      "Копирај као Markdown",
+    tipTranscriptCopyMsg:                   "Копирај одговор као Markdown",
+    tipTranscriptCopyTable:                 "Копирај табелу",
     tipTranscriptExport:                    "Извези као Markdown датотеку",
     tipTranscriptToolExpand:                "Прошири или скупи детаље алата",
 
@@ -2520,6 +2598,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Nepodarilo sa dekódovať tento prepis",
     tipTranscriptReveal:                    "Zobraziť súbor prepisu v priečinku",
     tipTranscriptCopy:                      "Kopírovať ako Markdown",
+    tipTranscriptCopyMsg:                   "Kopírovať odpoveď ako Markdown",
+    tipTranscriptCopyTable:                 "Kopírovať tabuľku",
     tipTranscriptExport:                    "Exportovať ako súbor Markdown",
     tipTranscriptToolExpand:                "Rozbaliť alebo zbaliť podrobnosti nástroja",
 
@@ -2583,6 +2663,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Ni bilo mogoče dekodirati tega prepisa",
     tipTranscriptReveal:                    "Prikaži datoteko prepisa v mapi",
     tipTranscriptCopy:                      "Kopiraj kot Markdown",
+    tipTranscriptCopyMsg:                   "Kopiraj odgovor kot Markdown",
+    tipTranscriptCopyTable:                 "Kopiraj tabelo",
     tipTranscriptExport:                    "Izvozi kot datoteko Markdown",
     tipTranscriptToolExpand:                "Razširi ali strni podrobnosti orodja",
 
@@ -2646,6 +2728,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "இந்த படியெடுப்பை டிகோடிங் செய்ய முடியவில்லை",
     tipTranscriptReveal:                    "கோப்புறையில் படியெடுப்பு கோப்பைக் காட்டு",
     tipTranscriptCopy:                      "Markdown ஆக நகலெடு",
+    tipTranscriptCopyMsg:                   "பதிலை Markdown ஆக நகலெடுக்கவும்",
+    tipTranscriptCopyTable:                 "அட்டவணையை நகலெடுக்கவும்",
     tipTranscriptExport:                    "Markdown கோப்பாக ஏற்றுமதி செய்",
     tipTranscriptToolExpand:                "கருவி விவரங்களை விரிவாக்கு அல்லது சுருக்கு",
 
@@ -2709,6 +2793,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "इस प्रतिलेख को डिकोड नहीं किया जा सका",
     tipTranscriptReveal:                    "फ़ोल्डर में प्रतिलेख फ़ाइल दिखाएँ",
     tipTranscriptCopy:                      "Markdown के रूप में कॉपी करें",
+    tipTranscriptCopyMsg:                   "उत्तर को Markdown के रूप में कॉपी करें",
+    tipTranscriptCopyTable:                 "तालिका कॉपी करें",
     tipTranscriptExport:                    "Markdown फ़ाइल के रूप में निर्यात करें",
     tipTranscriptToolExpand:                "टूल विवरणों का विस्तार या संकुचन करें",
 
@@ -2772,6 +2858,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "এই প্রতিলিপি ডিকোড করা যায়নি",
     tipTranscriptReveal:                    "ফোল্ডারে প্রতিলিপি ফাইল দেখান",
     tipTranscriptCopy:                      "Markdown হিসাবে কপি করুন",
+    tipTranscriptCopyMsg:                   "উত্তরটি Markdown হিসাবে কপি করুন",
+    tipTranscriptCopyTable:                 "সারণী কপি করুন",
     tipTranscriptExport:                    "Markdown ফাইল হিসাবে এক্সপোর্ট করুন",
     tipTranscriptToolExpand:                "টুলের বিবরণ প্রসারিত বা সঙ্কুচিত করুন",
 
@@ -2835,6 +2923,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "اس ٹرانسکرپٹ کو ڈی کوڈ نہیں کیا جا سکا",
     tipTranscriptReveal:                    "فولڈر میں ٹرانسکرپٹ فائل دکھائیں",
     tipTranscriptCopy:                      "مارک ڈاؤن کے طور پر کاپی کریں",
+    tipTranscriptCopyMsg:                   "جواب کو مارک ڈاؤن کے طور پر کاپی کریں",
+    tipTranscriptCopyTable:                 "ٹیبل کاپی کریں",
     tipTranscriptExport:                    "مارک ڈاؤن فائل کے طور پر ایکسپورٹ کریں",
     tipTranscriptToolExpand:                "ٹول کی تفصیلات کو وسعت دیں یا سمیٹیں",
 
@@ -2898,6 +2988,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Imeshindwa kusimbua nakala hii",
     tipTranscriptReveal:                    "Onyesha faili ya nakala kwenye folda",
     tipTranscriptCopy:                      "Nakili kama Markdown",
+    tipTranscriptCopyMsg:                   "Nakili jibu kama Markdown",
+    tipTranscriptCopyTable:                 "Nakili jedwali",
     tipTranscriptExport:                    "Hamisha kama faili ya Markdown",
     tipTranscriptToolExpand:                "Panua au kunja maelezo ya zana",
 
@@ -2961,6 +3053,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "ਇਸ ਟ੍ਰਾਂਸਕ੍ਰਿਪਟ ਨੂੰ ਡੀਕੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ",
     tipTranscriptReveal:                    "ਫੋਲਡਰ ਵਿੱਚ ਟ੍ਰਾਂਸਕ੍ਰਿਪਟ ਫਾਈਲ ਦਿਖਾਓ",
     tipTranscriptCopy:                      "ਮਾਰਕਡਾਊਨ ਵਜੋਂ ਕਾਪੀ ਕਰੋ",
+    tipTranscriptCopyMsg:                   "ਜਵਾਬ ਨੂੰ ਮਾਰਕਡਾਊਨ ਵਜੋਂ ਕਾਪੀ ਕਰੋ",
+    tipTranscriptCopyTable:                 "ਸਾਰਣੀ ਕਾਪੀ ਕਰੋ",
     tipTranscriptExport:                    "ਮਾਰਕਡਾਊਨ ਫਾਈਲ ਵਜੋਂ ਐਕਸਪੋਰਟ ਕਰੋ",
     tipTranscriptToolExpand:                "ਟੂਲ ਵੇਰਵਿਆਂ ਦਾ ਵਿਸਤਾਰ ਜਾਂ ਸੰਕੁਚਨ ਕਰੋ",
 
@@ -3024,6 +3118,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Ba a iya fassara wannan rubutun ba",
     tipTranscriptReveal:                    "Nuna fayil ɗin rubutun a cikin babban fayil",
     tipTranscriptCopy:                      "Kwafi a matsayin Markdown",
+    tipTranscriptCopyMsg:                   "Kwafi amsar a matsayin Markdown",
+    tipTranscriptCopyTable:                 "Kwafi tebur",
     tipTranscriptExport:                    "Fitar da shi a matsayin fayil ɗin Markdown",
     tipTranscriptToolExpand:                "Fadada ko rufe cikakkun bayanai na kayan aiki",
 
@@ -3087,6 +3183,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Kò lè ṣiṣẹ́ àkọsílẹ̀ yìí",
     tipTranscriptReveal:                    "Fi faili àkọsílẹ̀ hàn nínú fóldà",
     tipTranscriptCopy:                      "Daakọ gẹ́gẹ́ bí Markdown",
+    tipTranscriptCopyMsg:                   "Ṣe àwòkọ ìdáhùn bíi Markdown",
+    tipTranscriptCopyTable:                 "Ṣe àwòkọ tábìlì",
     tipTranscriptExport:                    "Ṣe okeere bi faili Markdown",
     tipTranscriptToolExpand:                "Fadada tabi pa awọn alaye ohun elo rẹ",
 
@@ -3150,6 +3248,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "ఈ ట్రాన్‌స్క్రిప్ట్‌ను డీకోడ్ చేయలేకపోయింది",
     tipTranscriptReveal:                    "ఫోల్డర్‌లో ట్రాన్‌స్క్రిప్ట్ ఫైల్‌ను చూపించు",
     tipTranscriptCopy:                      "మార్క్‌డౌన్‌గా కాపీ చేయి",
+    tipTranscriptCopyMsg:                   "సమాధానాన్ని మార్క్‌డౌన్‌గా కాపీ చేయండి",
+    tipTranscriptCopyTable:                 "పట్టికను కాపీ చేయండి",
     tipTranscriptExport:                    "Markdown ఫైల్‌గా ఎగుమతి చేయండి",
     tipTranscriptToolExpand:                "పరికరం వివరాలను విస్తరించండి లేదా కుదించండి",
 
@@ -3213,6 +3313,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "हा प्रतिलेख डीकोड करता आला नाही",
     tipTranscriptReveal:                    "फोल्डरमध्ये प्रतिलेख फाइल दाखवा",
     tipTranscriptCopy:                      "मार्कडाउन म्हणून कॉपी करा",
+    tipTranscriptCopyMsg:                   "उत्तर Markdown म्हणून कॉपी करा",
+    tipTranscriptCopyTable:                 "टेबल कॉपी करा",
     tipTranscriptExport:                    "Markdown फाइल म्हणून निर्यात करा",
     tipTranscriptToolExpand:                "साधनाचे तपशील विस्तृत करा किंवा संकुचित करा",
 
@@ -3276,6 +3378,8 @@ const TRANSLATIONS = {
     msgTranscriptError:                     "Hindi ma-decode ang transkrip na ito",
     tipTranscriptReveal:                    "Ipakita ang file ng transkrip sa folder",
     tipTranscriptCopy:                      "Kopyahin bilang Markdown",
+    tipTranscriptCopyMsg:                   "Kopyahin ang sagot bilang Markdown",
+    tipTranscriptCopyTable:                 "Kopyahin ang talahanayan",
     tipTranscriptExport:                    "I-export bilang Markdown file",
     tipTranscriptToolExpand:                "Palawakin o i-collapse ang mga detalye ng tool",
 
