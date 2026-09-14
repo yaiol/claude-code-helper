@@ -19,7 +19,7 @@
 </div>
 
 <h3 align="center">
-  <a href="https://apps.yaiol.com/en/p/claude-code-helper/">Website</a>
+  <a href="https://apps.yaiol.com/p/claude-code-helper/">Website</a>
   <span>&nbsp;·&nbsp;</span>
   <a href="#install">Install</a>
   <span>&nbsp;·&nbsp;</span>
@@ -31,7 +31,7 @@
 </h3>
 
 <div align="center">
-  <sub><a href="https://apps.yaiol.com/en/p/claude-code-helper/help/"><b>Help in 28 languages</b></a></sub>
+  <sub><a href="https://apps.yaiol.com/p/claude-code-helper/help/"><b>Help in 28 languages</b></a></sub>
 </div>
 
 <!-- /readme:nav -->
@@ -78,10 +78,10 @@ Claude Code Helper surfaces them all into one window. A two-pane viewer lists ev
 
 | | |
 |---|---|
-| **User manual** | [Read it online](https://apps.yaiol.com/en/p/claude-code-helper/help/) |
+| **User manual** | [Read it online](https://apps.yaiol.com/p/claude-code-helper/help/) |
 | **Printable PDF** | attached to each [release](../../releases/latest) |
-| **What's new** | [Release notes](https://apps.yaiol.com/en/p/claude-code-helper/help/releases/) |
-| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/en/p/claude-code-helper/) |
+| **What's new** | [Release notes](https://apps.yaiol.com/p/claude-code-helper/help/releases/) |
+| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/p/claude-code-helper/) |
 
 ---
 
