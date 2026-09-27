@@ -5,7 +5,7 @@
 //   language via the i18n key workflow. Full procedure: see CLAUDE-i18n.md.
 //   Never paste translations by hand. The scripts ARE the work.
 import React, { useEffect, useMemo, useState } from 'react';
-import { Settings, HelpCircle, Sun, Moon, X, ScrollText, RefreshCw, Search, FolderOpen, Copy, Check, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react';
+import { Settings, HelpCircle, X, RefreshCw, Search, FolderOpen, Copy, Check, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import pkg from '../package.json';
@@ -14,7 +14,7 @@ import { checkForUpdate, getUrl } from './lib/update-check';
 import { UpdateBanner } from './lib/ui-update-banner';
 import { AppHeader } from './lib/ui-header';
 import { GithubIcon } from './lib/ui-icons';
-import yaiolLogo from './assets/yaiol-logo.svg';
+import { SettingsView } from './lib/ui-settings';
 // Storage namespace - single source: package.json `storagePrefix`. Never hardcode a prefix.
 const STORAGE_PREFIX = pkg.storagePrefix;
 
@@ -291,27 +291,27 @@ export default function App() {
             <HelpCircle />
           </button>
           <button
-            className="btn icon"
-            onClick={() => setSettingsOpen(true)}
+            className={`btn icon stg-toggle ${settingsOpen ? 'active' : ''}`}
+            onClick={() => setSettingsOpen(o => !o)}
             title={t('tipHdrSettings')}
             aria-label={t('tipHdrSettings')}
+            aria-pressed={settingsOpen}
           >
             <Settings />
           </button>
         </div>
       </AppHeader>
 
+      {/* .app-main content region (Rule 14) — wraps the two-pane split */}
+      <div className="app-main">
       {settingsOpen && (
-        <SettingsDialog
-          t={t}
+        <SettingsView
+          t={t} appName={APP_NAME} appVersion={APP_VERSION} languages={LANGUAGES}
           lang={lang} setLang={setLang}
           theme={theme} setTheme={setTheme}
           onClose={() => setSettingsOpen(false)}
         />
       )}
-
-      {/* .app-main content region (Rule 14) — wraps the two-pane split */}
-      <div className="app-main">
       <div className="workspace ch-split">
         {/* ── Left: session list ──────────────────────────────────────────── */}
         <section className="ch-list pnl">
@@ -480,94 +480,6 @@ export default function App() {
           )}
         </section>
       </div>
-      </div>
-    </div>
-  );
-}
-
-function SettingsDialog({ t, lang, setLang, theme, setTheme, onClose }) {
-  const [activeTab, setActiveTab] = useState('display');
-
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
-
-  const TABS = [
-    { key: 'display', label: t('tabDlgSettingsDisplay'), icon: Sun },
-    { key: 'about',   label: t('tabDlgSettingsAbout'),   icon: ScrollText },
-  ];
-
-  return (
-    <div className="dl-backdrop" onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}>
-      <div className="dlg" onClick={e => e.stopPropagation()}>
-        {/* Header */}
-        <div className="dlg-head">
-          <span className="dlg-title"><Settings />{t('ttlDlgSettings')}</span>
-          <button className="dl-close" onClick={onClose} title={t('btnGlobalCancel')} aria-label={t('btnGlobalCancel')}>
-            <X />
-          </button>
-        </div>
-
-        {/* Tab bar */}
-        <div className="tabs">
-          {TABS.map(({ key, label, icon: TabIcon }) => (
-            <button
-              key={key}
-              className={`tab ${activeTab === key ? 'active' : ''}`}
-              onClick={() => setActiveTab(key)}
-            >
-              <TabIcon />{label}
-            </button>
-          ))}
-        </div>
-
-        {/* Body */}
-        {/* All tab panels stacked in one grid cell → dialog sizes to the tallest (Display), no yoyo on tab switch. Rule DLG-8. */}
-        <div className="dlg-body" style={{ display: 'grid' }}>
-          <div style={{ gridArea: '1/1', visibility: activeTab === 'display' ? 'visible' : 'hidden', zIndex: activeTab === 'display' ? 1 : 0, background: 'var(--dlg-bgd)' }}>
-              {/* Language */}
-              <div className="dlg-field">
-                <label className="dlg-field-label">{t('lblDlgSettingsDisplayLang')}</label>
-                <select className="select" value={lang} onChange={e => setLang(e.target.value)}>
-                  {LANGUAGES.map(l => <option key={l.key} value={l.key}>{l.label}</option>)}
-                </select>
-              </div>
-              {/* Theme */}
-              <div className="dlg-field divider">
-                <label className="dlg-field-label">{t('lblDlgSettingsDisplayTheme')}</label>
-                <div className="opt-btns">
-                  {[
-                    { key: 'dark',  Icon: Moon, label: t('btnDlgSettingsDisplayThemeDark') },
-                    { key: 'light', Icon: Sun,  label: t('btnDlgSettingsDisplayThemeLight') },
-                  ].map(({ key, Icon, label }) => {
-                    const active = theme === key;
-                    return (
-                      <button
-                        key={key}
-                        className={`opt-btn ${active ? 'active' : ''}`}
-                        onClick={() => setTheme(key)}
-                      >
-                        <Icon />
-                        <span>{label}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-          </div>
-
-          <div style={{ gridArea: '1/1', visibility: activeTab === 'about' ? 'visible' : 'hidden', zIndex: activeTab === 'about' ? 1 : 0, background: 'var(--dlg-bgd)' }}>
-            <div className="dlg-about">
-              <img src={yaiolLogo} alt="Yaiol" style={{ width: 120, height: 'auto', flexShrink: 0 }} />
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
-                <div className="dlg-about-id">{APP_NAME} <b>v{APP_VERSION}</b> by yaiol</div>
-                <div className="dlg-about-desc">{t('msgDlgSettingsAboutDesc')}</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

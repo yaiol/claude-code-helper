@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4 — 2026-09-27
+
+- Open Settings as a full-window page instead of a dialog: the tabs are listed down the left side, a back arrow beside the title closes the page, and so do the header's settings button and Esc. The transcript you were reading stays where you left it underneath
+- Give text fields and drop-downs a lighter background in the dark theme, so they stand out from the bars and panels around them
+- Point the README's website, manual and release-notes links at the language-neutral addresses, and centre the install table
+
 ## 1.0.3 — 2026-09-06
 
 - Copy any single answer from a transcript, without exporting the whole session

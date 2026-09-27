@@ -1,7 +1,7 @@
 {
   "name": "claude-code-helper",
   "productName": "Claude Code Helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "description": "Claude Helper",
   "private": true,

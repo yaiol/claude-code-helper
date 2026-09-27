@@ -11,7 +11,6 @@ const TRANSLATIONS = {
   en: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancel",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "New version available:",
@@ -24,19 +23,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Open settings",
     tipHdrHelp:                             "Help",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Settings",
-    tabDlgSettingsDisplay:                  "Display",
-    tabDlgSettingsAbout:                    "About",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Settings",
+    tipStgBack:                             "Back",
+    tabStgDisplay:                          "Display",
+    tabStgAbout:                            "About",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Language",
-    lblDlgSettingsDisplayTheme:             "Theme",
-    btnDlgSettingsDisplayThemeDark:         "Dark",
-    btnDlgSettingsDisplayThemeLight:        "Light",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Language",
+    lblStgDisplayTheme:                     "Theme",
+    btnStgDisplayThemeDark:                 "Dark",
+    btnStgDisplayThemeLight:                "Light",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "is a Claude Helper.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "is a Claude Helper.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -77,7 +77,6 @@ const TRANSLATIONS = {
   fr: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Annuler",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nouvelle version disponible :",
@@ -90,19 +89,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Ouvrir les paramètres",
     tipHdrHelp:                             "Aide",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Paramètres",
-    tabDlgSettingsDisplay:                  "Affichage",
-    tabDlgSettingsAbout:                    "À propos",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Paramètres",
+    tipStgBack:                             "Retour",
+    tabStgDisplay:                          "Affichage",
+    tabStgAbout:                            "À propos",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Langue",
-    lblDlgSettingsDisplayTheme:             "Thème",
-    btnDlgSettingsDisplayThemeDark:         "Sombre",
-    btnDlgSettingsDisplayThemeLight:        "Clair",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Langue",
+    lblStgDisplayTheme:                     "Thème",
+    btnStgDisplayThemeDark:                 "Sombre",
+    btnStgDisplayThemeLight:                "Clair",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "est un modèle d'application yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "est un modèle d'application yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -142,7 +142,6 @@ const TRANSLATIONS = {
   de: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Abbrechen",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Neue Version verfügbar:",
@@ -155,19 +154,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Einstellungen öffnen",
     tipHdrHelp:                             "Hilfe",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Einstellungen",
-    tabDlgSettingsDisplay:                  "Anzeige",
-    tabDlgSettingsAbout:                    "Über",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Einstellungen",
+    tipStgBack:                             "Zurück",
+    tabStgDisplay:                          "Anzeige",
+    tabStgAbout:                            "Über",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Sprache",
-    lblDlgSettingsDisplayTheme:             "Design",
-    btnDlgSettingsDisplayThemeDark:         "Dunkel",
-    btnDlgSettingsDisplayThemeLight:        "Hell",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Sprache",
+    lblStgDisplayTheme:                     "Design",
+    btnStgDisplayThemeDark:                 "Dunkel",
+    btnStgDisplayThemeLight:                "Hell",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ist eine yaiol Electron App-Vorlage.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ist eine yaiol Electron App-Vorlage.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sitzungen",
@@ -207,7 +207,6 @@ const TRANSLATIONS = {
   es: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancelar",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nueva versión disponible:",
@@ -220,19 +219,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Abrir configuración",
     tipHdrHelp:                             "Ayuda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuración",
-    tabDlgSettingsDisplay:                  "Pantalla",
-    tabDlgSettingsAbout:                    "Acerca de",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuración",
+    tipStgBack:                             "Atrás",
+    tabStgDisplay:                          "Pantalla",
+    tabStgAbout:                            "Acerca de",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Oscuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Oscuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "es una plantilla de aplicación yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "es una plantilla de aplicación yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesiones",
@@ -272,7 +272,6 @@ const TRANSLATIONS = {
   pt_BR: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancelar",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nova versão disponível:",
@@ -285,19 +284,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Abrir configurações",
     tipHdrHelp:                             "Ajuda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configurações",
-    tabDlgSettingsDisplay:                  "Exibição",
-    tabDlgSettingsAbout:                    "Sobre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configurações",
+    tipStgBack:                             "Voltar",
+    tabStgDisplay:                          "Exibição",
+    tabStgAbout:                            "Sobre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "é um modelo de aplicativo yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "é um modelo de aplicativo yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessões",
@@ -337,7 +337,6 @@ const TRANSLATIONS = {
   pt_PT: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancelar",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nova versão disponível:",
@@ -350,19 +349,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Abrir definições",
     tipHdrHelp:                             "Ajuda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Definições",
-    tabDlgSettingsDisplay:                  "Visualização",
-    tabDlgSettingsAbout:                    "Sobre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Definições",
+    tipStgBack:                             "Voltar",
+    tabStgDisplay:                          "Visualização",
+    tabStgAbout:                            "Sobre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "é um modelo de aplicação yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "é um modelo de aplicação yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessões",
@@ -402,7 +402,6 @@ const TRANSLATIONS = {
   it: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Annulla",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nuova versione disponibile:",
@@ -415,19 +414,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Apri impostazioni",
     tipHdrHelp:                             "Aiuto",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Impostazioni",
-    tabDlgSettingsDisplay:                  "Schermo",
-    tabDlgSettingsAbout:                    "Informazioni",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Impostazioni",
+    tipStgBack:                             "Indietro",
+    tabStgDisplay:                          "Schermo",
+    tabStgAbout:                            "Informazioni",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Lingua",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Scuro",
-    btnDlgSettingsDisplayThemeLight:        "Chiaro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Lingua",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Scuro",
+    btnStgDisplayThemeLight:                "Chiaro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "è un modello di app yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "è un modello di app yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioni",
@@ -467,7 +467,6 @@ const TRANSLATIONS = {
   nl: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Annuleren",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nieuwe versie beschikbaar:",
@@ -480,19 +479,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Instellingen openen",
     tipHdrHelp:                             "Hulp",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Instellingen",
-    tabDlgSettingsDisplay:                  "Weergave",
-    tabDlgSettingsAbout:                    "Over",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Instellingen",
+    tipStgBack:                             "Terug",
+    tabStgDisplay:                          "Weergave",
+    tabStgAbout:                            "Over",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Taal",
-    lblDlgSettingsDisplayTheme:             "Thema",
-    btnDlgSettingsDisplayThemeDark:         "Donker",
-    btnDlgSettingsDisplayThemeLight:        "Licht",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Taal",
+    lblStgDisplayTheme:                     "Thema",
+    btnStgDisplayThemeDark:                 "Donker",
+    btnStgDisplayThemeLight:                "Licht",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "is een yaiol Electron app-sjabloon.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "is een yaiol Electron app-sjabloon.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessies",
@@ -532,7 +532,6 @@ const TRANSLATIONS = {
   ru: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Отмена",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Доступна новая версия:",
@@ -545,19 +544,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Открыть настройки",
     tipHdrHelp:                             "Справка",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Настройки",
-    tabDlgSettingsDisplay:                  "Отображение",
-    tabDlgSettingsAbout:                    "О программе",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Настройки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Отображение",
+    tabStgAbout:                            "О программе",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Язык",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тёмный",
-    btnDlgSettingsDisplayThemeLight:        "Светлый",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Язык",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тёмный",
+    btnStgDisplayThemeLight:                "Светлый",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "- это шаблон приложения yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "- это шаблон приложения yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сессии",
@@ -597,7 +597,6 @@ const TRANSLATIONS = {
   uk: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Скасувати",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Доступна нова версія:",
@@ -610,19 +609,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Відкрити налаштування",
     tipHdrHelp:                             "Довідка",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Налаштування",
-    tabDlgSettingsDisplay:                  "Відображення",
-    tabDlgSettingsAbout:                    "Про програму",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Налаштування",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Відображення",
+    tabStgAbout:                            "Про програму",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Мова",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Темний",
-    btnDlgSettingsDisplayThemeLight:        "Світлий",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Мова",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Темний",
+    btnStgDisplayThemeLight:                "Світлий",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "- це шаблон програми yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "- це шаблон програми yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесії",
@@ -662,7 +662,6 @@ const TRANSLATIONS = {
   pl: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Anuluj",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Dostępna nowa wersja:",
@@ -675,19 +674,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Otwórz ustawienia",
     tipHdrHelp:                             "Pomoc",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ustawienia",
-    tabDlgSettingsDisplay:                  "Wyświetlanie",
-    tabDlgSettingsAbout:                    "O programie",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ustawienia",
+    tipStgBack:                             "Wstecz",
+    tabStgDisplay:                          "Wyświetlanie",
+    tabStgAbout:                            "O programie",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Język",
-    lblDlgSettingsDisplayTheme:             "Motyw",
-    btnDlgSettingsDisplayThemeDark:         "Ciemny",
-    btnDlgSettingsDisplayThemeLight:        "Jasny",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Język",
+    lblStgDisplayTheme:                     "Motyw",
+    btnStgDisplayThemeDark:                 "Ciemny",
+    btnStgDisplayThemeLight:                "Jasny",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "to szablon aplikacji yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "to szablon aplikacji yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesje",
@@ -727,7 +727,6 @@ const TRANSLATIONS = {
   ro: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Anulează",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Versiune nouă disponibilă:",
@@ -740,19 +739,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Deschide setările",
     tipHdrHelp:                             "Ajutor",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Setări",
-    tabDlgSettingsDisplay:                  "Afișaj",
-    tabDlgSettingsAbout:                    "Despre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Setări",
+    tipStgBack:                             "Înapoi",
+    tabStgDisplay:                          "Afișaj",
+    tabStgAbout:                            "Despre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Limbă",
-    lblDlgSettingsDisplayTheme:             "Temă",
-    btnDlgSettingsDisplayThemeDark:         "Întunecat",
-    btnDlgSettingsDisplayThemeLight:        "Luminos",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Limbă",
+    lblStgDisplayTheme:                     "Temă",
+    btnStgDisplayThemeDark:                 "Întunecat",
+    btnStgDisplayThemeLight:                "Luminos",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "este un șablon de aplicație yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "este un șablon de aplicație yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesiuni",
@@ -792,7 +792,6 @@ const TRANSLATIONS = {
   sv: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Avbryt",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Ny version tillgänglig:",
@@ -805,19 +804,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Öppna inställningar",
     tipHdrHelp:                             "Hjälp",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Inställningar",
-    tabDlgSettingsDisplay:                  "Visning",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Inställningar",
+    tipStgBack:                             "Tillbaka",
+    tabStgDisplay:                          "Visning",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Språk",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mörk",
-    btnDlgSettingsDisplayThemeLight:        "Ljus",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Språk",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mörk",
+    btnStgDisplayThemeLight:                "Ljus",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "är en yaiol Electron app-mall.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "är en yaiol Electron app-mall.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioner",
@@ -857,7 +857,6 @@ const TRANSLATIONS = {
   nb: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Avbryt",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Ny versjon tilgjengelig:",
@@ -870,19 +869,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Åpne innstillinger",
     tipHdrHelp:                             "Hjelp",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Innstillinger",
-    tabDlgSettingsDisplay:                  "Skjerm",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Innstillinger",
+    tipStgBack:                             "Tilbake",
+    tabStgDisplay:                          "Skjerm",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Språk",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mørk",
-    btnDlgSettingsDisplayThemeLight:        "Lys",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Språk",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mørk",
+    btnStgDisplayThemeLight:                "Lys",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "er en yaiol Electron app-mal.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "er en yaiol Electron app-mal.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesjoner",
@@ -922,7 +922,6 @@ const TRANSLATIONS = {
   tr: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "İptal",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Yeni sürüm mevcut:",
@@ -935,19 +934,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Ayarları aç",
     tipHdrHelp:                             "Yardım",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ayarlar",
-    tabDlgSettingsDisplay:                  "Görüntü",
-    tabDlgSettingsAbout:                    "Hakkında",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ayarlar",
+    tipStgBack:                             "Geri",
+    tabStgDisplay:                          "Görüntü",
+    tabStgAbout:                            "Hakkında",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Dil",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Koyu",
-    btnDlgSettingsDisplayThemeLight:        "Açık",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Dil",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Koyu",
+    btnStgDisplayThemeLight:                "Açık",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "bir yaiol Electron uygulama şablonudur.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "bir yaiol Electron uygulama şablonudur.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Oturumlar",
@@ -987,7 +987,6 @@ const TRANSLATIONS = {
   hr: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Odustani",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nova verzija dostupna:",
@@ -1000,19 +999,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Otvori postavke",
     tipHdrHelp:                             "Pomoć",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Postavke",
-    tabDlgSettingsDisplay:                  "Prikaz",
-    tabDlgSettingsAbout:                    "O programu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Postavke",
+    tipStgBack:                             "Natrag",
+    tabStgDisplay:                          "Prikaz",
+    tabStgAbout:                            "O programu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jezik",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Tamno",
-    btnDlgSettingsDisplayThemeLight:        "Svijetlo",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jezik",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Tamno",
+    btnStgDisplayThemeLight:                "Svijetlo",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "je predložak aplikacije yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "je predložak aplikacije yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesije",
@@ -1052,7 +1052,6 @@ const TRANSLATIONS = {
   el: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Ακύρωση",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Νέα έκδοση διαθέσιμη:",
@@ -1065,19 +1064,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Άνοιγμα ρυθμίσεων",
     tipHdrHelp:                             "Βοήθεια",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ρυθμίσεις",
-    tabDlgSettingsDisplay:                  "Οθόνη",
-    tabDlgSettingsAbout:                    "Σχετικά",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ρυθμίσεις",
+    tipStgBack:                             "Πίσω",
+    tabStgDisplay:                          "Οθόνη",
+    tabStgAbout:                            "Σχετικά",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Γλώσσα",
-    lblDlgSettingsDisplayTheme:             "Θέμα",
-    btnDlgSettingsDisplayThemeDark:         "Σκοτεινό",
-    btnDlgSettingsDisplayThemeLight:        "Φωτεινό",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Γλώσσα",
+    lblStgDisplayTheme:                     "Θέμα",
+    btnStgDisplayThemeDark:                 "Σκοτεινό",
+    btnStgDisplayThemeLight:                "Φωτεινό",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "είναι ένα πρότυπο εφαρμογής yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "είναι ένα πρότυπο εφαρμογής yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Συνεδρίες",
@@ -1117,7 +1117,6 @@ const TRANSLATIONS = {
   he: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "ביטול",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "גרסה חדשה זמינה:",
@@ -1130,19 +1129,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "פתח הגדרות",
     tipHdrHelp:                             "עזרה",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "הגדרות",
-    tabDlgSettingsDisplay:                  "תצוגה",
-    tabDlgSettingsAbout:                    "אודות",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "הגדרות",
+    tipStgBack:                             "חזור",
+    tabStgDisplay:                          "תצוגה",
+    tabStgAbout:                            "אודות",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "שפה",
-    lblDlgSettingsDisplayTheme:             "ערכת נושא",
-    btnDlgSettingsDisplayThemeDark:         "כהה",
-    btnDlgSettingsDisplayThemeLight:        "בהיר",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "שפה",
+    lblStgDisplayTheme:                     "ערכת נושא",
+    btnStgDisplayThemeDark:                 "כהה",
+    btnStgDisplayThemeLight:                "בהיר",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "הוא תבנית יישום yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "הוא תבנית יישום yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "סשנים",
@@ -1182,7 +1182,6 @@ const TRANSLATIONS = {
   ar: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "إلغاء",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "إصدار جديد متوفر:",
@@ -1195,19 +1194,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "فتح الإعدادات",
     tipHdrHelp:                             "مساعدة",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "الإعدادات",
-    tabDlgSettingsDisplay:                  "عرض",
-    tabDlgSettingsAbout:                    "حول",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "الإعدادات",
+    tipStgBack:                             "رجوع",
+    tabStgDisplay:                          "عرض",
+    tabStgAbout:                            "حول",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "اللغة",
-    lblDlgSettingsDisplayTheme:             "المظهر",
-    btnDlgSettingsDisplayThemeDark:         "داكن",
-    btnDlgSettingsDisplayThemeLight:        "فاتح",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "اللغة",
+    lblStgDisplayTheme:                     "المظهر",
+    btnStgDisplayThemeDark:                 "داكن",
+    btnStgDisplayThemeLight:                "فاتح",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "هو قالب تطبيق yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "هو قالب تطبيق yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "الجلسات",
@@ -1247,7 +1247,6 @@ const TRANSLATIONS = {
   fa: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "لغو",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "نسخه جدید موجود است:",
@@ -1260,19 +1259,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "باز کردن تنظیمات",
     tipHdrHelp:                             "راهنما",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "تنظیمات",
-    tabDlgSettingsDisplay:                  "نمایش",
-    tabDlgSettingsAbout:                    "درباره",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "تنظیمات",
+    tipStgBack:                             "بازگشت",
+    tabStgDisplay:                          "نمایش",
+    tabStgAbout:                            "درباره",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "زبان",
-    lblDlgSettingsDisplayTheme:             "پوسته",
-    btnDlgSettingsDisplayThemeDark:         "تیره",
-    btnDlgSettingsDisplayThemeLight:        "روشن",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "زبان",
+    lblStgDisplayTheme:                     "پوسته",
+    btnStgDisplayThemeDark:                 "تیره",
+    btnStgDisplayThemeLight:                "روشن",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "یک قالب برنامه yaiol Electron است.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "یک قالب برنامه yaiol Electron است.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "نشست‌ها",
@@ -1312,7 +1312,6 @@ const TRANSLATIONS = {
   zh_CN: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "取消",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "新版本可用:",
@@ -1325,19 +1324,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "打开设置",
     tipHdrHelp:                             "帮助",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "设置",
-    tabDlgSettingsDisplay:                  "显示",
-    tabDlgSettingsAbout:                    "关于",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "设置",
+    tipStgBack:                             "返回",
+    tabStgDisplay:                          "显示",
+    tabStgAbout:                            "关于",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "语言",
-    lblDlgSettingsDisplayTheme:             "主题",
-    btnDlgSettingsDisplayThemeDark:         "深色",
-    btnDlgSettingsDisplayThemeLight:        "浅色",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "语言",
+    lblStgDisplayTheme:                     "主题",
+    btnStgDisplayThemeDark:                 "深色",
+    btnStgDisplayThemeLight:                "浅色",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "是一个 yaiol Electron 应用程序模板。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "是一个 yaiol Electron 应用程序模板。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "会话",
@@ -1377,7 +1377,6 @@ const TRANSLATIONS = {
   zh_TW: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "取消",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "新版本可用:",
@@ -1390,19 +1389,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "打開設定",
     tipHdrHelp:                             "說明",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "設定",
-    tabDlgSettingsDisplay:                  "顯示",
-    tabDlgSettingsAbout:                    "關於",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "設定",
+    tipStgBack:                             "返回",
+    tabStgDisplay:                          "顯示",
+    tabStgAbout:                            "關於",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "語言",
-    lblDlgSettingsDisplayTheme:             "主題",
-    btnDlgSettingsDisplayThemeDark:         "深色",
-    btnDlgSettingsDisplayThemeLight:        "淺色",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "語言",
+    lblStgDisplayTheme:                     "主題",
+    btnStgDisplayThemeDark:                 "深色",
+    btnStgDisplayThemeLight:                "淺色",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "是一個 yaiol Electron 應用程式範本。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "是一個 yaiol Electron 應用程式範本。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "工作階段",
@@ -1442,7 +1442,6 @@ const TRANSLATIONS = {
   ja: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "キャンセル",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "新しいバージョンが利用可能です:",
@@ -1455,19 +1454,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "設定を開く",
     tipHdrHelp:                             "ヘルプ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "設定",
-    tabDlgSettingsDisplay:                  "表示",
-    tabDlgSettingsAbout:                    "概要",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "設定",
+    tipStgBack:                             "戻る",
+    tabStgDisplay:                          "表示",
+    tabStgAbout:                            "概要",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "言語",
-    lblDlgSettingsDisplayTheme:             "テーマ",
-    btnDlgSettingsDisplayThemeDark:         "ダーク",
-    btnDlgSettingsDisplayThemeLight:        "ライト",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "言語",
+    lblStgDisplayTheme:                     "テーマ",
+    btnStgDisplayThemeDark:                 "ダーク",
+    btnStgDisplayThemeLight:                "ライト",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "は yaiol Electron アプリのテンプレートです。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "は yaiol Electron アプリのテンプレートです。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "セッション",
@@ -1507,7 +1507,6 @@ const TRANSLATIONS = {
   ko: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "취소",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "새 버전 사용 가능:",
@@ -1520,19 +1519,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "설정 열기",
     tipHdrHelp:                             "도움말",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "설정",
-    tabDlgSettingsDisplay:                  "디스플레이",
-    tabDlgSettingsAbout:                    "정보",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "설정",
+    tipStgBack:                             "뒤로",
+    tabStgDisplay:                          "디스플레이",
+    tabStgAbout:                            "정보",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "언어",
-    lblDlgSettingsDisplayTheme:             "테마",
-    btnDlgSettingsDisplayThemeDark:         "어둡게",
-    btnDlgSettingsDisplayThemeLight:        "밝게",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "언어",
+    lblStgDisplayTheme:                     "테마",
+    btnStgDisplayThemeDark:                 "어둡게",
+    btnStgDisplayThemeLight:                "밝게",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "yaiol Electron 앱 템플릿입니다.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "yaiol Electron 앱 템플릿입니다.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "세션",
@@ -1572,7 +1572,6 @@ const TRANSLATIONS = {
   vi: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Hủy",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Phiên bản mới có sẵn:",
@@ -1585,19 +1584,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Mở cài đặt",
     tipHdrHelp:                             "Trợ giúp",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Cài đặt",
-    tabDlgSettingsDisplay:                  "Hiển thị",
-    tabDlgSettingsAbout:                    "Giới thiệu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Cài đặt",
+    tipStgBack:                             "Quay lại",
+    tabStgDisplay:                          "Hiển thị",
+    tabStgAbout:                            "Giới thiệu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Ngôn ngữ",
-    lblDlgSettingsDisplayTheme:             "Chủ đề",
-    btnDlgSettingsDisplayThemeDark:         "Tối",
-    btnDlgSettingsDisplayThemeLight:        "Sáng",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Ngôn ngữ",
+    lblStgDisplayTheme:                     "Chủ đề",
+    btnStgDisplayThemeDark:                 "Tối",
+    btnStgDisplayThemeLight:                "Sáng",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "là một mẫu ứng dụng yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "là một mẫu ứng dụng yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Phiên",
@@ -1637,7 +1637,6 @@ const TRANSLATIONS = {
   th: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "ยกเลิก",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "มีเวอร์ชันใหม่:",
@@ -1650,19 +1649,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "เปิดการตั้งค่า",
     tipHdrHelp:                             "วิธีใช้",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "การตั้งค่า",
-    tabDlgSettingsDisplay:                  "การแสดงผล",
-    tabDlgSettingsAbout:                    "เกี่ยวกับ",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "การตั้งค่า",
+    tipStgBack:                             "ย้อนกลับ",
+    tabStgDisplay:                          "การแสดงผล",
+    tabStgAbout:                            "เกี่ยวกับ",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ภาษา",
-    lblDlgSettingsDisplayTheme:             "ธีม",
-    btnDlgSettingsDisplayThemeDark:         "มืด",
-    btnDlgSettingsDisplayThemeLight:        "สว่าง",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ภาษา",
+    lblStgDisplayTheme:                     "ธีม",
+    btnStgDisplayThemeDark:                 "มืด",
+    btnStgDisplayThemeLight:                "สว่าง",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "เป็นเทมเพลตแอป yaiol Electron",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "เป็นเทมเพลตแอป yaiol Electron",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "เซสชัน",
@@ -1702,7 +1702,6 @@ const TRANSLATIONS = {
   id: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Batal",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Versi baru tersedia:",
@@ -1715,19 +1714,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Buka pengaturan",
     tipHdrHelp:                             "Bantuan",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Pengaturan",
-    tabDlgSettingsDisplay:                  "Tampilan",
-    tabDlgSettingsAbout:                    "Tentang",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Pengaturan",
+    tipStgBack:                             "Kembali",
+    tabStgDisplay:                          "Tampilan",
+    tabStgAbout:                            "Tentang",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Bahasa",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Gelap",
-    btnDlgSettingsDisplayThemeLight:        "Terang",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Bahasa",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Gelap",
+    btnStgDisplayThemeLight:                "Terang",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "adalah templat aplikasi yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "adalah templat aplikasi yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesi",
@@ -1767,7 +1767,6 @@ const TRANSLATIONS = {
   ca: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancel·la",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nova versió disponible:",
@@ -1780,19 +1779,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Obre la configuració",
     tipHdrHelp:                             "Ajuda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuració",
-    tabDlgSettingsDisplay:                  "Visualització",
-    tabDlgSettingsAbout:                    "Quant a",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuració",
+    tipStgBack:                             "Enrere",
+    tabStgDisplay:                          "Visualització",
+    tabStgAbout:                            "Quant a",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Fosc",
-    btnDlgSettingsDisplayThemeLight:        "Clar",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Fosc",
+    btnStgDisplayThemeLight:                "Clar",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "és una plantilla d'aplicació yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "és una plantilla d'aplicació yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -1832,7 +1832,6 @@ const TRANSLATIONS = {
   cs: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Zrušit",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nová verze je k dispozici:",
@@ -1845,19 +1844,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Otevřít nastavení",
     tipHdrHelp:                             "Nápověda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavení",
-    tabDlgSettingsDisplay:                  "Zobrazení",
-    tabDlgSettingsAbout:                    "O aplikaci",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavení",
+    tipStgBack:                             "Zpět",
+    tabStgDisplay:                          "Zobrazení",
+    tabStgAbout:                            "O aplikaci",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jazyk",
-    lblDlgSettingsDisplayTheme:             "Motiv",
-    btnDlgSettingsDisplayThemeDark:         "Tmavý",
-    btnDlgSettingsDisplayThemeLight:        "Světlý",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jazyk",
+    lblStgDisplayTheme:                     "Motiv",
+    btnStgDisplayThemeDark:                 "Tmavý",
+    btnStgDisplayThemeLight:                "Světlý",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "je šablona aplikace yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "je šablona aplikace yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Relace",
@@ -1897,7 +1897,6 @@ const TRANSLATIONS = {
   da: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Annuller",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Ny version tilgængelig:",
@@ -1910,19 +1909,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Åbn indstillinger",
     tipHdrHelp:                             "Hjælp",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Indstillinger",
-    tabDlgSettingsDisplay:                  "Skærm",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Indstillinger",
+    tipStgBack:                             "Tilbage",
+    tabStgDisplay:                          "Skærm",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Sprog",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mørk",
-    btnDlgSettingsDisplayThemeLight:        "Lys",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Sprog",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mørk",
+    btnStgDisplayThemeLight:                "Lys",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "er en yaiol Electron app-skabelon.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "er en yaiol Electron app-skabelon.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioner",
@@ -1962,7 +1962,6 @@ const TRANSLATIONS = {
   fi: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Peruuta",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Uusi versio saatavilla:",
@@ -1975,19 +1974,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Avaa asetukset",
     tipHdrHelp:                             "Ohje",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Asetukset",
-    tabDlgSettingsDisplay:                  "Näyttö",
-    tabDlgSettingsAbout:                    "Tietoja",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Asetukset",
+    tipStgBack:                             "Takaisin",
+    tabStgDisplay:                          "Näyttö",
+    tabStgAbout:                            "Tietoja",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Kieli",
-    lblDlgSettingsDisplayTheme:             "Teema",
-    btnDlgSettingsDisplayThemeDark:         "Tumma",
-    btnDlgSettingsDisplayThemeLight:        "Vaalea",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Kieli",
+    lblStgDisplayTheme:                     "Teema",
+    btnStgDisplayThemeDark:                 "Tumma",
+    btnStgDisplayThemeLight:                "Vaalea",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "on yaiol Electron -sovelluspohja.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "on yaiol Electron -sovelluspohja.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Istunnot",
@@ -2027,7 +2027,6 @@ const TRANSLATIONS = {
   ms: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Batal",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Versi baharu tersedia:",
@@ -2040,19 +2039,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Buka tetapan",
     tipHdrHelp:                             "Bantuan",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Tetapan",
-    tabDlgSettingsDisplay:                  "Paparan",
-    tabDlgSettingsAbout:                    "Mengenai",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Tetapan",
+    tipStgBack:                             "Kembali",
+    tabStgDisplay:                          "Paparan",
+    tabStgAbout:                            "Mengenai",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Bahasa",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Gelap",
-    btnDlgSettingsDisplayThemeLight:        "Cerah",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Bahasa",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Gelap",
+    btnStgDisplayThemeLight:                "Cerah",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ialah templat aplikasi yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ialah templat aplikasi yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesi",
@@ -2092,7 +2092,6 @@ const TRANSLATIONS = {
   hy: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Չեղարկել",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Նոր տարբերակ հասանելի է:",
@@ -2105,19 +2104,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Բացել կարգավորումները",
     tipHdrHelp:                             "Օգնություն",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Կարգավորումներ",
-    tabDlgSettingsDisplay:                  "Ցուցադրում",
-    tabDlgSettingsAbout:                    "Ծրագրի մասին",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Կարգավորումներ",
+    tipStgBack:                             "Հետ",
+    tabStgDisplay:                          "Ցուցադրում",
+    tabStgAbout:                            "Ծրագրի մասին",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Լեզու",
-    lblDlgSettingsDisplayTheme:             "Թեմա",
-    btnDlgSettingsDisplayThemeDark:         "Մուգ",
-    btnDlgSettingsDisplayThemeLight:        "Բաց",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Լեզու",
+    lblStgDisplayTheme:                     "Թեմա",
+    btnStgDisplayThemeDark:                 "Մուգ",
+    btnStgDisplayThemeLight:                "Բաց",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "yaiol Electron հավելվածի ձևանմուշ է։",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "yaiol Electron հավելվածի ձևանմուշ է։",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Սեսիաներ",
@@ -2157,7 +2157,6 @@ const TRANSLATIONS = {
   bg: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Отказ",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Налична е нова версия:",
@@ -2170,19 +2169,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Отвори настройки",
     tipHdrHelp:                             "Помощ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Настройки",
-    tabDlgSettingsDisplay:                  "Показване",
-    tabDlgSettingsAbout:                    "Относно",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Настройки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Показване",
+    tabStgAbout:                            "Относно",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Език",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тъмен",
-    btnDlgSettingsDisplayThemeLight:        "Светъл",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Език",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тъмен",
+    btnStgDisplayThemeLight:                "Светъл",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "е шаблон за приложение yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "е шаблон за приложение yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесии",
@@ -2222,7 +2222,6 @@ const TRANSLATIONS = {
   gl: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Cancelar",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Nova versión dispoñible:",
@@ -2235,19 +2234,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Abrir configuración",
     tipHdrHelp:                             "Axuda",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuración",
-    tabDlgSettingsDisplay:                  "Visualización",
-    tabDlgSettingsAbout:                    "Acerca de",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuración",
+    tipStgBack:                             "Atrás",
+    tabStgDisplay:                          "Visualización",
+    tabStgAbout:                            "Acerca de",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "é un modelo de aplicación yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "é un modelo de aplicación yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesións",
@@ -2287,7 +2287,6 @@ const TRANSLATIONS = {
   hu: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Mégse",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Új verzió elérhető:",
@@ -2300,19 +2299,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Beállítások megnyitása",
     tipHdrHelp:                             "Súgó",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Beállítások",
-    tabDlgSettingsDisplay:                  "Megjelenítés",
-    tabDlgSettingsAbout:                    "Névjegy",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Beállítások",
+    tipStgBack:                             "Vissza",
+    tabStgDisplay:                          "Megjelenítés",
+    tabStgAbout:                            "Névjegy",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Nyelv",
-    lblDlgSettingsDisplayTheme:             "Téma",
-    btnDlgSettingsDisplayThemeDark:         "Sötét",
-    btnDlgSettingsDisplayThemeLight:        "Világos",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Nyelv",
+    lblStgDisplayTheme:                     "Téma",
+    btnStgDisplayThemeDark:                 "Sötét",
+    btnStgDisplayThemeLight:                "Világos",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "egy yaiol Electron alkalmazássablon.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "egy yaiol Electron alkalmazássablon.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Munkamenetek",
@@ -2352,7 +2352,6 @@ const TRANSLATIONS = {
   lt: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Atšaukti",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Yra nauja versija:",
@@ -2365,19 +2364,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Atidaryti nustatymus",
     tipHdrHelp:                             "Pagalba",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nustatymai",
-    tabDlgSettingsDisplay:                  "Rodymas",
-    tabDlgSettingsAbout:                    "Apie",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nustatymai",
+    tipStgBack:                             "Atgal",
+    tabStgDisplay:                          "Rodymas",
+    tabStgAbout:                            "Apie",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Kalba",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Tamsus",
-    btnDlgSettingsDisplayThemeLight:        "Šviesus",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Kalba",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Tamsus",
+    btnStgDisplayThemeLight:                "Šviesus",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "yra yaiol Electron programos šablonas.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "yra yaiol Electron programos šablonas.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesijos",
@@ -2417,7 +2417,6 @@ const TRANSLATIONS = {
   mk: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Откажи",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Достапна е нова верзија:",
@@ -2430,19 +2429,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Отвори поставки",
     tipHdrHelp:                             "Помош",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Поставки",
-    tabDlgSettingsDisplay:                  "Приказ",
-    tabDlgSettingsAbout:                    "За програмата",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Поставки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Приказ",
+    tabStgAbout:                            "За програмата",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Јазик",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Темно",
-    btnDlgSettingsDisplayThemeLight:        "Светло",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Јазик",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Темно",
+    btnStgDisplayThemeLight:                "Светло",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "е шаблон за апликација yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "е шаблон за апликација yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесии",
@@ -2482,7 +2482,6 @@ const TRANSLATIONS = {
   sr: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Откажи",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Доступна је нова верзија:",
@@ -2495,19 +2494,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Отвори подешавања",
     tipHdrHelp:                             "Помоћ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Подешавања",
-    tabDlgSettingsDisplay:                  "Приказ",
-    tabDlgSettingsAbout:                    "О програму",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Подешавања",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Приказ",
+    tabStgAbout:                            "О програму",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Језик",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тамно",
-    btnDlgSettingsDisplayThemeLight:        "Светло",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Језик",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тамно",
+    btnStgDisplayThemeLight:                "Светло",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "је шаблон yaiol Electron апликације.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "је шаблон yaiol Electron апликације.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесије",
@@ -2547,7 +2547,6 @@ const TRANSLATIONS = {
   sk: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Zrušiť",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "K dispozícii je nová verzia:",
@@ -2560,19 +2559,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Otvoriť nastavenia",
     tipHdrHelp:                             "Pomoc",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavenia",
-    tabDlgSettingsDisplay:                  "Zobrazenie",
-    tabDlgSettingsAbout:                    "O aplikácii",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavenia",
+    tipStgBack:                             "Späť",
+    tabStgDisplay:                          "Zobrazenie",
+    tabStgAbout:                            "O aplikácii",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jazyk",
-    lblDlgSettingsDisplayTheme:             "Téma",
-    btnDlgSettingsDisplayThemeDark:         "Tmavý",
-    btnDlgSettingsDisplayThemeLight:        "Svetlý",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jazyk",
+    lblStgDisplayTheme:                     "Téma",
+    btnStgDisplayThemeDark:                 "Tmavý",
+    btnStgDisplayThemeLight:                "Svetlý",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "je šablóna aplikácie yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "je šablóna aplikácie yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Relácie",
@@ -2612,7 +2612,6 @@ const TRANSLATIONS = {
   sl: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Prekliči",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Na voljo je nova različica:",
@@ -2625,19 +2624,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Odpri nastavitve",
     tipHdrHelp:                             "Pomoč",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavitve",
-    tabDlgSettingsDisplay:                  "Prikaz",
-    tabDlgSettingsAbout:                    "O programu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavitve",
+    tipStgBack:                             "Nazaj",
+    tabStgDisplay:                          "Prikaz",
+    tabStgAbout:                            "O programu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jezik",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Temno",
-    btnDlgSettingsDisplayThemeLight:        "Svetlo",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jezik",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Temno",
+    btnStgDisplayThemeLight:                "Svetlo",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "je predloga aplikacije yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "je predloga aplikacije yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Seje",
@@ -2677,7 +2677,6 @@ const TRANSLATIONS = {
   ta: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "ரத்துசெய்",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "புதிய பதிப்பு உள்ளது:",
@@ -2690,19 +2689,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "அமைப்புகளைத் திற",
     tipHdrHelp:                             "உதவி",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "அமைப்புகள்",
-    tabDlgSettingsDisplay:                  "காட்சி",
-    tabDlgSettingsAbout:                    "பற்றி",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "அமைப்புகள்",
+    tipStgBack:                             "பின்செல்",
+    tabStgDisplay:                          "காட்சி",
+    tabStgAbout:                            "பற்றி",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "மொழி",
-    lblDlgSettingsDisplayTheme:             "தீம்",
-    btnDlgSettingsDisplayThemeDark:         "இருண்ட",
-    btnDlgSettingsDisplayThemeLight:        "வெளிச்சம்",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "மொழி",
+    lblStgDisplayTheme:                     "தீம்",
+    btnStgDisplayThemeDark:                 "இருண்ட",
+    btnStgDisplayThemeLight:                "வெளிச்சம்",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ஒரு yaiol Electron பயன்பாட்டு டெம்ப்ளேட் ஆகும்.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ஒரு yaiol Electron பயன்பாட்டு டெம்ப்ளேட் ஆகும்.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "அமர்வுகள்",
@@ -2742,7 +2742,6 @@ const TRANSLATIONS = {
   hi: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "रद्द करें",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "नया संस्करण उपलब्ध है:",
@@ -2755,19 +2754,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "सेटिंग्स खोलें",
     tipHdrHelp:                             "सहायता",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "सेटिंग्स",
-    tabDlgSettingsDisplay:                  "प्रदर्शन",
-    tabDlgSettingsAbout:                    "के बारे में",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "सेटिंग्स",
+    tipStgBack:                             "वापस",
+    tabStgDisplay:                          "प्रदर्शन",
+    tabStgAbout:                            "के बारे में",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "भाषा",
-    lblDlgSettingsDisplayTheme:             "थीम",
-    btnDlgSettingsDisplayThemeDark:         "गहरा",
-    btnDlgSettingsDisplayThemeLight:        "हल्का",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "भाषा",
+    lblStgDisplayTheme:                     "थीम",
+    btnStgDisplayThemeDark:                 "गहरा",
+    btnStgDisplayThemeLight:                "हल्का",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "एक yaiol Electron ऐप टेम्पलेट है।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "एक yaiol Electron ऐप टेम्पलेट है।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "सत्र",
@@ -2807,7 +2807,6 @@ const TRANSLATIONS = {
   bn: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "বাতিল করুন",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "নতুন সংস্করণ উপলব্ধ:",
@@ -2820,19 +2819,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "সেটিংস খুলুন",
     tipHdrHelp:                             "সাহায্য",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "সেটিংস",
-    tabDlgSettingsDisplay:                  "প্রদর্শন",
-    tabDlgSettingsAbout:                    "সম্পর্কে",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "সেটিংস",
+    tipStgBack:                             "পিছনে",
+    tabStgDisplay:                          "প্রদর্শন",
+    tabStgAbout:                            "সম্পর্কে",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ভাষা",
-    lblDlgSettingsDisplayTheme:             "থিম",
-    btnDlgSettingsDisplayThemeDark:         "গাঢ়",
-    btnDlgSettingsDisplayThemeLight:        "হালকা",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ভাষা",
+    lblStgDisplayTheme:                     "থিম",
+    btnStgDisplayThemeDark:                 "গাঢ়",
+    btnStgDisplayThemeLight:                "হালকা",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "একটি yaiol Electron অ্যাপ টেমপ্লেট।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "একটি yaiol Electron অ্যাপ টেমপ্লেট।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "সেশন",
@@ -2872,7 +2872,6 @@ const TRANSLATIONS = {
   ur: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "منسوخ کریں",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "نیا ورژن دستیاب ہے:",
@@ -2885,19 +2884,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "ترتیبات کھولیں",
     tipHdrHelp:                             "مدد",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "ترتیبات",
-    tabDlgSettingsDisplay:                  "ڈسپلے",
-    tabDlgSettingsAbout:                    "کے بارے میں",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "ترتیبات",
+    tipStgBack:                             "واپس",
+    tabStgDisplay:                          "ڈسپلے",
+    tabStgAbout:                            "کے بارے میں",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "زبان",
-    lblDlgSettingsDisplayTheme:             "تھیم",
-    btnDlgSettingsDisplayThemeDark:         "گہرا",
-    btnDlgSettingsDisplayThemeLight:        "ہلکا",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "زبان",
+    lblStgDisplayTheme:                     "تھیم",
+    btnStgDisplayThemeDark:                 "گہرا",
+    btnStgDisplayThemeLight:                "ہلکا",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ایک یائیول الیکٹران ایپ ٹیمپلیٹ ہے۔",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ایک یائیول الیکٹران ایپ ٹیمپلیٹ ہے۔",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "سیشنز",
@@ -2937,7 +2937,6 @@ const TRANSLATIONS = {
   sw: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Ghairi",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Toleo jipya linapatikana:",
@@ -2950,19 +2949,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Fungua mipangilio",
     tipHdrHelp:                             "Msaada",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Mipangilio",
-    tabDlgSettingsDisplay:                  "Onyesho",
-    tabDlgSettingsAbout:                    "Kuhusu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Mipangilio",
+    tipStgBack:                             "Rudi",
+    tabStgDisplay:                          "Onyesho",
+    tabStgAbout:                            "Kuhusu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Lugha",
-    lblDlgSettingsDisplayTheme:             "Mandhari",
-    btnDlgSettingsDisplayThemeDark:         "Giza",
-    btnDlgSettingsDisplayThemeLight:        "Nuru",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Lugha",
+    lblStgDisplayTheme:                     "Mandhari",
+    btnStgDisplayThemeDark:                 "Giza",
+    btnStgDisplayThemeLight:                "Nuru",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ni kiolezo cha programu ya yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ni kiolezo cha programu ya yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Vipindi",
@@ -3002,7 +3002,6 @@ const TRANSLATIONS = {
   pa: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "ਰੱਦ ਕਰੋ",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "ਨਵਾਂ ਸੰਸਕਰਨ ਉਪਲਬਧ ਹੈ:",
@@ -3015,19 +3014,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
     tipHdrHelp:                             "ਮਦਦ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "ਸੈਟਿੰਗਾਂ",
-    tabDlgSettingsDisplay:                  "ਪ੍ਰਦਰਸ਼ਨ",
-    tabDlgSettingsAbout:                    "ਬਾਰੇ",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "ਸੈਟਿੰਗਾਂ",
+    tipStgBack:                             "ਵਾਪਸ",
+    tabStgDisplay:                          "ਪ੍ਰਦਰਸ਼ਨ",
+    tabStgAbout:                            "ਬਾਰੇ",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ਭਾਸ਼ਾ",
-    lblDlgSettingsDisplayTheme:             "ਥੀਮ",
-    btnDlgSettingsDisplayThemeDark:         "ਗੂੜ੍ਹਾ",
-    btnDlgSettingsDisplayThemeLight:        "ਹਲਕਾ",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ਭਾਸ਼ਾ",
+    lblStgDisplayTheme:                     "ਥੀਮ",
+    btnStgDisplayThemeDark:                 "ਗੂੜ੍ਹਾ",
+    btnStgDisplayThemeLight:                "ਹਲਕਾ",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ਇੱਕ yaiol Electron ਐਪ ਟੈਂਪਲੇਟ ਹੈ।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ਇੱਕ yaiol Electron ਐਪ ਟੈਂਪਲੇਟ ਹੈ।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "ਸੈਸ਼ਨ",
@@ -3067,7 +3067,6 @@ const TRANSLATIONS = {
   ha: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Soke",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Sabon sigar yana nan:",
@@ -3080,19 +3079,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Bude saituna",
     tipHdrHelp:                             "Taimako",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Saituna",
-    tabDlgSettingsDisplay:                  "Nuni",
-    tabDlgSettingsAbout:                    "Game da",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Saituna",
+    tipStgBack:                             "Baya",
+    tabStgDisplay:                          "Nuni",
+    tabStgAbout:                            "Game da",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Harshe",
-    lblDlgSettingsDisplayTheme:             "Jigo",
-    btnDlgSettingsDisplayThemeDark:         "Duhu",
-    btnDlgSettingsDisplayThemeLight:        "Haske",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Harshe",
+    lblStgDisplayTheme:                     "Jigo",
+    btnStgDisplayThemeDark:                 "Duhu",
+    btnStgDisplayThemeLight:                "Haske",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "samfuri ne na aikace-aikacen yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "samfuri ne na aikace-aikacen yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Zama",
@@ -3132,7 +3132,6 @@ const TRANSLATIONS = {
   yo: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Fagilee",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "Ẹya tuntun wa:",
@@ -3145,19 +3144,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Ṣi eto",
     tipHdrHelp:                             "Iranlọwọ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Eto",
-    tabDlgSettingsDisplay:                  "Ifihan",
-    tabDlgSettingsAbout:                    "Nipa",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Eto",
+    tipStgBack:                             "Pada",
+    tabStgDisplay:                          "Ifihan",
+    tabStgAbout:                            "Nipa",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Èdè",
-    lblDlgSettingsDisplayTheme:             "Àtùpà",
-    btnDlgSettingsDisplayThemeDark:         "Dudu",
-    btnDlgSettingsDisplayThemeLight:        "Fẹ́lẹ́fẹ́lẹ́",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Èdè",
+    lblStgDisplayTheme:                     "Àtùpà",
+    btnStgDisplayThemeDark:                 "Dudu",
+    btnStgDisplayThemeLight:                "Fẹ́lẹ́fẹ́lẹ́",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "jẹ́ àdàkọ ohun èlò yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "jẹ́ àdàkọ ohun èlò yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Awọn igba",
@@ -3197,7 +3197,6 @@ const TRANSLATIONS = {
   te: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "రద్దు చేయి",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "కొత్త వెర్షన్ అందుబాటులో ఉంది:",
@@ -3210,19 +3209,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "సెట్టింగ్‌లను తెరవండి",
     tipHdrHelp:                             "సహాయం",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "సెట్టింగ్‌లు",
-    tabDlgSettingsDisplay:                  "ప్రదర్శన",
-    tabDlgSettingsAbout:                    "గురించి",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "సెట్టింగ్‌లు",
+    tipStgBack:                             "వెనుకకు",
+    tabStgDisplay:                          "ప్రదర్శన",
+    tabStgAbout:                            "గురించి",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "భాష",
-    lblDlgSettingsDisplayTheme:             "థీమ్",
-    btnDlgSettingsDisplayThemeDark:         "ముదురు",
-    btnDlgSettingsDisplayThemeLight:        "లేత",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "భాష",
+    lblStgDisplayTheme:                     "థీమ్",
+    btnStgDisplayThemeDark:                 "ముదురు",
+    btnStgDisplayThemeLight:                "లేత",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ఒక yaiol Electron యాప్ టెంప్లేట్.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ఒక yaiol Electron యాప్ టెంప్లేట్.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "సెషన్లు",
@@ -3262,7 +3262,6 @@ const TRANSLATIONS = {
   mr: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "रद्द करा",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "नवीन आवृत्ती उपलब्ध आहे:",
@@ -3275,19 +3274,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "सेटिंग्ज उघडा",
     tipHdrHelp:                             "मदत",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "सेटिंग्ज",
-    tabDlgSettingsDisplay:                  "प्रदर्शन",
-    tabDlgSettingsAbout:                    "बद्दल",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "सेटिंग्ज",
+    tipStgBack:                             "मागे",
+    tabStgDisplay:                          "प्रदर्शन",
+    tabStgAbout:                            "बद्दल",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "भाषा",
-    lblDlgSettingsDisplayTheme:             "थीम",
-    btnDlgSettingsDisplayThemeDark:         "गडद",
-    btnDlgSettingsDisplayThemeLight:        "हलका",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "भाषा",
+    lblStgDisplayTheme:                     "थीम",
+    btnStgDisplayThemeDark:                 "गडद",
+    btnStgDisplayThemeLight:                "हलका",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "एक yaiol Electron ॲप टेम्पलेट आहे.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "एक yaiol Electron ॲप टेम्पलेट आहे.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "सत्रे",
@@ -3327,7 +3327,6 @@ const TRANSLATIONS = {
   tl: {
 
     // Prefix:Global - Scope:shared across all apps
-    btnGlobalCancel:                        "Kanselahin",
 
     // Prefix:Update - Scope:in-app update notification banner
     lblUpdateAvailable:                     "May bagong bersyon:",
@@ -3340,19 +3339,20 @@ const TRANSLATIONS = {
     tipHdrSettings:                         "Buksan ang mga setting",
     tipHdrHelp:                             "Tulong",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Mga Setting",
-    tabDlgSettingsDisplay:                  "Display",
-    tabDlgSettingsAbout:                    "Tungkol sa",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Mga Setting",
+    tipStgBack:                             "Bumalik",
+    tabStgDisplay:                          "Display",
+    tabStgAbout:                            "Tungkol sa",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Wika",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Madilim",
-    btnDlgSettingsDisplayThemeLight:        "Maliwanag",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Wika",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Madilim",
+    btnStgDisplayThemeLight:                "Maliwanag",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ay isang template ng app ng yaiol Electron.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ay isang template ng app ng yaiol Electron.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Mga Sesyon",
