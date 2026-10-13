@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 — 2026-10-13
+
+- Starting a second copy of the app now brings the first window forward and exits, instead of opening a second window that ran on empty settings
+
 ## 1.0.4 — 2026-09-27
 
 - Open Settings as a full-window page instead of a dialog: the tabs are listed down the left side, a back arrow beside the title closes the page, and so do the header's settings button and Esc. The transcript you were reading stays where you left it underneath

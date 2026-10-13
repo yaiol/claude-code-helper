@@ -1,7 +1,7 @@
 /* ──────────────────────────────────────────────────────────────────────────
    Canonical app chrome — SHARED across all electron apps.
 
-   ⚠ SOURCE OF TRUTH: app/electron/.common/shared/assets/ui-app.css
+   ⚠ SOURCE OF TRUTH: the shared catalog (assets/ui-app.css)
    Copied into each app's src/assets/ui-app.css by sync-shared.js. NEVER edit the
    per-app copy — edit this file and re-sync. Import once, after the app's own
    CSS:  import './assets/ui-app.css';

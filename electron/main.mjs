@@ -141,7 +141,19 @@ function createWindow(port) {
   mainWindow.webContents.setWindowOpenHandler(({ url }) => { shell.openExternal(url); return { action: 'deny' }; });
 }
 
-app.whenReady().then(() => { mark("app.whenReady");
+// ⚠ CLAUDE: ONE instance per profile. A second process shares userData and cannot open the first one's
+// locked storage, so it ran on empty settings (defaults) - a different library, a flat app list. The
+// second launch now just brings the first window forward.
+const gotInstanceLock = app.requestSingleInstanceLock();
+if (!gotInstanceLock) app.quit();
+app.on('second-instance', () => {
+  if (mainWindow) {
+    if (mainWindow.isMinimized()) mainWindow.restore();
+    mainWindow.focus();
+  }
+});
+
+if (gotInstanceLock) app.whenReady().then(() => { mark("app.whenReady");
   Menu.setApplicationMenu(null);
   startServer((port) => createWindow(port));
 });

@@ -1,7 +1,7 @@
 /* ──────────────────────────────────────────────────────────────────────────
    Canonical "list within a view" styling — SHARED across all electron apps.
 
-   ⚠ SOURCE OF TRUTH: app/electron/.common/shared/assets/ui-listview.css
+   ⚠ SOURCE OF TRUTH: the shared catalog (assets/ui-listview.css)
    This file is COPIED into each app's src/assets/ui-listview.css by sync-shared.js.
    NEVER edit the per-app copy — edit this file and re-sync.
 
