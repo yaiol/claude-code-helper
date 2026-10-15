@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6 — 2026-10-15
+
+- The transcript header now shows an estimate of how long the agent actually worked in a session and how many tokens it processed (for example `8.5 h active · 1.14B tokens`). Hovering it explains what is counted: the time you spent away or thinking is left out, and the total includes the cached context re-read on every turn. Subagent work is not included, because it is not in the session log
+
 ## 1.0.5 — 2026-10-13
 
 - Starting a second copy of the app now brings the first window forward and exits, instead of opening a second window that ran on empty settings

@@ -336,6 +336,48 @@ function blockToMd(block, resultById) {
   }
 }
 
+// A silent gap this long inside a working stretch is a suspended machine or a dropped
+// connection, not work - it is clamped so one sleep cannot add hours of "agent time".
+const MAX_WORK_GAP_MS = 30 * 60 * 1000;
+
+// What the session cost and how long the agent actually worked, from the log alone.
+//   tokens - one API message is logged once per content block with the usage repeated, so
+//            usage is counted once per message id (summing lines roughly doubles it).
+//   time   - the gap before each entry is attributed by what ended it: an assistant entry =
+//            the model generating, a tool_result = a tool running. A gap ending in a real
+//            user prompt is the human thinking or away and is NOT agent time.
+// Subagent work is not in the main log, so it is not included.
+function usageStats(entries) {
+  const byMessage = new Map();
+  let genMs = 0, toolMs = 0, prevTs = null;
+  for (const e of entries) {
+    const ts = e.timestamp ? Date.parse(e.timestamp) : NaN;
+    if (e.type === "assistant" && e.message && e.message.usage) {
+      byMessage.set(e.message.id || e.uuid, e.message.usage);
+    }
+    if (!Number.isNaN(ts)) {
+      if (prevTs !== null) {
+        const gap = Math.min(Math.max(ts - prevTs, 0), MAX_WORK_GAP_MS);
+        const c = e.message && e.message.content;
+        if (e.type === "assistant") genMs += gap;
+        else if (Array.isArray(c) && c.some(b => b && b.type === "tool_result")) toolMs += gap;
+      }
+      prevTs = ts;
+    }
+  }
+  let outputTokens = 0, newContextTokens = 0, cacheReadTokens = 0;
+  for (const u of byMessage.values()) {
+    outputTokens     += u.output_tokens || 0;
+    newContextTokens += (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0);
+    cacheReadTokens  += u.cache_read_input_tokens || 0;
+  }
+  return {
+    outputTokens, newContextTokens, cacheReadTokens,
+    totalTokens: outputTokens + newContextTokens + cacheReadTokens,
+    genMs, toolMs, activeMs: genMs + toolMs,
+  };
+}
+
 function decodeTranscript(id) {
   const file = findTranscript(id);
   if (!file) return { ok: false, error: "not-found" };
@@ -344,6 +386,7 @@ function decodeTranscript(id) {
 
   const lines = raw.split(/\r?\n/).filter(Boolean);
   const parsed = [];     // pre-parsed user/assistant turns, reused by both passes
+  const entries = [];    // every user/assistant log entry (incl. meta) - feeds usageStats()
   const resultById = new Map(); // tool_use_id → { text, is_error } - folded into the matching call
   let summary = null, firstTs = null, lastTs = null, userTurns = 0;
 
@@ -354,6 +397,7 @@ function decodeTranscript(id) {
     if (obj.timestamp) { if (!firstTs) firstTs = obj.timestamp; lastTs = obj.timestamp; }
     if (obj.type === "summary" && obj.summary) { summary = obj.summary; continue; }
     if (obj.type !== "user" && obj.type !== "assistant") continue; // skip queue-ops / snapshots / meta
+    entries.push(obj);
     if (obj.isMeta) continue;
 
     const msg = obj.message;
@@ -409,7 +453,7 @@ function decodeTranscript(id) {
     ok: true,
     markdown,
     messages,
-    meta: { summary, firstTs, lastTs, userTurns, file, lines: lines.length },
+    meta: { summary, firstTs, lastTs, userTurns, file, lines: lines.length, stats: usageStats(entries) },
   };
 }
 

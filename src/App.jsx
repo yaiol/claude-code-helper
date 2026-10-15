@@ -93,6 +93,18 @@ function fmtDate(ts) {
   try { return new Date(ts).toLocaleString(); } catch { return ''; }
 }
 
+// Compact counts for the session stats: 2.19M / 1.14B. Hours keep one decimal, minutes below one.
+function fmtTokens(n) {
+  if (n >= 1e9) return `${(n / 1e9).toFixed(2)}B`;
+  if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`;
+  if (n >= 1e3) return `${Math.round(n / 1e3)}k`;
+  return String(n);
+}
+function fmtActive(ms) {
+  const h = ms / 3.6e6;
+  return h >= 1 ? `${h.toFixed(1)} h` : `${Math.max(1, Math.round(ms / 6e4))} min`;
+}
+
 // One of three mutually-exclusive list categories, each driven by its own filter chip.
 // Lost sessions have isArchived:false, so they must be classified by origin FIRST -
 // otherwise they'd fall under 'active' and the Lost chip could never isolate them.
@@ -428,6 +440,11 @@ export default function App() {
                   {transcript?.meta && (
                     <span className="ch-view-sub mono">
                       {transcript.cwd}{transcript.meta.firstTs ? ` · ${fmtDate(Date.parse(transcript.meta.firstTs))}` : ''}
+                      {transcript.meta.stats && transcript.meta.stats.totalTokens > 0 && (
+                        <span title={t('tipTranscriptStats')}>
+                          {` · ${fmtActive(transcript.meta.stats.activeMs)} ${t('lblTranscriptStatsActive')} · ${fmtTokens(transcript.meta.stats.totalTokens)} ${t('lblTranscriptStatsTokens')}`}
+                        </span>
+                      )}
                     </span>
                   )}
                 </div>
