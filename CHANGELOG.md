@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.7 — 2026-10-23
+
+- A newer version now appears as a card in a news dialog instead of a banner strip: the card lists the release notes newer than the running version, links to the download page, and Don't show again hides it until a still newer version is out
+- Occasional yaiol announcements appear in the same dialog; Settings > General has a new Show news from yaiol switch that turns them off completely (the new-version card is not governed by it)
+
 ## 1.0.6 — 2026-10-15
 
 - The transcript header now shows an estimate of how long the agent actually worked in a session and how many tokens it processed (for example `8.5 h active · 1.14B tokens`). Hovering it explains what is counted: the time you spent away or thinking is left out, and the total includes the cached context re-read on every turn. Subagent work is not included, because it is not in the session log

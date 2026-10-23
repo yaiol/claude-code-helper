@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import pkg from "../package.json" with { type: "json" };
 import * as sessions from "./sessions.js";
 import { mark, dumpStartupTiming } from "./startup-timing.mjs";
+import { registerNewsRoutes } from "./news.mjs";
 mark("electron boot + module imports");
 
 // ESM has no __dirname - derive it from import.meta.url.
@@ -86,6 +87,8 @@ function startServer(callback) {
       res.status(500).json({ ok: false, error: String(e && e.message || e) });
     }
   });
+
+  registerNewsRoutes(api, { appId: pkg.name, appVersion: pkg.version });
 
   findFreePort(4000, (port) => {
     api.listen(port, () => {
