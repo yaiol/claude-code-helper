@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.8 — 2026-11-12
+
+- Fix the session list staying empty with "Could not read Claude Desktop data": Claude Desktop moved its data to a new folder, and the app now reads it there (the previous location is still read for older Claude Desktop versions)
+- The window now has its own title bar: Settings, Help and GitHub sit at its left beside the app icon, the name and version are in the middle, and it follows the Windows title-bar colour. The empty header row that was under it is gone
+- A run of tool calls in a transcript now reads as one compact list instead of one widely spaced block per call, and each call is labelled with its plain-words description when it has one
+- New transcript toolbar button to show or hide all tool calls, leaving only the conversation. Export as Markdown file and Copy as Markdown follow it: hidden calls are left out of the text
+- Claude Desktop's own task-list and end-of-turn bookkeeping calls are no longer shown in transcripts or exports
+
 ## 1.0.7 — 2026-10-23
 
 - A newer version now appears as a card in a news dialog instead of a banner strip: the card lists the release notes newer than the running version, links to the download page, and Don't show again hides it until a still newer version is out

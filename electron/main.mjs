@@ -10,6 +10,7 @@ import pkg from "../package.json" with { type: "json" };
 import * as sessions from "./sessions.js";
 import { mark, dumpStartupTiming } from "./startup-timing.mjs";
 import { registerNewsRoutes } from "./news.mjs";
+import { registerWindowRoutes, watchWindowState } from "./window-bar.mjs";
 mark("electron boot + module imports");
 
 // ESM has no __dirname - derive it from import.meta.url.
@@ -54,7 +55,7 @@ function startServer(callback) {
     catch (e) { res.status(500).json({ ok: false, error: String(e && e.message || e) }); }
   });
   api.get("/transcript", (req, res) => {
-    try { res.json(sessions.decodeTranscript(String(req.query.id || ""))); }
+    try { res.json(sessions.decodeTranscript(String(req.query.id || ""), { tools: req.query.tools !== "0" })); }
     catch (e) { res.status(500).json({ ok: false, error: String(e && e.message || e) }); }
   });
   api.post("/reveal-transcript", (req, res) => {
@@ -68,7 +69,7 @@ function startServer(callback) {
   api.post("/export-transcript", async (req, res) => {
     try {
       const b = req.body || {};
-      const dec = sessions.decodeTranscript(String(b.id || ""));
+      const dec = sessions.decodeTranscript(String(b.id || ""), { tools: b.tools !== false });
       if (!dec.ok) { res.json({ ok: false, error: dec.error }); return; }
       const title = String(b.title || "session");
       const safe = title.replace(/[\\/:*?"<>|]+/g, "_").replace(/\s+/g, " ").trim().slice(0, 80) || "session";
@@ -90,6 +91,8 @@ function startServer(callback) {
 
   registerNewsRoutes(api, { appId: pkg.name, appVersion: pkg.version });
 
+  registerWindowRoutes(api, () => mainWindow);
+
   findFreePort(4000, (port) => {
     api.listen(port, () => {
       mark("express listening");
@@ -106,7 +109,7 @@ function createWindow(port) {
     height: 720,
     minWidth: 800,
     minHeight: 500,
-    frame: true,
+    frame: false,   // the app draws its own window bar (UisBarWindow)
     icon: path.join(__dirname, isDev ? '../public/app.ico' : '../dist/app.ico'),
     webPreferences: {
       nodeIntegration: false,
@@ -122,6 +125,7 @@ function createWindow(port) {
   } else {
     mainWindow.loadFile(path.join(__dirname, "../dist/index.html"), { query });
   }
+  watchWindowState(mainWindow);
   mark("BrowserWindow created");
   mainWindow.webContents.once('did-finish-load', () => { mark("renderer did-finish-load"); dumpStartupTiming({ appName: APP_NAME, isDev, userDataPath: app.getPath("userData") }); });
   mainWindow.webContents.on('did-finish-load', () => mainWindow.setTitle(isDev ? `${APP_NAME} (Dev)` : APP_NAME));

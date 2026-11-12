@@ -23,6 +23,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Open settings",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimize",
+    tipWinMaximize:                         "Maximize",
+    tipWinRestore:                          "Restore",
+    tipWinClose:                            "Close",
+
     tipHdrHelp:                             "Help",
 
     // Prefix:Stg - Scope:settings view
@@ -68,6 +75,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copy table",
     tipTranscriptExport:                    "Export as Markdown file",
     tipTranscriptToolExpand:                "Expand or collapse tool details",
+    tipTranscriptToolShow:                  "Show or hide tool calls",
     lblTranscriptStatsActive:               "active",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimate from this session's log: time the agent was actively working (your idle time excluded) and tokens processed, including cached context re-read each turn. Subagents are not included.",
@@ -94,6 +102,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Ouvrir les paramètres",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimiser",
+    tipWinMaximize:                         "Agrandir",
+    tipWinRestore:                          "Restaurer",
+    tipWinClose:                            "Fermer",
+
     tipHdrHelp:                             "Aide",
 
     // Prefix:Stg - Scope:settings view
@@ -139,6 +154,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copier le tableau",
     tipTranscriptExport:                    "Exporter en tant que fichier Markdown",
     tipTranscriptToolExpand:                "Développer ou réduire les détails de l'outil",
+    tipTranscriptToolShow:                  "Afficher ou masquer les appels d'outils",
     lblTranscriptStatsActive:               "actif",
     lblTranscriptStatsTokens:               "jetons",
     tipTranscriptStats:                     "Estimation du journal de cette session : temps d'activité de l'agent (votre temps d'inactivité exclu) et jetons traités, y compris la relecture du contexte mis en cache à chaque tour. Les sous-agents ne sont pas inclus.",
@@ -164,6 +180,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Einstellungen öffnen",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimieren",
+    tipWinMaximize:                         "Maximieren",
+    tipWinRestore:                          "Wiederherstellen",
+    tipWinClose:                            "Schließen",
+
     tipHdrHelp:                             "Hilfe",
 
     // Prefix:Stg - Scope:settings view
@@ -209,6 +232,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Tabelle kopieren",
     tipTranscriptExport:                    "Als Markdown-Datei exportieren",
     tipTranscriptToolExpand:                "Werkzeugdetails ein- oder ausblenden",
+    tipTranscriptToolShow:                  "Werkzeugaufrufe ein- oder ausblenden",
     lblTranscriptStatsActive:               "aktiv",
     lblTranscriptStatsTokens:               "Token",
     tipTranscriptStats:                     "Schätzung aus dem Sitzungsprotokoll: Zeit, in der der Agent aktiv gearbeitet hat (Ihre Leerlaufzeit ausgeschlossen) und verarbeitete Token, einschließlich des erneuten Lesens des zwischengespeicherten Kontexts in jeder Runde. Unteragenten sind nicht enthalten.",
@@ -234,6 +258,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Abrir configuración",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Cerrar",
+
     tipHdrHelp:                             "Ayuda",
 
     // Prefix:Stg - Scope:settings view
@@ -279,6 +310,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copiar tabla",
     tipTranscriptExport:                    "Exportar como archivo Markdown",
     tipTranscriptToolExpand:                "Expandir o contraer los detalles de la herramienta",
+    tipTranscriptToolShow:                  "Mostrar u ocultar llamadas a herramientas",
     lblTranscriptStatsActive:               "activo",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimación del registro de esta sesión: tiempo que el agente estuvo trabajando activamente (tu tiempo de inactividad excluido) y tokens procesados, incluyendo la relectura del contexto en caché en cada turno. Los subagentes no están incluidos.",
@@ -304,6 +336,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Abrir configurações",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Fechar",
+
     tipHdrHelp:                             "Ajuda",
 
     // Prefix:Stg - Scope:settings view
@@ -349,6 +388,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copiar tabela",
     tipTranscriptExport:                    "Exportar como arquivo Markdown",
     tipTranscriptToolExpand:                "Expandir ou recolher os detalhes da ferramenta",
+    tipTranscriptToolShow:                  "Mostrar ou ocultar chamadas de ferramenta",
     lblTranscriptStatsActive:               "ativo",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimativa do registro desta sessão: tempo em que o agente esteve ativo (seu tempo ocioso excluído) e tokens processados, incluindo a releitura do contexto em cache a cada turno. Subagentes não estão incluídos.",
@@ -374,6 +414,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Abrir definições",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Fechar",
+
     tipHdrHelp:                             "Ajuda",
 
     // Prefix:Stg - Scope:settings view
@@ -419,6 +466,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copiar tabela",
     tipTranscriptExport:                    "Exportar como ficheiro Markdown",
     tipTranscriptToolExpand:                "Expandir ou recolher os detalhes da ferramenta",
+    tipTranscriptToolShow:                  "Mostrar ou ocultar chamadas de ferramenta",
     lblTranscriptStatsActive:               "ativo",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimativa do registo desta sessão: tempo em que o agente esteve ativamente a trabalhar (o seu tempo de inatividade excluído) e tokens processados, incluindo a releitura do contexto em cache em cada turno. Subagentes não estão incluídos.",
@@ -444,6 +492,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Apri impostazioni",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Riduci a icona",
+    tipWinMaximize:                         "Ingrandisci",
+    tipWinRestore:                          "Ripristina",
+    tipWinClose:                            "Chiudi",
+
     tipHdrHelp:                             "Aiuto",
 
     // Prefix:Stg - Scope:settings view
@@ -489,6 +544,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copia tabella",
     tipTranscriptExport:                    "Esporta come file Markdown",
     tipTranscriptToolExpand:                "Espandi o comprimi i dettagli dello strumento",
+    tipTranscriptToolShow:                  "Mostra o nascondi le chiamate agli strumenti",
     lblTranscriptStatsActive:               "attivo",
     lblTranscriptStatsTokens:               "token",
     tipTranscriptStats:                     "Stima dal log di questa sessione: tempo in cui l'agente ha lavorato attivamente (il tuo tempo di inattività escluso) e token elaborati, inclusa la rilettura del contesto memorizzato nella cache ad ogni turno. I sotto-agenti non sono inclusi.",
@@ -514,6 +570,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Instellingen openen",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimaliseren",
+    tipWinMaximize:                         "Maximaliseren",
+    tipWinRestore:                          "Herstellen",
+    tipWinClose:                            "Sluiten",
+
     tipHdrHelp:                             "Hulp",
 
     // Prefix:Stg - Scope:settings view
@@ -559,6 +622,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Tabel kopiëren",
     tipTranscriptExport:                    "Exporteren als Markdown-bestand",
     tipTranscriptToolExpand:                "Gereedschapsdetails uitvouwen of samenvouwen",
+    tipTranscriptToolShow:                  "Gereedschapsaanroepen tonen of verbergen",
     lblTranscriptStatsActive:               "actief",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Schatting uit het sessielogboek: tijd dat de agent actief werkte (uw inactiviteit uitgesloten) en verwerkte tokens, inclusief het opnieuw lezen van de gecachte context bij elke beurt. Subagenten zijn niet inbegrepen.",
@@ -584,6 +648,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Открыть настройки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Свернуть",
+    tipWinMaximize:                         "Развернуть",
+    tipWinRestore:                          "Восстановить",
+    tipWinClose:                            "Закрыть",
+
     tipHdrHelp:                             "Справка",
 
     // Prefix:Stg - Scope:settings view
@@ -629,6 +700,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Скопировать таблицу",
     tipTranscriptExport:                    "Экспортировать как файл Markdown",
     tipTranscriptToolExpand:                "Развернуть или свернуть сведения об инструменте",
+    tipTranscriptToolShow:                  "Показать или скрыть вызовы инструментов",
     lblTranscriptStatsActive:               "активно",
     lblTranscriptStatsTokens:               "токены",
     tipTranscriptStats:                     "Оценка из журнала этой сессии: время активной работы агента (ваше время простоя исключено) и обработанные токены, включая повторное чтение кэшированного контекста в каждом ходе. Субагенты не включены.",
@@ -654,6 +726,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Відкрити налаштування",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Згорнути",
+    tipWinMaximize:                         "Розгорнути",
+    tipWinRestore:                          "Відновити",
+    tipWinClose:                            "Закрити",
+
     tipHdrHelp:                             "Довідка",
 
     // Prefix:Stg - Scope:settings view
@@ -699,6 +778,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Скопіювати таблицю",
     tipTranscriptExport:                    "Експортувати як файл Markdown",
     tipTranscriptToolExpand:                "Розгорнути або згорнути відомості про інструмент",
+    tipTranscriptToolShow:                  "Показати або приховати виклики інструментів",
     lblTranscriptStatsActive:               "активно",
     lblTranscriptStatsTokens:               "токени",
     tipTranscriptStats:                     "Оцінка з журналу цієї сесії: час активної роботи агента (ваш час простою виключено) та оброблені токени, включаючи повторне читання кешованого контексту на кожному кроці. Субагенти не включені.",
@@ -724,6 +804,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Otwórz ustawienia",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizuj",
+    tipWinMaximize:                         "Maksymalizuj",
+    tipWinRestore:                          "Przywróć",
+    tipWinClose:                            "Zamknij",
+
     tipHdrHelp:                             "Pomoc",
 
     // Prefix:Stg - Scope:settings view
@@ -769,6 +856,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopiuj tabelę",
     tipTranscriptExport:                    "Eksportuj jako plik Markdown",
     tipTranscriptToolExpand:                "Rozwiń lub zwiń szczegóły narzędzia",
+    tipTranscriptToolShow:                  "Pokaż lub ukryj wywołania narzędzi",
     lblTranscriptStatsActive:               "aktywne",
     lblTranscriptStatsTokens:               "tokeny",
     tipTranscriptStats:                     "Szacunek z logu tej sesji: czas aktywnej pracy agenta (z wyłączeniem Twojego czasu bezczynności) oraz przetworzone tokeny, w tym ponowne odczytanie buforowanego kontekstu w każdej turze. Subagenci nie są uwzględnieni.",
@@ -794,6 +882,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Deschide setările",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizare",
+    tipWinMaximize:                         "Maximizare",
+    tipWinRestore:                          "Restaurare",
+    tipWinClose:                            "Închidere",
+
     tipHdrHelp:                             "Ajutor",
 
     // Prefix:Stg - Scope:settings view
@@ -839,6 +934,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copiază tabelul",
     tipTranscriptExport:                    "Exportă ca fișier Markdown",
     tipTranscriptToolExpand:                "Extindeți sau restrângeți detaliile instrumentului",
+    tipTranscriptToolShow:                  "Afișați sau ascundeți apelurile instrumentelor",
     lblTranscriptStatsActive:               "activ",
     lblTranscriptStatsTokens:               "tokenuri",
     tipTranscriptStats:                     "Estimare din jurnalul acestei sesiuni: timpul în care agentul a lucrat activ (timpul tău de inactivitate exclus) și tokenuri procesate, inclusiv recitirea contextului cache la fiecare tură. Subagenții nu sunt incluși.",
@@ -864,6 +960,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Öppna inställningar",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimera",
+    tipWinMaximize:                         "Maximera",
+    tipWinRestore:                          "Återställ",
+    tipWinClose:                            "Stäng",
+
     tipHdrHelp:                             "Hjälp",
 
     // Prefix:Stg - Scope:settings view
@@ -909,6 +1012,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopiera tabell",
     tipTranscriptExport:                    "Exportera som Markdown-fil",
     tipTranscriptToolExpand:                "Expandera eller dölj verktygsdetaljer",
+    tipTranscriptToolShow:                  "Visa eller dölj verktygsanrop",
     lblTranscriptStatsActive:               "aktiv",
     lblTranscriptStatsTokens:               "token",
     tipTranscriptStats:                     "Uppskattning från denna sessions logg: tid agenten arbetade aktivt (din inaktivitet exkluderad) och bearbetade token, inklusive omläsning av cachat sammanhang varje tur. Underagenter ingår ej.",
@@ -934,6 +1038,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Åpne innstillinger",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimer",
+    tipWinMaximize:                         "Maksimer",
+    tipWinRestore:                          "Gjenopprett",
+    tipWinClose:                            "Lukk",
+
     tipHdrHelp:                             "Hjelp",
 
     // Prefix:Stg - Scope:settings view
@@ -979,6 +1090,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopier tabell",
     tipTranscriptExport:                    "Eksporter som Markdown-fil",
     tipTranscriptToolExpand:                "Utvid eller skjul verktøydetaljer",
+    tipTranscriptToolShow:                  "Vis eller skjul verktøyanrop",
     lblTranscriptStatsActive:               "aktiv",
     lblTranscriptStatsTokens:               "tokener",
     tipTranscriptStats:                     "Estimering fra denne sesjonens logg: tid agenten var aktivt i arbeid (din inaktiv tid ekskludert) og behandlede tokener, inkludert gjenlesing av bufret kontekst hver tur. Underagenter er ikke inkludert.",
@@ -1004,6 +1116,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Ayarları aç",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Küçült",
+    tipWinMaximize:                         "Ekranı kapla",
+    tipWinRestore:                          "Geri yükle",
+    tipWinClose:                            "Kapat",
+
     tipHdrHelp:                             "Yardım",
 
     // Prefix:Stg - Scope:settings view
@@ -1049,6 +1168,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Tabloyu kopyala",
     tipTranscriptExport:                    "Markdown dosyası olarak dışa aktar",
     tipTranscriptToolExpand:                "Araç ayrıntılarını genişlet veya daralt",
+    tipTranscriptToolShow:                  "Araç çağrılarını göster veya gizle",
     lblTranscriptStatsActive:               "aktif",
     lblTranscriptStatsTokens:               "jetonlar",
     tipTranscriptStats:                     "Bu oturumun günlüğünden tahmin: aracının aktif olarak çalıştığı süre (boşta kalma süreniz hariç) ve işlenen jetonlar, her turda önbelleğe alınmış bağlamın yeniden okunması dahil. Alt aracılar dahil değildir.",
@@ -1074,6 +1194,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Otvori postavke",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimiziraj",
+    tipWinMaximize:                         "Maksimiziraj",
+    tipWinRestore:                          "Vrati",
+    tipWinClose:                            "Zatvori",
+
     tipHdrHelp:                             "Pomoć",
 
     // Prefix:Stg - Scope:settings view
@@ -1119,6 +1246,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopiraj tablicu",
     tipTranscriptExport:                    "Izvezi kao Markdown datoteku",
     tipTranscriptToolExpand:                "Proširi ili sažmi pojedinosti alata",
+    tipTranscriptToolShow:                  "Prikaži ili sakrij pozive alata",
     lblTranscriptStatsActive:               "aktivno",
     lblTranscriptStatsTokens:               "tokeni",
     tipTranscriptStats:                     "Procjena iz zapisnika ove sesije: vrijeme kada je agent aktivno radio (vaše vrijeme mirovanja isključeno) i obrađeni tokeni, uključujući ponovno čitanje keširanog konteksta u svakom koraku. Podagenti nisu uključeni.",
@@ -1144,6 +1272,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Άνοιγμα ρυθμίσεων",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Ελαχιστοποίηση",
+    tipWinMaximize:                         "Μεγιστοποίηση",
+    tipWinRestore:                          "Επαναφορά",
+    tipWinClose:                            "Κλείσιμο",
+
     tipHdrHelp:                             "Βοήθεια",
 
     // Prefix:Stg - Scope:settings view
@@ -1189,6 +1324,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Αντιγραφή πίνακα",
     tipTranscriptExport:                    "Εξαγωγή ως αρχείο Markdown",
     tipTranscriptToolExpand:                "Ανάπτυξη ή σύμπτυξη λεπτομερειών εργαλείου",
+    tipTranscriptToolShow:                  "Εμφάνιση ή απόκρυψη κλήσεων εργαλείων",
     lblTranscriptStatsActive:               "ενεργό",
     lblTranscriptStatsTokens:               "διακριτικά",
     tipTranscriptStats:                     "Εκτίμηση από το αρχείο καταγραφής αυτής της συνεδρίας: χρόνος που ο πράκτορας εργαζόταν ενεργά (ο χρόνος αδράνειάς σας εξαιρείται) και διακριτικά που επεξεργάστηκαν, συμπεριλαμβανομένης της επανανάγνωσης του προσωρινά αποθηκευμένου περιβάλλοντος σε κάθε γύρο. Οι υπο-πράκτορες δεν περιλαμβάνονται.",
@@ -1214,6 +1350,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "פתח הגדרות",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "מזער",
+    tipWinMaximize:                         "הגדל",
+    tipWinRestore:                          "שחזר",
+    tipWinClose:                            "סגור",
+
     tipHdrHelp:                             "עזרה",
 
     // Prefix:Stg - Scope:settings view
@@ -1259,6 +1402,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "העתק טבלה",
     tipTranscriptExport:                    "ייצוא כקובץ Markdown",
     tipTranscriptToolExpand:                "הרחב או כווץ פרטי כלי",
+    tipTranscriptToolShow:                  "הצג או הסתר קריאות לכלי",
     lblTranscriptStatsActive:               "פעיל",
     lblTranscriptStatsTokens:               "אסימונים",
     tipTranscriptStats:                     "הערכה מיומן הפעלה זו: זמן שהסוכן עבד באופן פעיל (זמן הסרק שלך לא נכלל) ואסימונים שעובדו, כולל קריאה חוזרת של הקשר שמור במטמון בכל תור. סוכני משנה אינם כלולים.",
@@ -1284,6 +1428,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "فتح الإعدادات",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "تصغير",
+    tipWinMaximize:                         "تكبير",
+    tipWinRestore:                          "استعادة",
+    tipWinClose:                            "إغلاق",
+
     tipHdrHelp:                             "مساعدة",
 
     // Prefix:Stg - Scope:settings view
@@ -1329,6 +1480,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "انسخ الجدول",
     tipTranscriptExport:                    "تصدير كملف Markdown",
     tipTranscriptToolExpand:                "توسيع أو طي تفاصيل الأداة",
+    tipTranscriptToolShow:                  "إظهار أو إخفاء استدعاءات الأدوات",
     lblTranscriptStatsActive:               "نشط",
     lblTranscriptStatsTokens:               "رموز",
     tipTranscriptStats:                     "تقدير من سجل هذه الجلسة: الوقت الذي كان الوكيل يعمل فيه بنشاط (وقت الخمول الخاص بك مستبعد) والرموز المعالجة، بما في ذلك إعادة قراءة السياق المخزن مؤقتًا في كل دور. الوكلاء الفرعيون غير مشمولين.",
@@ -1354,6 +1506,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "باز کردن تنظیمات",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "کوچک‌نمایی",
+    tipWinMaximize:                         "بزرگ‌نمایی",
+    tipWinRestore:                          "بازیابی",
+    tipWinClose:                            "بستن",
+
     tipHdrHelp:                             "راهنما",
 
     // Prefix:Stg - Scope:settings view
@@ -1399,6 +1558,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "کپی جدول",
     tipTranscriptExport:                    "خروجی گرفتن به عنوان فایل Markdown",
     tipTranscriptToolExpand:                "بسط یا جمع کردن جزئیات ابزار",
+    tipTranscriptToolShow:                  "نمایش یا پنهان کردن فراخوانی ابزار",
     lblTranscriptStatsActive:               "فعال",
     lblTranscriptStatsTokens:               "توکن‌ها",
     tipTranscriptStats:                     "تخمین از گزارش این جلسه: زمان فعال بودن عامل (زمان بیکاری شما مستثنی شده است) و توکن‌های پردازش شده، شامل بازخوانی زمینه کش شده در هر نوبت. زیرعامل‌ها شامل نمی‌شوند.",
@@ -1424,6 +1584,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "打开设置",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "还原",
+    tipWinClose:                            "关闭",
+
     tipHdrHelp:                             "帮助",
 
     // Prefix:Stg - Scope:settings view
@@ -1469,6 +1636,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "复制表格",
     tipTranscriptExport:                    "导出为 Markdown 文件",
     tipTranscriptToolExpand:                "展开或折叠工具详情",
+    tipTranscriptToolShow:                  "显示或隐藏工具调用",
     lblTranscriptStatsActive:               "活跃",
     lblTranscriptStatsTokens:               "令牌",
     tipTranscriptStats:                     "本会话日志估算：代理活跃工作时间（不含您的空闲时间）和处理的令牌数，包括每次轮次重新读取的缓存上下文。不包含子代理。",
@@ -1494,6 +1662,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "打開設定",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "還原",
+    tipWinClose:                            "關閉",
+
     tipHdrHelp:                             "說明",
 
     // Prefix:Stg - Scope:settings view
@@ -1539,6 +1714,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "複製表格",
     tipTranscriptExport:                    "匯出為 Markdown 檔案",
     tipTranscriptToolExpand:                "展開或摺疊工具詳細資訊",
+    tipTranscriptToolShow:                  "顯示或隱藏工具呼叫",
     lblTranscriptStatsActive:               "活躍",
     lblTranscriptStatsTokens:               "權杖",
     tipTranscriptStats:                     "本工作階段日誌估計：代理程式活躍工作時間（不含您的閒置時間）和處理的權杖數，包括每次輪次重新讀取的快取內容。不包含子代理程式。",
@@ -1564,6 +1740,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "設定を開く",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "元に戻す",
+    tipWinClose:                            "閉じる",
+
     tipHdrHelp:                             "ヘルプ",
 
     // Prefix:Stg - Scope:settings view
@@ -1609,6 +1792,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "テーブルをコピー",
     tipTranscriptExport:                    "Markdownファイルとしてエクスポート",
     tipTranscriptToolExpand:                "ツールの詳細を展開または折りたたむ",
+    tipTranscriptToolShow:                  "ツール呼び出しの表示/非表示",
     lblTranscriptStatsActive:               "アクティブ",
     lblTranscriptStatsTokens:               "トークン",
     tipTranscriptStats:                     "このセッションのログからの推定：エージェントがアクティブに作業していた時間（アイドル時間は除く）と処理されたトークン数。これには、各ターンでキャッシュされたコンテキストの再読み込みが含まれます。サブエージェントは含まれません。",
@@ -1634,6 +1818,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "설정 열기",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "최소화",
+    tipWinMaximize:                         "최대화",
+    tipWinRestore:                          "이전 크기로",
+    tipWinClose:                            "닫기",
+
     tipHdrHelp:                             "도움말",
 
     // Prefix:Stg - Scope:settings view
@@ -1679,6 +1870,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "테이블 복사",
     tipTranscriptExport:                    "Markdown 파일로 내보내기",
     tipTranscriptToolExpand:                "도구 세부 정보 확장 또는 축소",
+    tipTranscriptToolShow:                  "도구 호출 표시 또는 숨기기",
     lblTranscriptStatsActive:               "활성",
     lblTranscriptStatsTokens:               "토큰",
     tipTranscriptStats:                     "이 세션 로그에서 추정: 에이전트가 활발하게 작업한 시간(사용자 유휴 시간 제외) 및 처리된 토큰 수(각 턴마다 캐시된 컨텍스트 재읽기 포함). 하위 에이전트는 포함되지 않습니다.",
@@ -1704,6 +1896,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Mở cài đặt",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Thu nhỏ",
+    tipWinMaximize:                         "Phóng to",
+    tipWinRestore:                          "Khôi phục",
+    tipWinClose:                            "Đóng",
+
     tipHdrHelp:                             "Trợ giúp",
 
     // Prefix:Stg - Scope:settings view
@@ -1749,6 +1948,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Sao chép bảng",
     tipTranscriptExport:                    "Xuất dưới dạng tệp Markdown",
     tipTranscriptToolExpand:                "Mở rộng hoặc thu gọn chi tiết công cụ",
+    tipTranscriptToolShow:                  "Hiện hoặc ẩn các lệnh gọi công cụ",
     lblTranscriptStatsActive:               "hoạt động",
     lblTranscriptStatsTokens:               "mã thông báo",
     tipTranscriptStats:                     "Ước tính từ nhật ký phiên này: thời gian tác nhân hoạt động (không bao gồm thời gian nhàn rỗi của bạn) và số mã thông báo đã xử lý, bao gồm cả việc đọc lại ngữ cảnh đã lưu vào bộ nhớ cache mỗi lượt. Các tác nhân phụ không được bao gồm.",
@@ -1774,6 +1974,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "เปิดการตั้งค่า",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ย่อ",
+    tipWinMaximize:                         "ขยาย",
+    tipWinRestore:                          "คืนค่า",
+    tipWinClose:                            "ปิด",
+
     tipHdrHelp:                             "วิธีใช้",
 
     // Prefix:Stg - Scope:settings view
@@ -1819,6 +2026,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "คัดลอกตาราง",
     tipTranscriptExport:                    "ส่งออกเป็นไฟล์ Markdown",
     tipTranscriptToolExpand:                "ขยายหรือยุบรายละเอียดเครื่องมือ",
+    tipTranscriptToolShow:                  "แสดงหรือซ่อนการเรียกใช้เครื่องมือ",
     lblTranscriptStatsActive:               "ทำงานอยู่",
     lblTranscriptStatsTokens:               "โทเค็น",
     tipTranscriptStats:                     "ประมาณการจากบันทึกเซสชันนี้: เวลาที่เอเจนต์ทำงานอย่างกระตือรือร้น (ไม่รวมเวลาที่คุณไม่ได้ใช้งาน) และโทเค็นที่ประมวลผล รวมถึงการอ่านบริบทที่แคชซ้ำในแต่ละรอบ ไม่รวมเอเจนต์ย่อย",
@@ -1844,6 +2052,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Buka pengaturan",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalkan",
+    tipWinMaximize:                         "Maksimalkan",
+    tipWinRestore:                          "Pulihkan",
+    tipWinClose:                            "Tutup",
+
     tipHdrHelp:                             "Bantuan",
 
     // Prefix:Stg - Scope:settings view
@@ -1889,6 +2104,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Salin tabel",
     tipTranscriptExport:                    "Ekspor sebagai file Markdown",
     tipTranscriptToolExpand:                "Perluas atau ciutkan detail alat",
+    tipTranscriptToolShow:                  "Tampilkan atau sembunyikan panggilan alat",
     lblTranscriptStatsActive:               "aktif",
     lblTranscriptStatsTokens:               "token",
     tipTranscriptStats:                     "Estimasi dari log sesi ini: waktu agen aktif bekerja (waktu idle Anda dikecualikan) dan token yang diproses, termasuk pembacaan ulang konteks yang di-cache setiap giliran. Subagen tidak termasuk.",
@@ -1914,6 +2130,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Obre la configuració",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimitzar",
+    tipWinMaximize:                         "Maximitzar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Tancar",
+
     tipHdrHelp:                             "Ajuda",
 
     // Prefix:Stg - Scope:settings view
@@ -1959,6 +2182,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copia taula",
     tipTranscriptExport:                    "Exporta com a fitxer Markdown",
     tipTranscriptToolExpand:                "Expandeix o contrau els detalls de l'eina",
+    tipTranscriptToolShow:                  "Mostra o amaga les crides a eines",
     lblTranscriptStatsActive:               "actiu",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimació del registre d'aquesta sessió: temps que l'agent va estar treballant activament (el vostre temps d'inactivitat exclòs) i tokens processats, incloent la relectura del context en memòria cau a cada torn. Els subagents no estan inclosos.",
@@ -1984,6 +2208,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Otevřít nastavení",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizovat",
+    tipWinMaximize:                         "Maximalizovat",
+    tipWinRestore:                          "Obnovit",
+    tipWinClose:                            "Zavřít",
+
     tipHdrHelp:                             "Nápověda",
 
     // Prefix:Stg - Scope:settings view
@@ -2029,6 +2260,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Zkopírovat tabulku",
     tipTranscriptExport:                    "Exportovat jako soubor Markdown",
     tipTranscriptToolExpand:                "Rozbalit nebo sbalit podrobnosti nástroje",
+    tipTranscriptToolShow:                  "Zobrazit nebo skrýt volání nástrojů",
     lblTranscriptStatsActive:               "aktivní",
     lblTranscriptStatsTokens:               "tokeny",
     tipTranscriptStats:                     "Odhad z protokolu této relace: čas, kdy agent aktivně pracoval (váš nečinný čas vyloučen) a zpracované tokeny, včetně opětovného čtení uloženého kontextu v každém tahu. Podagenti nejsou zahrnuti.",
@@ -2054,6 +2286,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Åbn indstillinger",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimer",
+    tipWinMaximize:                         "Maksimer",
+    tipWinRestore:                          "Gendan",
+    tipWinClose:                            "Luk",
+
     tipHdrHelp:                             "Hjælp",
 
     // Prefix:Stg - Scope:settings view
@@ -2099,6 +2338,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopiér tabel",
     tipTranscriptExport:                    "Eksporter som Markdown-fil",
     tipTranscriptToolExpand:                "Udvid eller skjul værktøjsdetaljer",
+    tipTranscriptToolShow:                  "Vis eller skjul værktøjskald",
     lblTranscriptStatsActive:               "aktiv",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Skøn fra denne sessions log: tid agenten var aktivt i arbejde (din inaktive tid ekskluderet) og behandlede tokens, inklusive genlæsning af cachelagret kontekst hver tur. Underagenter er ikke inkluderet.",
@@ -2124,6 +2364,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Avaa asetukset",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Pienennä",
+    tipWinMaximize:                         "Suurenna",
+    tipWinRestore:                          "Palauta",
+    tipWinClose:                            "Sulje",
+
     tipHdrHelp:                             "Ohje",
 
     // Prefix:Stg - Scope:settings view
@@ -2169,6 +2416,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopioi taulukko",
     tipTranscriptExport:                    "Vie Markdown-tiedostona",
     tipTranscriptToolExpand:                "Laajenna tai kutista työkalun tiedot",
+    tipTranscriptToolShow:                  "Näytä tai piilota työkalukutsut",
     lblTranscriptStatsActive:               "aktiivinen",
     lblTranscriptStatsTokens:               "tunnukset",
     tipTranscriptStats:                     "Arvio tämän istunnon lokista: aika, jonka agentti työskenteli aktiivisesti (oma joutoaika poissuljettu) ja käsitellyt tunnukset, mukaan lukien välimuistissa olevan kontekstin uudelleenlukeminen joka vuorolla. Ala-agentteja ei sisällytetä.",
@@ -2194,6 +2442,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Buka tetapan",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimumkan",
+    tipWinMaximize:                         "Maksimumkan",
+    tipWinRestore:                          "Pulihkan",
+    tipWinClose:                            "Tutup",
+
     tipHdrHelp:                             "Bantuan",
 
     // Prefix:Stg - Scope:settings view
@@ -2239,6 +2494,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Salin jadual",
     tipTranscriptExport:                    "Eksport sebagai fail Markdown",
     tipTranscriptToolExpand:                "Kembangkan atau runtuhkan butiran alat",
+    tipTranscriptToolShow:                  "Tunjuk atau sembunyikan panggilan alat",
     lblTranscriptStatsActive:               "aktif",
     lblTranscriptStatsTokens:               "token",
     tipTranscriptStats:                     "Anggaran daripada log sesi ini: masa ejen aktif bekerja (masa terbiar anda dikecualikan) dan token yang diproses, termasuk bacaan semula konteks yang disimpan dalam cache setiap giliran. Subagen tidak termasuk.",
@@ -2264,6 +2520,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Բացել կարգավորումները",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Նվազեցնել",
+    tipWinMaximize:                         "Առավելագույնի հասցնել",
+    tipWinRestore:                          "Վերականգնել",
+    tipWinClose:                            "Փակել",
+
     tipHdrHelp:                             "Օգնություն",
 
     // Prefix:Stg - Scope:settings view
@@ -2309,6 +2572,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Պատճենել աղյուսակը",
     tipTranscriptExport:                    "Արտահանել որպես Markdown ֆայլ",
     tipTranscriptToolExpand:                "Ընդլայնել կամ ծալել գործիքի մանրամասները",
+    tipTranscriptToolShow:                  "Ցուցադրել կամ թաքցնել գործիքի կանչերը",
     lblTranscriptStatsActive:               "ակտիվ",
     lblTranscriptStatsTokens:               "թոքեններ",
     tipTranscriptStats:                     "Գնահատում այս նիստի մատյանից. գործակալի ակտիվ աշխատանքի ժամանակը (ձեր պարապ ժամանակը բացառված է) և մշակված թոքենները, ներառյալ քեշավորված կոնտեքստի վերընթերցումը յուրաքանչյուր շրջադարձի ժամանակ: Ենթագործակալները ներառված չեն:",
@@ -2334,6 +2598,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Отвори настройки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизиране",
+    tipWinMaximize:                         "Максимизиране",
+    tipWinRestore:                          "Възстановяване",
+    tipWinClose:                            "Затваряне",
+
     tipHdrHelp:                             "Помощ",
 
     // Prefix:Stg - Scope:settings view
@@ -2379,6 +2650,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Копирай таблица",
     tipTranscriptExport:                    "Експортиране като Markdown файл",
     tipTranscriptToolExpand:                "Разгъване или свиване на подробностите за инструмента",
+    tipTranscriptToolShow:                  "Показване или скриване на извикванията на инструменти",
     lblTranscriptStatsActive:               "активно",
     lblTranscriptStatsTokens:               "токени",
     tipTranscriptStats:                     "Оценка от дневника на тази сесия: времето, през което агентът е работил активно (вашето време на празен ход е изключено) и обработените токени, включително повторно четене на кеширания контекст при всеки ход. Подагентите не са включени.",
@@ -2404,6 +2676,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Abrir configuración",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Pechar",
+
     tipHdrHelp:                             "Axuda",
 
     // Prefix:Stg - Scope:settings view
@@ -2449,6 +2728,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Copiar táboa",
     tipTranscriptExport:                    "Exportar como ficheiro Markdown",
     tipTranscriptToolExpand:                "Expandir ou contraer os detalles da ferramenta",
+    tipTranscriptToolShow:                  "Mostrar ou ocultar chamadas de ferramentas",
     lblTranscriptStatsActive:               "activo",
     lblTranscriptStatsTokens:               "tokens",
     tipTranscriptStats:                     "Estimación do rexistro desta sesión: tempo que o axente estivo traballando activamente (o seu tempo de inactividade excluído) e tokens procesados, incluíndo a relectura do contexto en caché en cada quenda. Os subaxentes non están incluídos.",
@@ -2474,6 +2754,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Beállítások megnyitása",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Kis méretre",
+    tipWinMaximize:                         "Teljes méretre",
+    tipWinRestore:                          "Visszaállítás",
+    tipWinClose:                            "Bezárás",
+
     tipHdrHelp:                             "Súgó",
 
     // Prefix:Stg - Scope:settings view
@@ -2519,6 +2806,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Táblázat másolása",
     tipTranscriptExport:                    "Exportálás Markdown fájlként",
     tipTranscriptToolExpand:                "Eszköz részleteinek kibontása vagy összecsukása",
+    tipTranscriptToolShow:                  "Eszközhívások megjelenítése vagy elrejtése",
     lblTranscriptStatsActive:               "aktív",
     lblTranscriptStatsTokens:               "tokenek",
     tipTranscriptStats:                     "Becslés az aktuális munkamenet naplójából: az ügynök aktív munkaideje (az Ön tétlen ideje kizárva) és feldolgozott tokenek, beleértve a gyorsítótárazott kontextus minden körben történő újraolvasását. Az alügynökök nincsenek benne.",
@@ -2544,6 +2832,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Atidaryti nustatymus",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Mažinti",
+    tipWinMaximize:                         "Didinti",
+    tipWinRestore:                          "Atkurti",
+    tipWinClose:                            "Uždaryti",
+
     tipHdrHelp:                             "Pagalba",
 
     // Prefix:Stg - Scope:settings view
@@ -2589,6 +2884,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopijuoti lentelę",
     tipTranscriptExport:                    "Eksportuoti kaip Markdown failą",
     tipTranscriptToolExpand:                "Išskleisti arba sutraukti įrankio detales",
+    tipTranscriptToolShow:                  "Rodyti arba slėpti įrankių iškvietimus",
     lblTranscriptStatsActive:               "aktyvus",
     lblTranscriptStatsTokens:               "žetonai",
     tipTranscriptStats:                     "Įvertinimas iš šios sesijos žurnalo: laikas, kurį agentas aktyviai dirbo (jūsų neveikimo laikas neįskaičiuotas) ir apdoroti žetonai, įskaitant talpyklos konteksto pakartotinį skaitymą kiekviename posūkyje. Subagentai neįtraukti.",
@@ -2614,6 +2910,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Отвори поставки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизирај",
+    tipWinMaximize:                         "Максимизирај",
+    tipWinRestore:                          "Врати",
+    tipWinClose:                            "Затвори",
+
     tipHdrHelp:                             "Помош",
 
     // Prefix:Stg - Scope:settings view
@@ -2659,6 +2962,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Копирај табела",
     tipTranscriptExport:                    "Извези како Markdown датотека",
     tipTranscriptToolExpand:                "Прошири или стесни детали за алатката",
+    tipTranscriptToolShow:                  "Прикажи или скриј повици на алатки",
     lblTranscriptStatsActive:               "активно",
     lblTranscriptStatsTokens:               "токени",
     tipTranscriptStats:                     "Проценка од дневникот на оваа сесија: времето кога агентот активно работел (вашето време на мирување е исклучено) и обработените токени, вклучувајќи повторно читање на кешираниот контекст при секој чекор. Подагентите не се вклучени.",
@@ -2684,6 +2988,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Отвори подешавања",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизуј",
+    tipWinMaximize:                         "Максимизуј",
+    tipWinRestore:                          "Врати",
+    tipWinClose:                            "Затвори",
+
     tipHdrHelp:                             "Помоћ",
 
     // Prefix:Stg - Scope:settings view
@@ -2729,6 +3040,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Копирај табелу",
     tipTranscriptExport:                    "Извези као Markdown датотеку",
     tipTranscriptToolExpand:                "Прошири или скупи детаље алата",
+    tipTranscriptToolShow:                  "Прикажи или сакриј позиве алата",
     lblTranscriptStatsActive:               "активно",
     lblTranscriptStatsTokens:               "токени",
     tipTranscriptStats:                     "Процена из евиденције ове сесије: време када је агент активно радио (ваше време мировања искључено) и обрађени токени, укључујући поновно читање кешираног контекста у сваком кораку. Подагенти нису укључени.",
@@ -2754,6 +3066,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Otvoriť nastavenia",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizovať",
+    tipWinMaximize:                         "Maximalizovať",
+    tipWinRestore:                          "Obnoviť",
+    tipWinClose:                            "Zavrieť",
+
     tipHdrHelp:                             "Pomoc",
 
     // Prefix:Stg - Scope:settings view
@@ -2799,6 +3118,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopírovať tabuľku",
     tipTranscriptExport:                    "Exportovať ako súbor Markdown",
     tipTranscriptToolExpand:                "Rozbaliť alebo zbaliť podrobnosti nástroja",
+    tipTranscriptToolShow:                  "Zobraziť alebo skryť volania nástrojov",
     lblTranscriptStatsActive:               "aktívne",
     lblTranscriptStatsTokens:               "tokeny",
     tipTranscriptStats:                     "Odhad z protokolu tejto relácie: čas, kedy agent aktívne pracoval (váš nečinný čas vylúčený) a spracované tokeny, vrátane opätovného čítania uloženého kontextu v každom ťahu. Podagenti nie sú zahrnutí.",
@@ -2824,6 +3144,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Odpri nastavitve",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Pomanjšaj",
+    tipWinMaximize:                         "Povečaj",
+    tipWinRestore:                          "Obnovi",
+    tipWinClose:                            "Zapri",
+
     tipHdrHelp:                             "Pomoč",
 
     // Prefix:Stg - Scope:settings view
@@ -2869,6 +3196,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopiraj tabelo",
     tipTranscriptExport:                    "Izvozi kot datoteko Markdown",
     tipTranscriptToolExpand:                "Razširi ali strni podrobnosti orodja",
+    tipTranscriptToolShow:                  "Prikaži ali skrij klice orodij",
     lblTranscriptStatsActive:               "aktivno",
     lblTranscriptStatsTokens:               "žetoni",
     tipTranscriptStats:                     "Ocena iz dnevnika te seje: čas, ko je agent aktivno delal (vaš čas mirovanja je izključen) in obdelani žetoni, vključno s ponovnim branjem predpomnjenega konteksta v vsakem koraku. Podagenti niso vključeni.",
@@ -2894,6 +3222,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "அமைப்புகளைத் திற",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "சுருக்கு",
+    tipWinMaximize:                         "பெரிதாக்கு",
+    tipWinRestore:                          "மீட்டமை",
+    tipWinClose:                            "மூடு",
+
     tipHdrHelp:                             "உதவி",
 
     // Prefix:Stg - Scope:settings view
@@ -2939,6 +3274,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "அட்டவணையை நகலெடுக்கவும்",
     tipTranscriptExport:                    "Markdown கோப்பாக ஏற்றுமதி செய்",
     tipTranscriptToolExpand:                "கருவி விவரங்களை விரிவாக்கு அல்லது சுருக்கு",
+    tipTranscriptToolShow:                  "கருவி அழைப்புகளைக் காட்டு அல்லது மறை",
     lblTranscriptStatsActive:               "செயலில்",
     lblTranscriptStatsTokens:               "டோக்கன்கள்",
     tipTranscriptStats:                     "இந்த அமர்வின் பதிவிலிருந்து மதிப்பீடு: முகவர் சுறுசுறுப்பாகச் செயல்பட்ட நேரம் (உங்கள் செயலற்ற நேரம் நீக்கப்பட்டது) மற்றும் செயலாக்கப்பட்ட டோக்கன்கள், ஒவ்வொரு திருப்பத்திலும் தற்காலிகமாக சேமிக்கப்பட்ட சூழலை மீண்டும் படித்தல் உட்பட. துணை முகவர்கள் சேர்க்கப்படவில்லை.",
@@ -2964,6 +3300,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "सेटिंग्स खोलें",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "छोटा करें",
+    tipWinMaximize:                         "बड़ा करें",
+    tipWinRestore:                          "पुनर्स्थापित करें",
+    tipWinClose:                            "बंद करें",
+
     tipHdrHelp:                             "सहायता",
 
     // Prefix:Stg - Scope:settings view
@@ -3009,6 +3352,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "तालिका कॉपी करें",
     tipTranscriptExport:                    "Markdown फ़ाइल के रूप में निर्यात करें",
     tipTranscriptToolExpand:                "टूल विवरणों का विस्तार या संकुचन करें",
+    tipTranscriptToolShow:                  "टूल कॉल दिखाएं या छिपाएं",
     lblTranscriptStatsActive:               "सक्रिय",
     lblTranscriptStatsTokens:               "टोकन",
     tipTranscriptStats:                     "इस सत्र के लॉग से अनुमान: एजेंट के सक्रिय रूप से काम करने का समय (आपके निष्क्रिय समय को छोड़कर) और संसाधित टोकन, जिसमें प्रत्येक मोड़ पर कैश किए गए संदर्भ को फिर से पढ़ना शामिल है। उप-एजेंट शामिल नहीं हैं।",
@@ -3034,6 +3378,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "সেটিংস খুলুন",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ছোট করুন",
+    tipWinMaximize:                         "বড় করুন",
+    tipWinRestore:                          "পুনরুদ্ধার করুন",
+    tipWinClose:                            "বন্ধ করুন",
+
     tipHdrHelp:                             "সাহায্য",
 
     // Prefix:Stg - Scope:settings view
@@ -3079,6 +3430,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "সারণী কপি করুন",
     tipTranscriptExport:                    "Markdown ফাইল হিসাবে এক্সপোর্ট করুন",
     tipTranscriptToolExpand:                "টুলের বিবরণ প্রসারিত বা সঙ্কুচিত করুন",
+    tipTranscriptToolShow:                  "টুল কল দেখান বা লুকান",
     lblTranscriptStatsActive:               "সক্রিয়",
     lblTranscriptStatsTokens:               "টোকেন",
     tipTranscriptStats:                     "এই সেশনের লগ থেকে অনুমান: এজেন্ট সক্রিয়ভাবে কাজ করার সময় (আপনার নিষ্ক্রিয় সময় বাদ দিয়ে) এবং প্রক্রিয়াকৃত টোকেন, প্রতিটি মোড়ে ক্যাশে করা প্রসঙ্গ পুনরায় পড়া সহ। সাবএজেন্ট অন্তর্ভুক্ত নয়।",
@@ -3104,6 +3456,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "ترتیبات کھولیں",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "چھوٹا کریں",
+    tipWinMaximize:                         "بڑا کریں",
+    tipWinRestore:                          "بحال کریں",
+    tipWinClose:                            "بند کریں",
+
     tipHdrHelp:                             "مدد",
 
     // Prefix:Stg - Scope:settings view
@@ -3149,6 +3508,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "ٹیبل کاپی کریں",
     tipTranscriptExport:                    "مارک ڈاؤن فائل کے طور پر ایکسپورٹ کریں",
     tipTranscriptToolExpand:                "ٹول کی تفصیلات کو وسعت دیں یا سمیٹیں",
+    tipTranscriptToolShow:                  "ٹول کالز دکھائیں یا چھپائیں",
     lblTranscriptStatsActive:               "فعال",
     lblTranscriptStatsTokens:               "ٹوکنز",
     tipTranscriptStats:                     "اس سیشن کے لاگ سے تخمینہ: ایجنٹ کے فعال طور پر کام کرنے کا وقت (آپ کا بیکار وقت خارج ہے) اور پروسیس شدہ ٹوکنز، بشمول ہر موڑ پر کیش شدہ سیاق و سباق کو دوبارہ پڑھنا۔ ذیلی ایجنٹس شامل نہیں ہیں۔",
@@ -3174,6 +3534,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Fungua mipangilio",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Punguza",
+    tipWinMaximize:                         "Ongeza",
+    tipWinRestore:                          "Rejesha",
+    tipWinClose:                            "Funga",
+
     tipHdrHelp:                             "Msaada",
 
     // Prefix:Stg - Scope:settings view
@@ -3219,6 +3586,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Nakili jedwali",
     tipTranscriptExport:                    "Hamisha kama faili ya Markdown",
     tipTranscriptToolExpand:                "Panua au kunja maelezo ya zana",
+    tipTranscriptToolShow:                  "Onyesha au ficha simu za zana",
     lblTranscriptStatsActive:               "amilifu",
     lblTranscriptStatsTokens:               "tokeni",
     tipTranscriptStats:                     "Makadirio kutoka kwa kumbukumbu ya kikao hiki: muda ambao wakala alikuwa akifanya kazi kikamilifu (muda wako wa kutofanya kazi haujumuishwi) na tokeni zilizochakatwa, ikijumuisha kusoma upya muktadha uliowekwa kwenye akiba kila zamu. Wakala wadogo hawajajumuishwa.",
@@ -3244,6 +3612,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ਛੋਟਾ ਕਰੋ",
+    tipWinMaximize:                         "ਵੱਡਾ ਕਰੋ",
+    tipWinRestore:                          "ਮੁੜ-ਬਹਾਲ ਕਰੋ",
+    tipWinClose:                            "ਬੰਦ ਕਰੋ",
+
     tipHdrHelp:                             "ਮਦਦ",
 
     // Prefix:Stg - Scope:settings view
@@ -3289,6 +3664,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "ਸਾਰਣੀ ਕਾਪੀ ਕਰੋ",
     tipTranscriptExport:                    "ਮਾਰਕਡਾਊਨ ਫਾਈਲ ਵਜੋਂ ਐਕਸਪੋਰਟ ਕਰੋ",
     tipTranscriptToolExpand:                "ਟੂਲ ਵੇਰਵਿਆਂ ਦਾ ਵਿਸਤਾਰ ਜਾਂ ਸੰਕੁਚਨ ਕਰੋ",
+    tipTranscriptToolShow:                  "ਟੂਲ ਕਾਲਾਂ ਦਿਖਾਓ ਜਾਂ ਲੁਕਾਓ",
     lblTranscriptStatsActive:               "ਕਿਰਿਆਸ਼ੀਲ",
     lblTranscriptStatsTokens:               "ਟੋਕਨ",
     tipTranscriptStats:                     "ਇਸ ਸੈਸ਼ਨ ਦੇ ਲੌਗ ਤੋਂ ਅਨੁਮਾਨ: ਏਜੰਟ ਦੇ ਸਰਗਰਮੀ ਨਾਲ ਕੰਮ ਕਰਨ ਦਾ ਸਮਾਂ (ਤੁਹਾਡਾ ਵਿਹਲਾ ਸਮਾਂ ਛੱਡ ਕੇ) ਅਤੇ ਪ੍ਰੋਸੈਸ ਕੀਤੇ ਟੋਕਨ, ਜਿਸ ਵਿੱਚ ਹਰ ਵਾਰ ਕੈਸ਼ ਕੀਤੇ ਸੰਦਰਭ ਨੂੰ ਮੁੜ-ਪੜ੍ਹਨਾ ਸ਼ਾਮਲ ਹੈ। ਉਪ-ਏਜੰਟ ਸ਼ਾਮਲ ਨਹੀਂ ਹਨ।",
@@ -3314,6 +3690,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Bude saituna",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Rage girma",
+    tipWinMaximize:                         "Ƙara girma",
+    tipWinRestore:                          "Mayar",
+    tipWinClose:                            "Rufe",
+
     tipHdrHelp:                             "Taimako",
 
     // Prefix:Stg - Scope:settings view
@@ -3359,6 +3742,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kwafi tebur",
     tipTranscriptExport:                    "Fitar da shi a matsayin fayil ɗin Markdown",
     tipTranscriptToolExpand:                "Fadada ko rufe cikakkun bayanai na kayan aiki",
+    tipTranscriptToolShow:                  "Nuna ko ɓoye kiran kayan aiki",
     lblTranscriptStatsActive:               "aiki",
     lblTranscriptStatsTokens:               "alamomi",
     tipTranscriptStats:                     "Ƙididdiga daga log na wannan zama: lokacin da wakili ke aiki tuƙuru (an cire lokacin hutun ku) da kuma alamomin da aka sarrafa, gami da sake karanta mahallin da aka adana a kowane juyi. Ba a haɗa wakilai na ƙasa ba.",
@@ -3384,6 +3768,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Ṣi eto",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Din-kekere",
+    tipWinMaximize:                         "Din-nla",
+    tipWinRestore:                          "Mu pada",
+    tipWinClose:                            "Pa",
+
     tipHdrHelp:                             "Iranlọwọ",
 
     // Prefix:Stg - Scope:settings view
@@ -3429,6 +3820,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Ṣe àwòkọ tábìlì",
     tipTranscriptExport:                    "Ṣe okeere bi faili Markdown",
     tipTranscriptToolExpand:                "Fadada tabi pa awọn alaye ohun elo rẹ",
+    tipTranscriptToolShow:                  "Fihan tabi fi pamọ awọn ipe irinṣẹ",
     lblTranscriptStatsActive:               "nṣiṣẹ",
     lblTranscriptStatsTokens:               "awọn ami",
     tipTranscriptStats:                     "Ifoju lati inu iwe akọọlẹ igba yii: akoko ti aṣoju n ṣiṣẹ lọwọ (akoko isinmi rẹ ko si) ati awọn ami ti a ti ṣe ilana, pẹlu atunkawe ọrọ-ọrọ ti a ti fipamọ sinu kaṣe ni gbogbo igba. Awọn aṣoju kekere ko si.",
@@ -3454,6 +3846,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "సెట్టింగ్‌లను తెరవండి",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "చిన్నది చేయి",
+    tipWinMaximize:                         "పెద్దది చేయి",
+    tipWinRestore:                          "పునరుద్ధరించు",
+    tipWinClose:                            "మూసివేయి",
+
     tipHdrHelp:                             "సహాయం",
 
     // Prefix:Stg - Scope:settings view
@@ -3499,6 +3898,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "పట్టికను కాపీ చేయండి",
     tipTranscriptExport:                    "Markdown ఫైల్‌గా ఎగుమతి చేయండి",
     tipTranscriptToolExpand:                "పరికరం వివరాలను విస్తరించండి లేదా కుదించండి",
+    tipTranscriptToolShow:                  "పరికరం కాల్‌లను చూపించు లేదా దాచు",
     lblTranscriptStatsActive:               "సక్రియం",
     lblTranscriptStatsTokens:               "టోకెన్లు",
     tipTranscriptStats:                     "ఈ సెషన్ లాగ్ నుండి అంచనా: ఏజెంట్ చురుకుగా పనిచేసిన సమయం (మీ నిష్క్రియ సమయం మినహాయించి) మరియు ప్రాసెస్ చేయబడిన టోకెన్లు, ప్రతి మలుపులో కాష్ చేయబడిన సందర్భాన్ని తిరిగి చదవడం సహా. ఉప-ఏజెంట్లు చేర్చబడలేదు.",
@@ -3524,6 +3924,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "सेटिंग्ज उघडा",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "लहान करा",
+    tipWinMaximize:                         "मोठे करा",
+    tipWinRestore:                          "पुनर्संचयित करा",
+    tipWinClose:                            "बंद करा",
+
     tipHdrHelp:                             "मदत",
 
     // Prefix:Stg - Scope:settings view
@@ -3569,6 +3976,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "टेबल कॉपी करा",
     tipTranscriptExport:                    "Markdown फाइल म्हणून निर्यात करा",
     tipTranscriptToolExpand:                "साधनाचे तपशील विस्तृत करा किंवा संकुचित करा",
+    tipTranscriptToolShow:                  "टूल कॉल दाखवा किंवा लपवा",
     lblTranscriptStatsActive:               "सक्रिय",
     lblTranscriptStatsTokens:               "टोकन",
     tipTranscriptStats:                     "या सत्राच्या लॉगमधून अंदाज: एजंट सक्रियपणे काम करत असलेला वेळ (तुमचा निष्क्रिय वेळ वगळून) आणि प्रक्रिया केलेले टोकन, प्रत्येक वळणावर कॅश केलेला संदर्भ पुन्हा वाचणे यासह. उप-एजंट समाविष्ट नाहीत.",
@@ -3594,6 +4002,13 @@ const TRANSLATIONS = {
 
     // Prefix:Hdr - Scope:top toolbar
     tipHdrSettings:                         "Buksan ang mga setting",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Paliitin",
+    tipWinMaximize:                         "Palakihin",
+    tipWinRestore:                          "Ibalik",
+    tipWinClose:                            "Isara",
+
     tipHdrHelp:                             "Tulong",
 
     // Prefix:Stg - Scope:settings view
@@ -3639,6 +4054,7 @@ const TRANSLATIONS = {
     tipTranscriptCopyTable:                 "Kopyahin ang talahanayan",
     tipTranscriptExport:                    "I-export bilang Markdown file",
     tipTranscriptToolExpand:                "Palawakin o i-collapse ang mga detalye ng tool",
+    tipTranscriptToolShow:                  "Ipakita o itago ang mga tawag sa tool",
     lblTranscriptStatsActive:               "aktibo",
     lblTranscriptStatsTokens:               "token",
     tipTranscriptStats:                     "Pagtatantya mula sa log ng sesyon na ito: oras na aktibong nagtatrabaho ang ahente (hindi kasama ang iyong idle time) at mga token na naproseso, kasama ang muling pagbasa ng naka-cache na konteksto sa bawat pagliko. Hindi kasama ang mga subagent.",

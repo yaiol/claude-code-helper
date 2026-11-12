@@ -10,13 +10,13 @@
 html, body, #root { height: 100%; margin: 0; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--uis-bg);
+  color: var(--uis-text);
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
 .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
-/* .app-root frame comes from the shared chrome.css (height:100% + overflow so the panes
+/* .uis-app-root frame comes from the shared chrome.css (height:100% + overflow so the panes
    scroll internally, not the page). */
 
 /* Header bar + button chrome is provided by the shared ./lib/chrome.css (imported in index.jsx). */
@@ -43,69 +43,69 @@ body {
   flex-shrink: 0;
   display: flex; flex-direction: column;
   min-height: 0;
-  /* surface comes from .pnl (shared) — the app owns width/layout, not the fill */
-  border-right: 1px solid var(--border);
+  /* surface comes from .uis-pnl (shared) — the app owns width/layout, not the fill */
+  border-right: 1px solid var(--uis-border);
 }
 .ch-list-head {
   display: flex; align-items: center; gap: 8px;
   padding: 10px 12px;
 }
-.ch-list-title { font-weight: 700; font-size: 14px; color: var(--text); }
-.ch-list-count { font-size: 11px; color: var(--text-mute); }
-.ch-refresh { margin-left: auto; }  /* placement only — border comes from .barh-grp */
+.ch-list-title { font-weight: 700; font-size: 14px; color: var(--uis-text); }
+.ch-list-count { font-size: 11px; color: var(--uis-text-mute); }
+.ch-refresh { margin-left: auto; }  /* placement only — border comes from .uis-barh-grp */
 
-/* Search pill styling comes from the shared .search (chrome.css); only the
+/* Search pill styling comes from the shared .uis-txt-search (chrome.css); only the
    left-pane placement margin is local. */
 .ch-filter { margin: 0 12px 10px; }
 
 /* List filter chips - two stacked rows (sources above, categories below). `.on` = shown.
-   Chip styling comes from the shared .tag (ui-app.css); `--tag` sets the source orange. */
+   Chip styling comes from the shared .tag (uis-app.css); `--uis-tag` sets the source orange. */
 .ch-filter-toggles { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 12px 10px; }
 .ch-filter-sources { margin-bottom: 6px; } /* sit closer to the category row below */
-/* Source filter chips carry orange (--source) via the shared .tag's `--tag` custom prop
+/* Source filter chips carry orange (--source) via the shared .tag's `--uis-tag` custom prop
    (set inline on the button); category chips take the default accent. */
 .ch-toggle-n {
   font-size: 10px; font-weight: 600;
-  background: var(--bg-row); border-radius: 8px; padding: 0 5px;
+  background: var(--uis-bg-row); border-radius: 8px; padding: 0 5px;
 }
 
 .ch-list-scroll { flex: 1; overflow-y: auto; min-height: 0; }
 
 /* Session row: container / hover / SELECTED state + padding all come from the SHARED
-   list-view.css (.lv-item + .lv-item--stack, .lv-item-name) — standard size, no local
+   list-view.css (.uis-lvw-item + .uis-lvw-item--stack, .uis-lvw-item-name) — standard size, no local
    override. Only the clch-specific path / meta / badge sub-lines stay local. */
 .ch-item-cwd {
-  font-size: 10px; color: var(--text-mute);
+  font-size: 10px; color: var(--uis-text-mute);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .ch-item-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.ch-item-date { font-size: 10px; color: var(--text-dim); }
-/* ⚠ CLAUDE: list-row badges use the shared .tag with NO `--tag` colour — intentionally
+.ch-item-date { font-size: 10px; color: var(--uis-text-dim); }
+/* ⚠ CLAUDE: list-row badges use the shared .tag with NO `--uis-tag` colour — intentionally
    neutral; the source / lost / archived distinction is carried by the label text, not
    colour (colour is reserved for the FILTER chips: source = orange, category = accent). */
 
-.ch-empty { padding: 24px 16px; color: var(--text-mute); font-size: 13px; text-align: center; }
-.ch-empty-err { color: var(--danger); }
+.ch-empty { padding: 24px 16px; color: var(--uis-text-mute); font-size: 13px; text-align: center; }
+.ch-empty-err { color: var(--uis-danger); }
 
 /* Right pane - decoded transcript */
 .ch-view { flex: 1; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
 .ch-view-empty {
   flex: 1; display: flex; align-items: center; justify-content: center;
-  color: var(--text-mute); font-size: 14px; padding: 24px;
+  color: var(--uis-text-mute); font-size: 14px; padding: 24px;
 }
 .ch-view-head {
   display: flex; align-items: center; gap: 8px;
   padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--uis-border);
   flex-shrink: 0;
 }
 .ch-view-titlewrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .ch-view-title {
-  font-size: 14px; font-weight: 700; color: var(--text);
+  font-size: 14px; font-weight: 700; color: var(--uis-text);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .ch-view-sub {
-  font-size: 10px; color: var(--text-mute);
+  font-size: 10px; color: var(--uis-text-mute);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .ch-md-scroll { flex: 1; overflow-y: auto; min-height: 0; }
@@ -114,12 +114,15 @@ body {
 .ch-thread { max-width: 860px; margin: 0 auto; padding: 22px 24px 40px; }
 .ch-msg { display: flex; margin: 14px 0; }
 .ch-msg-user { justify-content: flex-end; }
+/* Tool calls hidden (the toolbar toggle): a run of calls is its own message, a call inside an answer is a
+   .tool-call - both go, the conversation stays. */
+.ch-tools-hidden .ch-msg-tool, .ch-tools-hidden .tool-call { display: none; }
 
 /* User: rounded tinted bubble, hugged to the right, capped width */
 .ch-msg-user .ch-bubble {
   max-width: 80%;
-  background: var(--bg-row);
-  border: 1px solid var(--border);
+  background: var(--uis-bg-row);
+  border: 1px solid var(--uis-border);
   border-radius: 16px;
   padding: 2px 16px;
 }
@@ -129,13 +132,13 @@ body {
 .ch-msg-assistant { flex-direction: column; }
 .ch-msg-assistant .ch-bubble { width: 100%; }
 
-/* Per-answer copy - a shared .btn.icon, PLACEMENT only: in-flow row at the end of
+/* Per-answer copy - a shared .uis-btn.ico, PLACEMENT only: in-flow row at the end of
    the answer, hover-revealed (space stays reserved, so nothing shifts). */
 .ch-msg-copy { align-self: flex-start; margin-top: 4px; opacity: 0; transition: opacity .12s; }
 .ch-msg:hover .ch-msg-copy, .ch-msg-copy:focus-visible, .ch-msg-copy.active { opacity: 1; }
 
 /* Per-table copy - same pattern: the decorateTables() wrapper positions a shared
-   .btn.icon over the table's top-right corner, revealed on table hover. */
+   .uis-btn.ico over the table's top-right corner, revealed on table hover. */
 .ch-tblwrap { position: relative; width: fit-content; max-width: 100%; }
 .ch-tblcopy { position: absolute; top: 2px; right: 2px; opacity: 0; transition: opacity .12s; }
 .ch-tblwrap:hover .ch-tblcopy, .ch-tblcopy:focus-visible, .ch-tblcopy.active { opacity: 1; }
@@ -144,62 +147,62 @@ body {
 .ch-bubble > :last-child  { margin-bottom: 0; }
 
 /* Rendered markdown - a simple, readable document body */
-.ch-md { line-height: 1.6; color: var(--text); }
+.ch-md { line-height: 1.6; color: var(--uis-text); }
 .ch-md h1, .ch-md h2, .ch-md h3 { line-height: 1.3; margin: 1.4em 0 .5em; }
-.ch-md h3 { font-size: 14px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+.ch-md h3 { font-size: 14px; color: var(--uis-accent); border-bottom: 1px solid var(--uis-border); padding-bottom: 4px; }
 .ch-md p { margin: .5em 0; }
-.ch-md hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
-.ch-md a { color: var(--accent); }
+.ch-md hr { border: none; border-top: 1px solid var(--uis-border); margin: 18px 0; }
+.ch-md a { color: var(--uis-accent); }
 .ch-md code {
   font-family: 'JetBrains Mono', monospace; font-size: 12px;
-  background: var(--bg-row); border: 1px solid var(--border);
+  background: var(--uis-bg-row); border: 1px solid var(--uis-border);
   border-radius: 4px; padding: 1px 5px;
 }
 .ch-md pre {
-  background: var(--bg-row); border: 1px solid var(--border);
+  background: var(--uis-bg-row); border: 1px solid var(--uis-border);
   border-radius: 8px; padding: 12px 14px; overflow-x: auto;
 }
 .ch-md pre code { background: none; border: none; padding: 0; font-size: 12px; line-height: 1.5; }
 .ch-md blockquote {
   margin: .6em 0; padding: 4px 12px;
-  border-left: 3px solid var(--border-strong);
-  background: var(--bg-row); border-radius: 0 6px 6px 0;
-  color: var(--text-dim);
+  border-left: 3px solid var(--uis-border-strong);
+  background: var(--uis-bg-row); border-radius: 0 6px 6px 0;
+  color: var(--uis-text-dim);
 }
-.ch-md blockquote code { background: var(--bg-elev); }
+.ch-md blockquote code { background: var(--uis-bg-elev); }
 /* Collapsible tool call / result blocks - folded to a one-line summary by default */
 .ch-md .tool-call {
-  margin: .5em 0; border: 1px solid var(--border);
-  border-radius: 8px; background: var(--bg-row); overflow: hidden;
+  margin: .5em 0; border: 1px solid var(--uis-border);
+  border-radius: 8px; background: var(--uis-bg-row); overflow: hidden;
 }
 .ch-md .tool-call > summary {
   cursor: pointer; user-select: none; list-style: none;
-  padding: 5px 12px; font-size: 12.5px; color: var(--text-dim);
+  padding: 5px 12px; font-size: 12.5px; color: var(--uis-text-dim);
   display: flex; align-items: baseline; gap: 4px;
 }
 .ch-md .tool-call > summary::-webkit-details-marker { display: none; }
 .ch-md .tool-call > summary::before {
-  content: "›"; color: var(--text-mute);
+  content: "›"; color: var(--uis-text-mute);
   transition: transform .12s; display: inline-block;
 }
 .ch-md .tool-call[open] > summary::before { transform: rotate(90deg); }
-.ch-md .tool-call[open] > summary { border-bottom: 1px solid var(--border); }
-.ch-md .tool-call > summary b { color: var(--accent); font-weight: 600; }
+.ch-md .tool-call[open] > summary { border-bottom: 1px solid var(--uis-border); }
+.ch-md .tool-call > summary b { color: var(--uis-accent); font-weight: 600; }
 .ch-md .tool-call > summary code {
   background: none; border: none; padding: 0;
-  color: var(--text-dim); font-size: 11.5px;
+  color: var(--uis-text-dim); font-size: 11.5px;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .ch-md .tool-call > pre { margin: 0; border: none; border-radius: 0; }
 /* The tool's own answer (its result), folded inside the same block, set off by a top rule */
-.ch-md .tool-call .tool-out { border-top: 1px solid var(--border); }
+.ch-md .tool-call .tool-out { border-top: 1px solid var(--uis-border); }
 .ch-md .tool-call .tool-out > pre { margin: 0; border: none; border-radius: 0; }
-.ch-md .tool-call .tool-out.tool-err { border-top-color: var(--accent); }
+.ch-md .tool-call .tool-out.tool-err { border-top-color: var(--uis-accent); }
 .ch-md ul, .ch-md ol { padding-left: 1.4em; margin: .5em 0; }
 .ch-md table { border-collapse: collapse; margin: .6em 0; }
-.ch-md th, .ch-md td { border: 1px solid var(--border); padding: 5px 10px; }
+.ch-md th, .ch-md td { border: 1px solid var(--uis-border); padding: 5px 10px; }
 .ch-md img {
   max-width: 100%; max-height: 420px; height: auto;
-  border: 1px solid var(--border); border-radius: 8px;
+  border: 1px solid var(--uis-border); border-radius: 8px;
   margin: .4em 0; display: block;
 }

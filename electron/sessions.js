@@ -2,15 +2,17 @@
 // Claude Code session discovery + transcript decoding.
 //
 // Two stores are joined here, by the session UUID:
-//   1. Claude Desktop store - holds the human-facing entry titles. Lives inside
-//      the MSIX package sandbox, NOT in the plain %APPDATA%\Claude (that path is
-//      a junction outside processes can't follow). Real path:
+//   1. Claude Desktop store - holds the human-facing entry titles:
+//        %LOCALAPPDATA%\Claude-Data\<package>\claude-code-sessions\**\local_*.json
+//      Older Claude Desktop versions kept it inside the MSIX package sandbox instead
+//      (NOT the plain %APPDATA%\Claude - that path is a junction outside processes
+//      can't follow):
 //        %LOCALAPPDATA%\Packages\Claude_<hash>\LocalCache\Roaming\Claude\claude-code-sessions\**\local_*.json
 //      Each local_*.json carries { title, cliSessionId, cwd, lastFocusedAt, … }.
 //   2. Transcript store - the actual conversation, keyed by UUID:
 //        ~/.claude/projects/<encoded-cwd>/<cliSessionId>.jsonl
 //
-// The <hash> is the package-publisher hash; never hardcode it - we glob Claude_*.
+// <package> / <hash> carry the package-publisher hash; never hardcode it - we list the folders.
 
 const fs   = require("fs");
 const path = require("path");
@@ -18,13 +20,22 @@ const os   = require("os");
 const { execFileSync } = require("child_process");
 
 // ── Store discovery ──────────────────────────────────────────────────────────
-// Find the Claude Desktop data dir. Prefer the MSIX package sandbox; fall back to
-// a classic (non-packaged) install at %APPDATA%\Claude. We pick the candidate that
-// actually contains claude-code-sessions/ so we never guess the publisher hash.
+// Find the Claude Desktop data dir. Current location first (%LOCALAPPDATA%\Claude-Data),
+// then the MSIX package sandbox older versions used, then a classic (non-packaged)
+// install at %APPDATA%\Claude. We pick the candidate that actually contains
+// claude-code-sessions/ so we never guess the publisher hash.
+// ⚠ CLAUDE: the order matters - after Claude Desktop moves its data, the old folder
+// still exists (emptied), so every location stays a candidate and the test is the content.
 function findClaudeDataDir() {
   const candidates = [];
   const localAppData = process.env.LOCALAPPDATA;
   if (localAppData) {
+    const dataRoot = path.join(localAppData, "Claude-Data");
+    try {
+      for (const e of fs.readdirSync(dataRoot, { withFileTypes: true })) {
+        if (e.isDirectory()) candidates.push(path.join(dataRoot, e.name));
+      }
+    } catch { /* no Claude-Data dir - an older Claude Desktop */ }
     const pkgRoot = path.join(localAppData, "Packages");
     try {
       for (const name of fs.readdirSync(pkgRoot)) {
@@ -270,7 +281,8 @@ function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Pick the single most telling field of a tool call for the one-line summary (plain text).
 function toolSummary(input) {
   if (!input || typeof input !== "object") return "";
-  for (const k of ["file_path", "path", "command", "pattern", "url", "query", "prompt", "description"]) {
+  // `description` first: when a call carries one, it says what the call is for in plain words.
+  for (const k of ["description", "file_path", "path", "command", "pattern", "url", "query", "prompt"]) {
     if (input[k]) return truncate(String(input[k]).replace(/\s+/g, " "), 120);
   }
   return "";
@@ -301,7 +313,8 @@ function toolDetails(name, summary, inputJson, result) {
 }
 
 // `resultById` maps tool_use_id → { text, is_error } so a tool_use can fold in its answer.
-function blockToMd(block, resultById) {
+// `showTools` false leaves the tool calls out altogether (the conversation only).
+function blockToMd(block, resultById, showTools = true) {
   if (typeof block === "string") return block;
   if (!block || typeof block !== "object") return "";
   switch (block.type) {
@@ -326,6 +339,9 @@ function blockToMd(block, resultById) {
     }
     case "tool_use": {
       const name = block.name || "tool";
+      // The desktop app's own turn bookkeeping (its task list, its end-of-turn recap) is not work
+      // the agent did on the project; Claude Desktop does not show these calls either.
+      if (!showTools || name.startsWith("mcp__ccd_turn__")) return "";
       const input = truncate(JSON.stringify(block.input || {}, null, 2), 1200);
       return toolDetails(name, toolSummary(block.input), input, resultById && resultById.get(block.id));
     }
@@ -378,7 +394,9 @@ function usageStats(entries) {
   };
 }
 
-function decodeTranscript(id) {
+// `tools: false` decodes the conversation without its tool calls - what the export and the copy use
+// when the reader has hidden them in the window.
+function decodeTranscript(id, { tools = true } = {}) {
   const file = findTranscript(id);
   if (!file) return { ok: false, error: "not-found" };
   let raw;
@@ -426,7 +444,7 @@ function decodeTranscript(id) {
     if (onlyToolResults) continue;
     if (role === "user") userTurns++;
 
-    const body = content.map(b => blockToMd(b, resultById)).filter(s => s && s.trim()).join("\n\n");
+    const body = content.map(b => blockToMd(b, resultById, tools)).filter(s => s && s.trim()).join("\n\n");
     if (!body.trim()) continue;
 
     // Export heading: "### User" each user turn; "### Claude" only at the START of an assistant
@@ -437,7 +455,12 @@ function decodeTranscript(id) {
     segs.push({ md: continuation ? body : heading + "\n\n" + body, tool });
     lastExportRole = role;
 
-    messages.push({ role, md: body });     // chat view: role → bubble, no inline label
+    // Chat view: role → bubble, no inline label. The log holds one entry per tool call, so a run of
+    // tool-only entries is folded into ONE message - the calls read as one tight list, as the
+    // export already does, instead of one spaced bubble each.
+    const prev = messages[messages.length - 1];
+    if (tool && role === "assistant" && prev && prev.role === "assistant" && prev.tool) prev.md += "\n\n" + body;
+    else messages.push({ role, md: body, tool });
   }
 
   // Join segments with a `---` rule between them - EXCEPT between two consecutive tool-only

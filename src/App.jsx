@@ -5,17 +5,17 @@
 //   language via the i18n key workflow. Full procedure: see CLAUDE-i18n.md.
 //   Never paste translations by hand. The scripts ARE the work.
 import React, { useEffect, useMemo, useState } from 'react';
-import { Settings, HelpCircle, X, RefreshCw, Search, FolderOpen, Copy, Check, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react';
+import { Settings, HelpCircle, X, RefreshCw, Search, FolderOpen, Copy, Check, FileDown, Archive, FileQuestion, ListChevronsDownUp, ListChevronsUpDown, SquareTerminal } from 'lucide-react';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import pkg from '../package.json';
 import { useT, LANGUAGES } from './i18n-gen';
 import { getUrl } from './lib/site-url';
-import { NewsLoader } from './lib/ui-news-loader';
-import { NewsSetting } from './lib/ui-news-setting';
-import { AppHeader } from './lib/ui-header';
-import { GithubIcon } from './lib/ui-icons';
-import { SettingsView } from './lib/ui-settings';
+import { UisNewsLoader } from './lib/uis-news-loader';
+import { UisAppHeader } from './lib/uis-header';
+import { UisBarWindow, LbsHokWindow } from './lib/uis-bar-window';
+import { UisIcoGithub } from './lib/uis-icons';
+import { UisStgView } from './lib/uis-stg-view';
 // Storage namespace - single source: package.json `storagePrefix`. Never hardcode a prefix.
 const STORAGE_PREFIX = pkg.storagePrefix;
 
@@ -60,7 +60,7 @@ function decorateTables(html, tip) {
     wrap.className = 'ch-tblwrap';
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'btn icon ch-tblcopy';
+    btn.className = 'uis-btn ico ch-tblcopy';
     btn.title = tip;
     btn.setAttribute('aria-label', tip);
     btn.innerHTML = SVG_TBL_COPY;
@@ -115,6 +115,8 @@ export default function App() {
   const [lang,         setLang]         = useState(() => localStorage.getItem(LS_LANG)  || DEFAULT_LANG);
   const [theme,        setTheme]        = useState(() => localStorage.getItem(LS_THEME) || DEFAULT_THEME);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  // The window bar: its three buttons act through the main process, which also says when the window is maximized.
+  const windowBar = LbsHokWindow(API);
   const [newsEnabled, setNewsEnabled] = useState(true);
   useEffect(() => {
     fetch(`${API}/news-settings`).then(r => r.json()).then(s => setNewsEnabled(s.enabled)).catch(() => {});
@@ -132,6 +134,7 @@ export default function App() {
   const [transcript,      setTranscript]      = useState(null);   // { markdown, messages, meta, title, cwd }
   const [transcriptState, setTranscriptState] = useState('idle'); // idle | loading | error | ready
   const [toolsExpanded,   setToolsExpanded]   = useState(false);  // false = tool blocks folded to one-line summaries
+  const [toolsShown,      setToolsShown]      = useState(true);   // false = tool calls hidden, only the conversation is left
   const [copiedMsg,       setCopiedMsg]       = useState(null);   // index of the answer just copied (brief check feedback)
   const [showActive,      setShowActive]      = useState(true);   // category filters (session-local, like `filter`)
   const [showArchived,    setShowArchived]    = useState(true);
@@ -199,8 +202,18 @@ export default function App() {
     }).catch(() => {});
   }
 
-  function copyMarkdown() {
-    if (transcript?.markdown) navigator.clipboard.writeText(transcript.markdown).catch(() => {});
+  // Copy and export follow the show / hide button: tool calls hidden in the window are left out of the text.
+  async function copyMarkdown() {
+    if (!transcript?.markdown) return;
+    let md = transcript.markdown;
+    if (!toolsShown) {
+      try {
+        const data = await (await fetch(`${API}/transcript?id=${encodeURIComponent(selectedId)}&tools=0`)).json();
+        if (!data.ok) return;
+        md = data.markdown;
+      } catch { return; }
+    }
+    navigator.clipboard.writeText(md).catch(() => {});
   }
 
   function copyMessage(md, i) {
@@ -231,6 +244,7 @@ export default function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         id: selectedId,
+        tools: toolsShown,
         title: transcript?.title || '',
         dialogTitle: t('ttlExport'),
         filterName: t('lblExportFilterMd'),
@@ -283,79 +297,82 @@ export default function App() {
   }, [sourceMatched, showActive, showArchived, showLost]);
 
   return (
-    <div className="app-root">
+    <div className="uis-app-root">
       {/* ── A new version (first) and the yaiol news, in one dialog ── */}
-      <NewsLoader api={API} lang={lang} t={t} />
-      <AppHeader appName={APP_NAME} appVersion={APP_VERSION}>
-        <span className="bar-spacer" />
-        <div className="barh-grp">
-          <button
-            className="btn icon"
-            onClick={() => window.open(GITHUB_URL, '_blank')}
-            title="GitHub"
-            aria-label="GitHub"
-          >
-            <GithubIcon />
-          </button>
-          <button
-            className="btn icon"
-            onClick={() => window.open(getUrl(pkg.name, lang.replace(/_/g, '-'), 'help'), '_blank')}
-            title={t('tipHdrHelp')}
-            aria-label={t('tipHdrHelp')}
-          >
-            <HelpCircle />
-          </button>
-          <button
-            className={`btn icon stg-toggle ${settingsOpen ? 'active' : ''}`}
-            onClick={() => setSettingsOpen(o => !o)}
-            title={t('tipHdrSettings')}
-            aria-label={t('tipHdrSettings')}
-            aria-pressed={settingsOpen}
-          >
-            <Settings />
-          </button>
-        </div>
-      </AppHeader>
+      <UisNewsLoader api={API} lang={lang} t={t} />
+      {/* ── Window bar ── the app's own title bar: the window has no system frame. */}
+      <UisBarWindow appName={APP_NAME} appVersion={APP_VERSION} iconSrc="./app.png" maximized={windowBar.maximized}
+        tipMinimize={t('tipWinMinimize')} tipMaximize={t('tipWinMaximize')} tipRestore={t('tipWinRestore')} tipClose={t('tipWinClose')}
+        onMinimize={windowBar.minimize} onMaximize={windowBar.maximize} onClose={windowBar.close}>
+        <button
+          className={`uis-barh-window-btn uis-stg-toggle ${settingsOpen ? 'active' : ''}`}
+          onClick={() => setSettingsOpen(o => !o)}
+          title={t('tipHdrSettings')}
+          aria-label={t('tipHdrSettings')}
+          aria-pressed={settingsOpen}
+        >
+          <Settings />
+        </button>
+        <button
+          className="uis-barh-window-btn"
+          onClick={() => window.open(getUrl(pkg.name, lang.replace(/_/g, '-'), 'help'), '_blank')}
+          title={t('tipHdrHelp')}
+          aria-label={t('tipHdrHelp')}
+        >
+          <HelpCircle />
+        </button>
+        <button
+          className="uis-barh-window-btn"
+          onClick={() => window.open(GITHUB_URL, '_blank')}
+          title="GitHub"
+          aria-label="GitHub"
+        >
+          <UisIcoGithub />
+        </button>
+      </UisBarWindow>
+      {/* The name and the version are in the window bar, so the header holds the work buttons only. */}
+      <UisAppHeader appName={APP_NAME} appVersion={APP_VERSION} bare>
+      </UisAppHeader>
 
-      {/* .app-main content region (Rule 14) — wraps the two-pane split */}
-      <div className="app-main">
+      {/* .uis-app-main content region (Rule 14) — wraps the two-pane split */}
+      <div className="uis-app-main">
       {settingsOpen && (
-        <SettingsView
+        <UisStgView
           t={t} appName={APP_NAME} appVersion={APP_VERSION} languages={LANGUAGES}
           lang={lang} setLang={setLang}
           theme={theme} setTheme={setTheme}
           generalExtra={(
-            <NewsSetting enabled={newsEnabled} onChange={toggleNews} label={t('lblStgGeneralNews')} />
+            <div className="uis-fld-labelled divider"><label className="uis-chk-lbl"><input type="checkbox" className="uis-chk-box" checked={newsEnabled} onChange={e => toggleNews(e.target.checked)} />{t('lblStgGeneralNews')}</label></div>
           )}
           onClose={() => setSettingsOpen(false)}
         />
       )}
       <div className="workspace ch-split">
         {/* ── Left: session list ──────────────────────────────────────────── */}
-        <section className="ch-list pnl">
+        <section className="ch-list uis-pnl">
           <div className="ch-list-head">
             <span className="ch-list-title">{t('ttlSessions')}</span>
             {sessions && (
               <span className="ch-list-count">{filtered.length} {t('lblSessionsCount')}</span>
             )}
-            <div className="barh-grp ch-refresh">
-              <button className="btn icon" onClick={loadSessions} title={t('tipSessionsRefresh')} aria-label={t('tipSessionsRefresh')}>
+            <div className="uis-barh-grp ch-refresh">
+              <button className="uis-btn ico" onClick={loadSessions} title={t('tipSessionsRefresh')} aria-label={t('tipSessionsRefresh')}>
                 <RefreshCw />
               </button>
             </div>
           </div>
-          <div className="ch-filter search">
-            <span className="search-glyph"><Search /></span>
+          <div className="ch-filter uis-txt-search">
+            <span className="uis-txt-search-glyph"><Search /></span>
             <input
-              className="search-input"
+              className="uis-txt-search-input"
               value={filter}
               onChange={e => setFilter(e.target.value)}
               placeholder={t('plhSessionsFilter')}
               aria-label={t('plhSessionsFilter')}
             />
             {filter && (
-              <button className="search-clear" onClick={() => setFilter('')} title={t('tipSessionsFilterClear')} aria-label={t('tipSessionsFilterClear')}>
-                <X className="icon-inline" />
+              <button className="uis-txt-search-clear" onClick={() => setFilter('')} title={t('tipSessionsFilterClear')} aria-label={t('tipSessionsFilterClear')}>
+                <X className="uis-ico-inline" />
               </button>
             )}
           </div>
@@ -366,7 +383,7 @@ export default function App() {
               {sourceList.map(src => (
                 <button
                   key={src}
-                  className={`chip ${!sourceOff.has(src) ? 'on' : ''}`}
+                  className={`uis-chp ${!sourceOff.has(src) ? 'on' : ''}`}
                   style={{ "--chip": "var(--source)" }}
                   onClick={() => toggleSource(src)}
                   title={t('tipSessionsFilterSource')}
@@ -379,8 +396,8 @@ export default function App() {
             </div>
             <div className="ch-filter-toggles">
               <button
-                className={`chip ${showActive ? 'on' : ''}`}
-                style={{ "--chip": "var(--accent)" }}
+                className={`uis-chp ${showActive ? 'on' : ''}`}
+                style={{ "--chip": "var(--uis-accent)" }}
                 onClick={() => setShowActive(v => !v)}
                 title={t('tipSessionsFilterActive')}
                 aria-label={t('tipSessionsFilterActive')}
@@ -389,24 +406,24 @@ export default function App() {
                 {t('lblSessionsActive')}<span className="ch-toggle-n">{counts.active}</span>
               </button>
               <button
-                className={`chip ${showArchived ? 'on' : ''}`}
-                style={{ "--chip": "var(--accent)" }}
+                className={`uis-chp ${showArchived ? 'on' : ''}`}
+                style={{ "--chip": "var(--uis-accent)" }}
                 onClick={() => setShowArchived(v => !v)}
                 title={t('tipSessionsFilterArchived')}
                 aria-label={t('tipSessionsFilterArchived')}
                 aria-pressed={showArchived}
               >
-                <Archive className="icon-inline" />{t('lblSessionsArchived')}<span className="ch-toggle-n">{counts.archived}</span>
+                <Archive className="uis-ico-inline" />{t('lblSessionsArchived')}<span className="ch-toggle-n">{counts.archived}</span>
               </button>
               <button
-                className={`chip ${showLost ? 'on' : ''}`}
-                style={{ "--chip": "var(--accent)" }}
+                className={`uis-chp ${showLost ? 'on' : ''}`}
+                style={{ "--chip": "var(--uis-accent)" }}
                 onClick={() => setShowLost(v => !v)}
                 title={t('tipSessionsFilterLost')}
                 aria-label={t('tipSessionsFilterLost')}
                 aria-pressed={showLost}
               >
-                <FileQuestion className="icon-inline" />{t('lblSessionsLost')}<span className="ch-toggle-n">{counts.lost}</span>
+                <FileQuestion className="uis-ico-inline" />{t('lblSessionsLost')}<span className="ch-toggle-n">{counts.lost}</span>
               </button>
             </div>
             </>
@@ -418,17 +435,17 @@ export default function App() {
             {filtered.map((s, i) => (
               <button
                 key={s.cliSessionId || `noid-${i}`}
-                className={`lv-item lv-item--stack ${selectedId === s.cliSessionId ? 'active' : ''}`}
+                className={`uis-lvw-item uis-lvw-item--stack ${selectedId === s.cliSessionId ? 'active' : ''}`}
                 onClick={() => selectSession(s)}
               >
-                <span className="lv-item-name">{s.title}</span>
+                <span className="uis-lvw-item-name">{s.title}</span>
                 <span className="ch-item-cwd mono">{s.cwd}</span>
                 <span className="ch-item-meta">
                   <span className="ch-item-date">{fmtDate(s.lastFocusedAt)}</span>
                   {/* Source badge - where the session physically lives: "Windows" or a WSL distro name (e.g. Ubuntu). */}
-                  {s.source && <span className="chip">{s.source}</span>}
-                  {s.origin === 'lost' && <span className="chip" title={t('tipSessionsLost')}><FileQuestion />{t('lblSessionsLost')}</span>}
-                  {s.isArchived && <span className="chip"><Archive />{t('lblSessionsArchived')}</span>}
+                  {s.source && <span className="uis-chp">{s.source}</span>}
+                  {s.origin === 'lost' && <span className="uis-chp" title={t('tipSessionsLost')}><FileQuestion />{t('lblSessionsLost')}</span>}
+                  {s.isArchived && <span className="uis-chp"><Archive />{t('lblSessionsArchived')}</span>}
                 </span>
               </button>
             ))}
@@ -454,18 +471,21 @@ export default function App() {
                     </span>
                   )}
                 </div>
-                <span className="bar-spacer" />
-                <div className="barh-grp">
-                  <button className={'btn icon' + (toolsExpanded ? ' active' : '')} onClick={() => setToolsExpanded(v => !v)} title={t('tipTranscriptToolExpand')} aria-label={t('tipTranscriptToolExpand')} aria-pressed={toolsExpanded} disabled={transcriptState !== 'ready'}>
+                <span className="uis-bar-spacer" />
+                <div className="uis-barh-grp">
+                  <button className={'uis-btn ico' + (toolsShown ? ' active' : '')} onClick={() => setToolsShown(v => !v)} title={t('tipTranscriptToolShow')} aria-label={t('tipTranscriptToolShow')} aria-pressed={toolsShown} disabled={transcriptState !== 'ready'}>
+                    <SquareTerminal />
+                  </button>
+                  <button className={'uis-btn ico' + (toolsExpanded ? ' active' : '')} onClick={() => setToolsExpanded(v => !v)} title={t('tipTranscriptToolExpand')} aria-label={t('tipTranscriptToolExpand')} aria-pressed={toolsExpanded} disabled={transcriptState !== 'ready' || !toolsShown}>
                     {toolsExpanded ? <ListChevronsDownUp /> : <ListChevronsUpDown />}
                   </button>
-                  <button className="btn icon" onClick={exportMarkdown} title={t('tipTranscriptExport')} aria-label={t('tipTranscriptExport')} disabled={transcriptState !== 'ready'}>
+                  <button className="uis-btn ico" onClick={exportMarkdown} title={t('tipTranscriptExport')} aria-label={t('tipTranscriptExport')} disabled={transcriptState !== 'ready'}>
                     <FileDown />
                   </button>
-                  <button className="btn icon" onClick={copyMarkdown} title={t('tipTranscriptCopy')} aria-label={t('tipTranscriptCopy')} disabled={transcriptState !== 'ready'}>
+                  <button className="uis-btn ico" onClick={copyMarkdown} title={t('tipTranscriptCopy')} aria-label={t('tipTranscriptCopy')} disabled={transcriptState !== 'ready'}>
                     <Copy />
                   </button>
-                  <button className="btn icon" onClick={revealTranscript} title={t('tipTranscriptReveal')} aria-label={t('tipTranscriptReveal')}>
+                  <button className="uis-btn ico" onClick={revealTranscript} title={t('tipTranscriptReveal')} aria-label={t('tipTranscriptReveal')}>
                     <FolderOpen />
                   </button>
                 </div>
@@ -474,18 +494,18 @@ export default function App() {
                 {transcriptState === 'loading' && <div className="ch-empty">{t('msgTranscriptLoading')}</div>}
                 {transcriptState === 'error' && <div className="ch-empty ch-empty-err">{t('msgTranscriptError')}</div>}
                 {transcriptState === 'ready' && (
-                  <div className="ch-thread" onClick={onThreadClick}>
+                  <div className={'ch-thread' + (toolsShown ? '' : ' ch-tools-hidden')} onClick={onThreadClick}>
                     {(transcript.messages || []).map((m, i) => {
                       // Inject `open` post-sanitize so the toolbar toggle expands every <details> at once.
                       let html = renderMarkdown(m.md);
                       if (toolsExpanded) html = html.replaceAll('<details ', '<details open ');
                       html = decorateTables(html, t('tipTranscriptCopyTable'));
                       return (
-                        <div key={i} className={`ch-msg ch-msg-${m.role}`}>
+                        <div key={i} className={`ch-msg ch-msg-${m.role}${m.tool ? ' ch-msg-tool' : ''}`}>
                           <div className="ch-md ch-bubble" dangerouslySetInnerHTML={{ __html: html }} />
-                          {m.role === 'assistant' && (
+                          {m.role === 'assistant' && !m.tool && (
                             <button
-                              className={'btn icon ch-msg-copy' + (copiedMsg === i ? ' active' : '')}
+                              className={'uis-btn ico ch-msg-copy' + (copiedMsg === i ? ' active' : '')}
                               onClick={() => copyMessage(m.md, i)}
                               title={t('tipTranscriptCopyMsg')}
                               aria-label={t('tipTranscriptCopyMsg')}

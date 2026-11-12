@@ -74,7 +74,7 @@
 
 ## What it is
 
-Claude Code stores its sessions in hidden, per-environment locations: a sandboxed Windows app store, and a separate store inside each WSL distribution. Finding and re-reading an old conversation means knowing where those live and reading raw `.jsonl` transcripts by hand.
+Claude Code stores its sessions in hidden, per-environment locations: the Claude desktop app's own data folder on Windows, and a separate store inside each WSL distribution. Finding and re-reading an old conversation means knowing where those live and reading raw `.jsonl` transcripts by hand.
 
 Claude Code Helper surfaces them all into one window. A two-pane viewer lists every session - merged from Windows and each running WSL distro, sorted by recency - and renders the selected transcript as a clean, Claude-style chat. It is strictly **read-only**: it reads the stores and never renames, edits, or deletes anything.
 
@@ -139,7 +139,7 @@ Two panes: on the **left** the session list, merged from every store and sorted 
 
 Sessions are gathered by passes over two kinds of store and merged into one list. The **source** badge on each row names the store it came from:
 
-- **Windows** - sessions read from the Claude desktop app's sandboxed Windows store, each with a human-readable title.
+- **Windows** - sessions read from the Claude desktop app's data folder, each with a human-readable title.
 - **WSL** - genuine CLI sessions run inside a WSL distribution, whose transcripts live in the Linux home directory, a store entirely separate from the Windows one. Each running distribution contributes its sessions, titled from the first user message.
 
 A Windows transcript with **no** matching Desktop entry (a Desktop-side bug or deletion) would otherwise be invisible. A recovery pass surfaces it as a **Lost** session, titled from its first message. Lost is a category, shown alongside **Active** and **Archived**, not a separate store; its source badge is still Windows.
