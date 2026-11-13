@@ -4,7 +4,9 @@
 //   [ icon | app-wide buttons ]      App Name  v1.2.3            [ minimize | maximize | close ]
 //
 // - icon:   the app's own icon (`iconSrc`, a picture URL; none = no icon), where a system title bar shows it.
-// - start:  the children - the standard group, here in the order settings · help · source (each a `.uis-barh-window-btn`, the SAME button as the three window buttons: one shape for the whole bar).
+// - start:  the children - the standard group, here in the order settings · help · source (each a `.uis-barh-window-btn`, the SAME button as the three window buttons: one shape for the whole bar),
+//           then the two reminders of uis-news-loader.jsx, each drawn only when it has something: `<UisBtnUpdate t={t} />`
+//           (a newer version is out) and `<UisBtnNews t={t} />` (yaiol has news for this app).
 // - middle: the app name and the version pill. They live HERE, so the header below is rendered `bare`
 //           (see UisAppHeader) and the name is shown once.
 // - end:    the three window buttons, drawn by the control. It holds no words and does nothing to the window
@@ -22,6 +24,8 @@
 //                 tipRestore={t('tipWinRestore')} tipClose={t('tipWinClose')}
 //                 onMinimize={…} onMaximize={…} onClose={…}>
 //     <button className="uis-barh-window-btn" …>…</button>   {/* settings · help · source, one each */}
+//     <UisBtnUpdate t={t} />
+//     <UisBtnNews t={t} />
 //   </UisBarWindow>
 //
 // `onMaximize` is one handler for both states: it maximizes a normal window and restores a maximized one.

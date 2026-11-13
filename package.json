@@ -1,9 +1,9 @@
 {
   "name": "claude-code-helper",
   "productName": "Claude Code Helper",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
-  "description": "Claude Helper",
+  "description": "Browse, search and re-read every Claude Code session on your machine, Windows and WSL, in one place.",
   "private": true,
   "author": "yaiol",
   "main": "electron/main.mjs",

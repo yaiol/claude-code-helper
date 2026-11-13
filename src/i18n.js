@@ -18,11 +18,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Don't show again",
     btnNewsOpenLink:                        "Learn more",
     tipNewsDismiss:                         "Close",
+    tipNewsShow:                            "News",
     lblStgGeneralNews:                      "Show news from yaiol",
     btnNewsClose:                           "Close",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Open settings",
+    tipHdrSettings:                         "Settings",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimize",
@@ -45,7 +46,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Light",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "is a Claude Helper.",
+    msgStgAboutDesc:                        "Browse, search and re-read every Claude Code session on your machine, Windows and WSL, in one place.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -97,11 +98,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne plus afficher",
     btnNewsOpenLink:                        "En savoir plus",
     tipNewsDismiss:                         "Fermer",
+    tipNewsShow:                            "Actualités",
     lblStgGeneralNews:                      "Afficher les actualités de yaiol",
     btnNewsClose:                           "Fermer",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ouvrir les paramètres",
+    tipHdrSettings:                         "Paramètres",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimiser",
@@ -124,7 +126,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Clair",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "est un modèle d'application yaiol Electron.",
+    msgStgAboutDesc:                        "Parcourir, rechercher et relire chaque session Claude Code sur votre machine, Windows et WSL, en un seul endroit.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -175,11 +177,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nicht mehr anzeigen",
     btnNewsOpenLink:                        "Mehr erfahren",
     tipNewsDismiss:                         "Schließen",
+    tipNewsShow:                            "Nachrichten",
     lblStgGeneralNews:                      "Nachrichten von yaiol anzeigen",
     btnNewsClose:                           "Schließen",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Einstellungen öffnen",
+    tipHdrSettings:                         "Einstellungen",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimieren",
@@ -202,7 +205,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Hell",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ist eine yaiol Electron App-Vorlage.",
+    msgStgAboutDesc:                        "Durchsuchen, suchen und erneut lesen Sie jede Claude Code-Sitzung auf Ihrem Computer, Windows und WSL, an einem Ort.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sitzungen",
@@ -253,11 +256,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "No volver a mostrar",
     btnNewsOpenLink:                        "Más información",
     tipNewsDismiss:                         "Cerrar",
+    tipNewsShow:                            "Noticias",
     lblStgGeneralNews:                      "Mostrar noticias de yaiol",
     btnNewsClose:                           "Cerrar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configuración",
+    tipHdrSettings:                         "Ajustes",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimizar",
@@ -280,7 +284,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "es una plantilla de aplicación yaiol Electron.",
+    msgStgAboutDesc:                        "Explore, busque y relea cada sesión de Claude Code en su máquina, Windows y WSL, en un solo lugar.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesiones",
@@ -331,11 +335,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Não mostrar novamente",
     btnNewsOpenLink:                        "Saiba mais",
     tipNewsDismiss:                         "Fechar",
+    tipNewsShow:                            "Notícias",
     lblStgGeneralNews:                      "Mostrar notícias de yaiol",
     btnNewsClose:                           "Fechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configurações",
+    tipHdrSettings:                         "Configurações",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimizar",
@@ -358,7 +363,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "é um modelo de aplicativo yaiol Electron.",
+    msgStgAboutDesc:                        "Navegue, pesquise e releia cada sessão do Claude Code em sua máquina, Windows e WSL, em um só lugar.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessões",
@@ -409,11 +414,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Não mostrar novamente",
     btnNewsOpenLink:                        "Saber mais",
     tipNewsDismiss:                         "Fechar",
+    tipNewsShow:                            "Notícias",
     lblStgGeneralNews:                      "Mostrar notícias de yaiol",
     btnNewsClose:                           "Fechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir definições",
+    tipHdrSettings:                         "Definições",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimizar",
@@ -436,7 +442,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "é um modelo de aplicação yaiol Electron.",
+    msgStgAboutDesc:                        "Navegue, pesquise e releia cada sessão do Claude Code na sua máquina, Windows e WSL, num só local.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessões",
@@ -487,11 +493,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Non mostrare più",
     btnNewsOpenLink:                        "Scopri di più",
     tipNewsDismiss:                         "Chiudi",
+    tipNewsShow:                            "Notizie",
     lblStgGeneralNews:                      "Mostra notizie da yaiol",
     btnNewsClose:                           "Chiudi",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Apri impostazioni",
+    tipHdrSettings:                         "Impostazioni",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Riduci a icona",
@@ -514,7 +521,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Chiaro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "è un modello di app yaiol Electron.",
+    msgStgAboutDesc:                        "Sfoglia, cerca e rileggi ogni sessione di Claude Code sulla tua macchina, Windows e WSL, in un unico posto.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioni",
@@ -565,11 +572,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Niet meer tonen",
     btnNewsOpenLink:                        "Meer informatie",
     tipNewsDismiss:                         "Sluiten",
+    tipNewsShow:                            "Nieuws",
     lblStgGeneralNews:                      "Nieuws van yaiol tonen",
     btnNewsClose:                           "Sluiten",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Instellingen openen",
+    tipHdrSettings:                         "Instellingen",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimaliseren",
@@ -592,7 +600,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Licht",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "is een yaiol Electron app-sjabloon.",
+    msgStgAboutDesc:                        "Blader, zoek en herlees elke Claude Code-sessie op uw machine, Windows en WSL, op één plek.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessies",
@@ -643,11 +651,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Больше не показывать",
     btnNewsOpenLink:                        "Узнать больше",
     tipNewsDismiss:                         "Закрыть",
+    tipNewsShow:                            "Новости",
     lblStgGeneralNews:                      "Показывать новости от yaiol",
     btnNewsClose:                           "Закрыть",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Открыть настройки",
+    tipHdrSettings:                         "Настройки",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Свернуть",
@@ -670,7 +679,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светлый",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "- это шаблон приложения yaiol Electron.",
+    msgStgAboutDesc:                        "Просматривайте, ищите и перечитывайте каждую сессию Claude Code на вашей машине, Windows и WSL, в одном месте.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сессии",
@@ -721,11 +730,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Більше не показувати",
     btnNewsOpenLink:                        "Дізнатися більше",
     tipNewsDismiss:                         "Закрити",
+    tipNewsShow:                            "Новини",
     lblStgGeneralNews:                      "Показувати новини від yaiol",
     btnNewsClose:                           "Закрити",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Відкрити налаштування",
+    tipHdrSettings:                         "Налаштування",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Згорнути",
@@ -748,7 +758,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Світлий",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "- це шаблон програми yaiol Electron.",
+    msgStgAboutDesc:                        "Переглядайте, шукайте та перечитуйте кожну сесію Claude Code на вашій машині, Windows та WSL, в одному місці.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесії",
@@ -799,11 +809,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nie pokazuj ponownie",
     btnNewsOpenLink:                        "Dowiedz się więcej",
     tipNewsDismiss:                         "Zamknij",
+    tipNewsShow:                            "Wiadomości",
     lblStgGeneralNews:                      "Pokaż wiadomości z yaiol",
     btnNewsClose:                           "Zamknij",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otwórz ustawienia",
+    tipHdrSettings:                         "Ustawienia",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimalizuj",
@@ -826,7 +837,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Jasny",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "to szablon aplikacji yaiol Electron.",
+    msgStgAboutDesc:                        "Przeglądaj, wyszukuj i ponownie czytaj każdą sesję Claude Code na swojej maszynie, Windows i WSL, w jednym miejscu.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesje",
@@ -877,11 +888,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nu mai afișa",
     btnNewsOpenLink:                        "Află mai multe",
     tipNewsDismiss:                         "Închide",
+    tipNewsShow:                            "Știri",
     lblStgGeneralNews:                      "Afișează știri de la yaiol",
     btnNewsClose:                           "Închide",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Deschide setările",
+    tipHdrSettings:                         "Setări",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimizare",
@@ -904,7 +916,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Luminos",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "este un șablon de aplicație yaiol Electron.",
+    msgStgAboutDesc:                        "Răsfoiește, caută și recitește fiecare sesiune Claude Code de pe mașina ta, Windows și WSL, într-un singur loc.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesiuni",
@@ -955,11 +967,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Visa inte igen",
     btnNewsOpenLink:                        "Läs mer",
     tipNewsDismiss:                         "Stäng",
+    tipNewsShow:                            "Nyheter",
     lblStgGeneralNews:                      "Visa nyheter från yaiol",
     btnNewsClose:                           "Stäng",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Öppna inställningar",
+    tipHdrSettings:                         "Inställningar",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimera",
@@ -982,7 +995,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Ljus",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "är en yaiol Electron app-mall.",
+    msgStgAboutDesc:                        "Bläddra, sök och läs om varje Claude Code-session på din maskin, Windows och WSL, på ett ställe.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioner",
@@ -1033,11 +1046,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ikke vis igjen",
     btnNewsOpenLink:                        "Les mer",
     tipNewsDismiss:                         "Lukk",
+    tipNewsShow:                            "Nyheter",
     lblStgGeneralNews:                      "Vis nyheter fra yaiol",
     btnNewsClose:                           "Lukk",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Åpne innstillinger",
+    tipHdrSettings:                         "Innstillinger",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimer",
@@ -1060,7 +1074,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Lys",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "er en yaiol Electron app-mal.",
+    msgStgAboutDesc:                        "Bla gjennom, søk og les på nytt hver Claude Code-økt på maskinen din, Windows og WSL, på ett sted.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesjoner",
@@ -1111,11 +1125,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Bir daha gösterme",
     btnNewsOpenLink:                        "Daha fazla bilgi edin",
     tipNewsDismiss:                         "Kapat",
+    tipNewsShow:                            "Haberler",
     lblStgGeneralNews:                      "yaiol'dan haberleri göster",
     btnNewsClose:                           "Kapat",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ayarları aç",
+    tipHdrSettings:                         "Ayarlar",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Küçült",
@@ -1138,7 +1153,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Açık",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "bir yaiol Electron uygulama şablonudur.",
+    msgStgAboutDesc:                        "Makinenizdeki, Windows ve WSL'deki her Claude Code oturumunu tek bir yerden göz atın, arayın ve tekrar okuyun.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Oturumlar",
@@ -1189,11 +1204,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne prikazuj ponovno",
     btnNewsOpenLink:                        "Saznajte više",
     tipNewsDismiss:                         "Zatvori",
+    tipNewsShow:                            "Vijesti",
     lblStgGeneralNews:                      "Prikaži vijesti iz yaiol",
     btnNewsClose:                           "Zatvori",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otvori postavke",
+    tipHdrSettings:                         "Postavke",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimiziraj",
@@ -1216,7 +1232,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svijetlo",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "je predložak aplikacije yaiol Electron.",
+    msgStgAboutDesc:                        "Pregledajte, pretražite i ponovno pročitajte svaku Claude Code sesiju na vašem računalu, Windows i WSL, na jednom mjestu.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesije",
@@ -1267,11 +1283,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Να μην εμφανιστεί ξανά",
     btnNewsOpenLink:                        "Μάθετε περισσότερα",
     tipNewsDismiss:                         "Κλείσιμο",
+    tipNewsShow:                            "Ειδήσεις",
     lblStgGeneralNews:                      "Εμφάνιση ειδήσεων από το yaiol",
     btnNewsClose:                           "Κλείσιμο",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Άνοιγμα ρυθμίσεων",
+    tipHdrSettings:                         "Ρυθμίσεις",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Ελαχιστοποίηση",
@@ -1294,7 +1311,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Φωτεινό",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "είναι ένα πρότυπο εφαρμογής yaiol Electron.",
+    msgStgAboutDesc:                        "Περιηγηθείτε, αναζητήστε και ξαναδιαβάστε κάθε συνεδρία Claude Code στον υπολογιστή σας, Windows και WSL, σε ένα μέρος.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Συνεδρίες",
@@ -1345,11 +1362,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "אל תציג שוב",
     btnNewsOpenLink:                        "למידע נוסף",
     tipNewsDismiss:                         "סגור",
+    tipNewsShow:                            "חדשות",
     lblStgGeneralNews:                      "הצג חדשות מ-yaiol",
     btnNewsClose:                           "סגור",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "פתח הגדרות",
+    tipHdrSettings:                         "הגדרות",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "מזער",
@@ -1372,7 +1390,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "בהיר",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "הוא תבנית יישום yaiol Electron.",
+    msgStgAboutDesc:                        "עיין, חפש וקרא מחדש כל סשן של Claude Code במחשב שלך, Windows ו-WSL, במקום אחד.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "סשנים",
@@ -1423,11 +1441,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "عدم الإظهار مرة أخرى",
     btnNewsOpenLink:                        "تعرّف على المزيد",
     tipNewsDismiss:                         "إغلاق",
+    tipNewsShow:                            "الأخبار",
     lblStgGeneralNews:                      "إظهار الأخبار من yaiol",
     btnNewsClose:                           "إغلاق",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "فتح الإعدادات",
+    tipHdrSettings:                         "الإعدادات",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "تصغير",
@@ -1450,7 +1469,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "فاتح",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "هو قالب تطبيق yaiol Electron.",
+    msgStgAboutDesc:                        "تصفح وابحث وأعد قراءة كل جلسة Claude Code على جهازك، Windows وWSL، في مكان واحد.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "الجلسات",
@@ -1501,11 +1520,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "دیگر نمایش نده",
     btnNewsOpenLink:                        "بیشتر بدانید",
     tipNewsDismiss:                         "بستن",
+    tipNewsShow:                            "اخبار",
     lblStgGeneralNews:                      "نمایش اخبار از yaiol",
     btnNewsClose:                           "بستن",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "باز کردن تنظیمات",
+    tipHdrSettings:                         "تنظیمات",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "کوچک‌نمایی",
@@ -1528,7 +1548,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "روشن",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "یک قالب برنامه yaiol Electron است.",
+    msgStgAboutDesc:                        "هر جلسه Claude Code را در دستگاه خود، ویندوز و WSL، در یک مکان مرور، جستجو و دوباره بخوانید.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "نشست‌ها",
@@ -1579,11 +1599,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "不再显示",
     btnNewsOpenLink:                        "了解更多",
     tipNewsDismiss:                         "关闭",
+    tipNewsShow:                            "新闻",
     lblStgGeneralNews:                      "显示来自 yaiol 的新闻",
     btnNewsClose:                           "关闭",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "打开设置",
+    tipHdrSettings:                         "设置",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "最小化",
@@ -1606,7 +1627,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "浅色",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "是一个 yaiol Electron 应用程序模板。",
+    msgStgAboutDesc:                        "在一个地方浏览、搜索和重读您机器上、Windows 和 WSL 中的所有 Claude Code 会话。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "会话",
@@ -1657,11 +1678,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "不再顯示",
     btnNewsOpenLink:                        "了解更多",
     tipNewsDismiss:                         "關閉",
+    tipNewsShow:                            "新聞",
     lblStgGeneralNews:                      "顯示來自 yaiol 的新聞",
     btnNewsClose:                           "關閉",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "打開設定",
+    tipHdrSettings:                         "設定",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "最小化",
@@ -1684,7 +1706,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "淺色",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "是一個 yaiol Electron 應用程式範本。",
+    msgStgAboutDesc:                        "在一個地方瀏覽、搜尋並重新閱讀您機器上、Windows 和 WSL 中的所有 Claude Code 工作階段。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "工作階段",
@@ -1735,11 +1757,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "今後表示しない",
     btnNewsOpenLink:                        "詳細を見る",
     tipNewsDismiss:                         "閉じる",
+    tipNewsShow:                            "ニュース",
     lblStgGeneralNews:                      "yaiol からのニュースを表示",
     btnNewsClose:                           "閉じる",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "設定を開く",
+    tipHdrSettings:                         "設定",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "最小化",
@@ -1762,7 +1785,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ライト",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "は yaiol Electron アプリのテンプレートです。",
+    msgStgAboutDesc:                        "お使いのPC、Windows、WSL上のすべてのClaude Codeセッションを、一箇所で閲覧、検索、再読できます。",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "セッション",
@@ -1813,11 +1836,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "다시 표시 안 함",
     btnNewsOpenLink:                        "자세히 알아보기",
     tipNewsDismiss:                         "닫기",
+    tipNewsShow:                            "뉴스",
     lblStgGeneralNews:                      "yaiol 뉴스 표시",
     btnNewsClose:                           "닫기",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "설정 열기",
+    tipHdrSettings:                         "설정",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "최소화",
@@ -1840,7 +1864,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "밝게",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "yaiol Electron 앱 템플릿입니다.",
+    msgStgAboutDesc:                        "귀하의 컴퓨터, Windows 및 WSL에서 모든 Claude Code 세션을 한 곳에서 찾아보고, 검색하고, 다시 읽으세요.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "세션",
@@ -1891,11 +1915,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Không hiển thị lại",
     btnNewsOpenLink:                        "Tìm hiểu thêm",
     tipNewsDismiss:                         "Đóng",
+    tipNewsShow:                            "Tin tức",
     lblStgGeneralNews:                      "Hiển thị tin tức từ yaiol",
     btnNewsClose:                           "Đóng",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Mở cài đặt",
+    tipHdrSettings:                         "Cài đặt",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Thu nhỏ",
@@ -1918,7 +1943,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Sáng",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "là một mẫu ứng dụng yaiol Electron.",
+    msgStgAboutDesc:                        "Duyệt, tìm kiếm và đọc lại mọi phiên Claude Code trên máy của bạn, Windows và WSL, tại một nơi.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Phiên",
@@ -1969,11 +1994,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "ไม่ต้องแสดงอีก",
     btnNewsOpenLink:                        "เรียนรู้เพิ่มเติม",
     tipNewsDismiss:                         "ปิด",
+    tipNewsShow:                            "ข่าว",
     lblStgGeneralNews:                      "แสดงข่าวสารจาก yaiol",
     btnNewsClose:                           "ปิด",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "เปิดการตั้งค่า",
+    tipHdrSettings:                         "การตั้งค่า",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "ย่อ",
@@ -1996,7 +2022,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "สว่าง",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "เป็นเทมเพลตแอป yaiol Electron",
+    msgStgAboutDesc:                        "เรียกดู ค้นหา และอ่านซ้ำทุกเซสชัน Claude Code บนเครื่องของคุณ ทั้ง Windows และ WSL ได้ในที่เดียว",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "เซสชัน",
@@ -2047,11 +2073,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Jangan tampilkan lagi",
     btnNewsOpenLink:                        "Pelajari lebih lanjut",
     tipNewsDismiss:                         "Tutup",
+    tipNewsShow:                            "Berita",
     lblStgGeneralNews:                      "Tampilkan berita dari yaiol",
     btnNewsClose:                           "Tutup",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buka pengaturan",
+    tipHdrSettings:                         "Pengaturan",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimalkan",
@@ -2074,7 +2101,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Terang",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "adalah templat aplikasi yaiol Electron.",
+    msgStgAboutDesc:                        "Jelajahi, cari, dan baca ulang setiap sesi Claude Code di mesin Anda, Windows dan WSL, di satu tempat.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesi",
@@ -2125,11 +2152,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "No tornar a mostrar",
     btnNewsOpenLink:                        "Més informació",
     tipNewsDismiss:                         "Tancar",
+    tipNewsShow:                            "Notícies",
     lblStgGeneralNews:                      "Mostrar notícies de yaiol",
     btnNewsClose:                           "Tancar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Obre la configuració",
+    tipHdrSettings:                         "Configuració",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimitzar",
@@ -2152,7 +2180,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Clar",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "és una plantilla d'aplicació yaiol Electron.",
+    msgStgAboutDesc:                        "Navegueu, cerqueu i torneu a llegir cada sessió de Claude Code a la vostra màquina, Windows i WSL, en un sol lloc.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessions",
@@ -2203,11 +2231,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nezobrazovat znovu",
     btnNewsOpenLink:                        "Další informace",
     tipNewsDismiss:                         "Zavřít",
+    tipNewsShow:                            "Zprávy",
     lblStgGeneralNews:                      "Zobrazovat zprávy z yaiol",
     btnNewsClose:                           "Zavřít",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otevřít nastavení",
+    tipHdrSettings:                         "Nastavení",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimalizovat",
@@ -2230,7 +2259,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Světlý",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "je šablona aplikace yaiol Electron.",
+    msgStgAboutDesc:                        "Procházejte, vyhledávejte a znovu čtěte každou relaci Claude Code na svém počítači, Windows a WSL, na jednom místě.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Relace",
@@ -2281,11 +2310,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Vis ikke igen",
     btnNewsOpenLink:                        "Læs mere",
     tipNewsDismiss:                         "Luk",
+    tipNewsShow:                            "Nyheder",
     lblStgGeneralNews:                      "Vis nyheder fra yaiol",
     btnNewsClose:                           "Luk",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Åbn indstillinger",
+    tipHdrSettings:                         "Indstillinger",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimer",
@@ -2308,7 +2338,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Lys",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "er en yaiol Electron app-skabelon.",
+    msgStgAboutDesc:                        "Gennemse, søg og genlæs hver Claude Code-session på din maskine, Windows og WSL, ét sted.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sessioner",
@@ -2359,11 +2389,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Älä näytä uudelleen",
     btnNewsOpenLink:                        "Lue lisää",
     tipNewsDismiss:                         "Sulje",
+    tipNewsShow:                            "Uutiset",
     lblStgGeneralNews:                      "Näytä uutiset yaiolista",
     btnNewsClose:                           "Sulje",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Avaa asetukset",
+    tipHdrSettings:                         "Asetukset",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Pienennä",
@@ -2386,7 +2417,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Vaalea",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "on yaiol Electron -sovelluspohja.",
+    msgStgAboutDesc:                        "Selaa, hae ja lue uudelleen kaikki Claude Code -istunnot koneeltasi, Windowsista ja WSL:stä, yhdessä paikassa.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Istunnot",
@@ -2437,11 +2468,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Jangan tunjuk lagi",
     btnNewsOpenLink:                        "Ketahui lebih lanjut",
     tipNewsDismiss:                         "Tutup",
+    tipNewsShow:                            "Berita",
     lblStgGeneralNews:                      "Tunjukkan berita dari yaiol",
     btnNewsClose:                           "Tutup",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buka tetapan",
+    tipHdrSettings:                         "Tetapan",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimumkan",
@@ -2464,7 +2496,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Cerah",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ialah templat aplikasi yaiol Electron.",
+    msgStgAboutDesc:                        "Semak imbas, cari dan baca semula setiap sesi Claude Code pada mesin anda, Windows dan WSL, di satu tempat.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesi",
@@ -2515,11 +2547,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Այլևս չցուցադրել",
     btnNewsOpenLink:                        "Իմանալ ավելին",
     tipNewsDismiss:                         "Փակել",
+    tipNewsShow:                            "Նորություններ",
     lblStgGeneralNews:                      "Ցուցադրել նորություններ yaiol-ից",
     btnNewsClose:                           "Փակել",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Բացել կարգավորումները",
+    tipHdrSettings:                         "Կարգավորումներ",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Նվազեցնել",
@@ -2542,7 +2575,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Բաց",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "yaiol Electron հավելվածի ձևանմուշ է։",
+    msgStgAboutDesc:                        "Դիտեք, որոնեք և վերընթերցեք Claude Code-ի յուրաքանչյուր նիստ ձեր համակարգչում, Windows-ում և WSL-ում, մեկ տեղում։",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Սեսիաներ",
@@ -2593,11 +2626,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не показвай отново",
     btnNewsOpenLink:                        "Научете повече",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Новини",
     lblStgGeneralNews:                      "Показвай новини от yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори настройки",
+    tipHdrSettings:                         "Настройки",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Минимизиране",
@@ -2620,7 +2654,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светъл",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "е шаблон за приложение yaiol Electron.",
+    msgStgAboutDesc:                        "Разглеждайте, търсете и препрочитайте всяка сесия на Claude Code на вашата машина, Windows и WSL, на едно място.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесии",
@@ -2671,11 +2705,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Non mostrar de novo",
     btnNewsOpenLink:                        "Máis información",
     tipNewsDismiss:                         "Pechar",
+    tipNewsShow:                            "Novas",
     lblStgGeneralNews:                      "Mostrar noticias de yaiol",
     btnNewsClose:                           "Pechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configuración",
+    tipHdrSettings:                         "Configuración",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimizar",
@@ -2698,7 +2733,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "é un modelo de aplicación yaiol Electron.",
+    msgStgAboutDesc:                        "Navega, busca e rele cada sesión de Claude Code na túa máquina, Windows e WSL, nun só lugar.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesións",
@@ -2749,11 +2784,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne mutasd újra",
     btnNewsOpenLink:                        "Tudjon meg többet",
     tipNewsDismiss:                         "Bezárás",
+    tipNewsShow:                            "Hírek",
     lblStgGeneralNews:                      "Hírek megjelenítése a yaiol-tól",
     btnNewsClose:                           "Bezárás",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Beállítások megnyitása",
+    tipHdrSettings:                         "Beállítások",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Kis méretre",
@@ -2776,7 +2812,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Világos",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "egy yaiol Electron alkalmazássablon.",
+    msgStgAboutDesc:                        "Böngésszen, keressen és olvasson újra minden Claude Code munkamenetet a gépén, Windows és WSL alatt, egy helyen.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Munkamenetek",
@@ -2827,11 +2863,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Daugiau nerodyti",
     btnNewsOpenLink:                        "Sužinoti daugiau",
     tipNewsDismiss:                         "Uždaryti",
+    tipNewsShow:                            "Naujienos",
     lblStgGeneralNews:                      "Rodyti naujienas iš yaiol",
     btnNewsClose:                           "Uždaryti",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Atidaryti nustatymus",
+    tipHdrSettings:                         "Nustatymai",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Mažinti",
@@ -2854,7 +2891,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Šviesus",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "yra yaiol Electron programos šablonas.",
+    msgStgAboutDesc:                        "Naršykite, ieškokite ir iš naujo skaitykite kiekvieną „Claude Code“ sesiją savo kompiuteryje, „Windows“ ir „WSL“, vienoje vietoje.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Sesijos",
@@ -2905,11 +2942,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не прикажувај повторно",
     btnNewsOpenLink:                        "Дознајте повеќе",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Вести",
     lblStgGeneralNews:                      "Прикажи вести од yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори поставки",
+    tipHdrSettings:                         "Поставки",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Минимизирај",
@@ -2932,7 +2970,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светло",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "е шаблон за апликација yaiol Electron.",
+    msgStgAboutDesc:                        "Прегледувајте, пребарувајте и повторно читајте ја секоја сесија на Claude Code на вашата машина, Windows и WSL, на едно место.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесии",
@@ -2983,11 +3021,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не приказуј поново",
     btnNewsOpenLink:                        "Сазнајте више",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Вести",
     lblStgGeneralNews:                      "Прикажи вести из yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори подешавања",
+    tipHdrSettings:                         "Подешавања",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Минимизуј",
@@ -3010,7 +3049,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светло",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "је шаблон yaiol Electron апликације.",
+    msgStgAboutDesc:                        "Прегледајте, претражите и поново прочитајте сваку Claude Code сесију на вашем рачунару, Windows и WSL, на једном месту.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Сесије",
@@ -3061,11 +3100,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nezobrazovať znova",
     btnNewsOpenLink:                        "Zistiť viac",
     tipNewsDismiss:                         "Zavrieť",
+    tipNewsShow:                            "Správy",
     lblStgGeneralNews:                      "Zobrazovať správy z yaiol",
     btnNewsClose:                           "Zavrieť",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otvoriť nastavenia",
+    tipHdrSettings:                         "Nastavenia",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Minimalizovať",
@@ -3088,7 +3128,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svetlý",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "je šablóna aplikácie yaiol Electron.",
+    msgStgAboutDesc:                        "Prehliadajte, vyhľadávajte a znova čítajte každú reláciu Claude Code na svojom počítači, Windows a WSL, na jednom mieste.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Relácie",
@@ -3139,11 +3179,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne prikazuj več",
     btnNewsOpenLink:                        "Več o tem",
     tipNewsDismiss:                         "Zapri",
+    tipNewsShow:                            "Novice",
     lblStgGeneralNews:                      "Prikaži novice iz yaiol",
     btnNewsClose:                           "Zapri",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Odpri nastavitve",
+    tipHdrSettings:                         "Nastavitve",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Pomanjšaj",
@@ -3166,7 +3207,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svetlo",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "je predloga aplikacije yaiol Electron.",
+    msgStgAboutDesc:                        "Brskajte, iščite in ponovno preberite vsako sejo Claude Code na vašem računalniku, Windows in WSL, na enem mestu.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Seje",
@@ -3217,11 +3258,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "மீண்டும் காட்டாதே",
     btnNewsOpenLink:                        "மேலும் அறிக",
     tipNewsDismiss:                         "மூடு",
+    tipNewsShow:                            "செய்திகள்",
     lblStgGeneralNews:                      "yaiol இலிருந்து செய்திகளைக் காட்டு",
     btnNewsClose:                           "மூடு",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "அமைப்புகளைத் திற",
+    tipHdrSettings:                         "அமைப்புகள்",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "சுருக்கு",
@@ -3244,7 +3286,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "வெளிச்சம்",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ஒரு yaiol Electron பயன்பாட்டு டெம்ப்ளேட் ஆகும்.",
+    msgStgAboutDesc:                        "உங்கள் கணினி, Windows மற்றும் WSL இல் உள்ள ஒவ்வொரு Claude Code அமர்வையும் ஒரே இடத்தில் உலாவவும், தேடவும் மற்றும் மீண்டும் படிக்கவும்.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "அமர்வுகள்",
@@ -3295,11 +3337,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "दोबारा न दिखाएँ",
     btnNewsOpenLink:                        "और जानें",
     tipNewsDismiss:                         "बंद करें",
+    tipNewsShow:                            "समाचार",
     lblStgGeneralNews:                      "yaiol से समाचार दिखाएँ",
     btnNewsClose:                           "बंद करें",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "सेटिंग्स खोलें",
+    tipHdrSettings:                         "सेटिंग्स",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "छोटा करें",
@@ -3322,7 +3365,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "हल्का",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "एक yaiol Electron ऐप टेम्पलेट है।",
+    msgStgAboutDesc:                        "अपनी मशीन, Windows और WSL पर हर Claude Code सत्र को एक ही जगह पर ब्राउज़ करें, खोजें और दोबारा पढ़ें।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "सत्र",
@@ -3373,11 +3416,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "আবার দেখাবেন না",
     btnNewsOpenLink:                        "আরও জানুন",
     tipNewsDismiss:                         "বন্ধ করুন",
+    tipNewsShow:                            "খবর",
     lblStgGeneralNews:                      "yaiol থেকে খবর দেখান",
     btnNewsClose:                           "বন্ধ করুন",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "সেটিংস খুলুন",
+    tipHdrSettings:                         "সেটিংস",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "ছোট করুন",
@@ -3400,7 +3444,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "হালকা",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "একটি yaiol Electron অ্যাপ টেমপ্লেট।",
+    msgStgAboutDesc:                        "আপনার মেশিন, Windows এবং WSL-এ প্রতিটি Claude Code সেশন এক জায়গায় ব্রাউজ করুন, অনুসন্ধান করুন এবং পুনরায় পড়ুন।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "সেশন",
@@ -3451,11 +3495,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "دوبارہ نہ دکھائیں",
     btnNewsOpenLink:                        "مزید جانیں",
     tipNewsDismiss:                         "بند کریں",
+    tipNewsShow:                            "خبریں",
     lblStgGeneralNews:                      "yaiol سے خبریں دکھائیں",
     btnNewsClose:                           "بند کریں",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "ترتیبات کھولیں",
+    tipHdrSettings:                         "ترتیبات",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "چھوٹا کریں",
@@ -3478,7 +3523,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ہلکا",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ایک یائیول الیکٹران ایپ ٹیمپلیٹ ہے۔",
+    msgStgAboutDesc:                        "اپنی مشین، ونڈوز اور WSL پر ہر Claude Code سیشن کو ایک ہی جگہ پر براؤز کریں، تلاش کریں اور دوبارہ پڑھیں۔",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "سیشنز",
@@ -3529,11 +3574,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Usionyeshe tena",
     btnNewsOpenLink:                        "Jifunze zaidi",
     tipNewsDismiss:                         "Funga",
+    tipNewsShow:                            "Habari",
     lblStgGeneralNews:                      "Onyesha habari kutoka yaiol",
     btnNewsClose:                           "Funga",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Fungua mipangilio",
+    tipHdrSettings:                         "Mipangilio",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Punguza",
@@ -3556,7 +3602,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Nuru",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ni kiolezo cha programu ya yaiol Electron.",
+    msgStgAboutDesc:                        "Vinjari, tafuta na usome tena kila kipindi cha Claude Code kwenye mashine yako, Windows na WSL, mahali pamoja.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Vipindi",
@@ -3607,11 +3653,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "ਦੁਬਾਰਾ ਨਾ ਦਿਖਾਓ",
     btnNewsOpenLink:                        "ਹੋਰ ਜਾਣੋ",
     tipNewsDismiss:                         "ਬੰਦ ਕਰੋ",
+    tipNewsShow:                            "ਖ਼ਬਰਾਂ",
     lblStgGeneralNews:                      "yaiol ਤੋਂ ਖ਼ਬਰਾਂ ਦਿਖਾਓ",
     btnNewsClose:                           "ਬੰਦ ਕਰੋ",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
+    tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "ਛੋਟਾ ਕਰੋ",
@@ -3634,7 +3681,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ਹਲਕਾ",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ਇੱਕ yaiol Electron ਐਪ ਟੈਂਪਲੇਟ ਹੈ।",
+    msgStgAboutDesc:                        "ਆਪਣੀ ਮਸ਼ੀਨ, ਵਿੰਡੋਜ਼ ਅਤੇ WSL 'ਤੇ ਹਰੇਕ ਕਲਾਉਡ ਕੋਡ ਸੈਸ਼ਨ ਨੂੰ ਇੱਕ ਥਾਂ 'ਤੇ ਬ੍ਰਾਊਜ਼ ਕਰੋ, ਖੋਜੋ ਅਤੇ ਦੁਬਾਰਾ ਪੜ੍ਹੋ।",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "ਸੈਸ਼ਨ",
@@ -3685,11 +3732,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Kada a sake nunawa",
     btnNewsOpenLink:                        "Koyi game da shi",
     tipNewsDismiss:                         "Rufe",
+    tipNewsShow:                            "Labarai",
     lblStgGeneralNews:                      "Nuna labarai daga yaiol",
     btnNewsClose:                           "Rufe",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Bude saituna",
+    tipHdrSettings:                         "Saituna",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Rage girma",
@@ -3712,7 +3760,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Haske",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "samfuri ne na aikace-aikacen yaiol Electron.",
+    msgStgAboutDesc:                        "Bincika, nemo kuma sake karanta kowane zaman Claude Code akan injinka, Windows da WSL, a wuri guda.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Zama",
@@ -3763,11 +3811,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Maṣe fi han mọ",
     btnNewsOpenLink:                        "Kọ́ ẹ̀kọ́ síwájú",
     tipNewsDismiss:                         "Pa",
+    tipNewsShow:                            "Ìròyìn",
     lblStgGeneralNews:                      "Fi iroyin lati yaiol han",
     btnNewsClose:                           "Pade",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ṣi eto",
+    tipHdrSettings:                         "Ètò",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Din-kekere",
@@ -3790,7 +3839,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Fẹ́lẹ́fẹ́lẹ́",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "jẹ́ àdàkọ ohun èlò yaiol Electron.",
+    msgStgAboutDesc:                        "Ṣawari, wa, ki o si tun ka gbogbo igba Claude Code lori ẹrọ rẹ, Windows ati WSL, ni ibi kan.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Awọn igba",
@@ -3841,11 +3890,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "మళ్ళీ చూపవద్దు",
     btnNewsOpenLink:                        "మరింత తెలుసుకోండి",
     tipNewsDismiss:                         "మూసివేయండి",
+    tipNewsShow:                            "వార్తలు",
     lblStgGeneralNews:                      "yaiol నుండి వార్తలను చూపించు",
     btnNewsClose:                           "మూసివేయి",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "సెట్టింగ్‌లను తెరవండి",
+    tipHdrSettings:                         "సెట్టింగ్‌లు",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "చిన్నది చేయి",
@@ -3868,7 +3918,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "లేత",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ఒక yaiol Electron యాప్ టెంప్లేట్.",
+    msgStgAboutDesc:                        "మీ మెషీన్, Windows మరియు WSL లోని ప్రతి Claude Code సెషన్‌ను ఒకే చోట బ్రౌజ్ చేయండి, శోధించండి మరియు మళ్లీ చదవండి.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "సెషన్లు",
@@ -3919,11 +3969,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "पुन्हा दाखवू नका",
     btnNewsOpenLink:                        "अधिक जाणून घ्या",
     tipNewsDismiss:                         "बंद करा",
+    tipNewsShow:                            "बातम्या",
     lblStgGeneralNews:                      "yaiol कडून बातम्या दाखवा",
     btnNewsClose:                           "बंद करा",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "सेटिंग्ज उघडा",
+    tipHdrSettings:                         "सेटिंग्ज",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "लहान करा",
@@ -3946,7 +3997,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "हलका",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "एक yaiol Electron ॲप टेम्पलेट आहे.",
+    msgStgAboutDesc:                        "तुमच्या मशीन, Windows आणि WSL वरील प्रत्येक Claude Code सत्र एकाच ठिकाणी ब्राउझ करा, शोधा आणि पुन्हा वाचा.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "सत्रे",
@@ -3997,11 +4048,12 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Huwag nang ipakita muli",
     btnNewsOpenLink:                        "Matuto pa",
     tipNewsDismiss:                         "Isara",
+    tipNewsShow:                            "Balita",
     lblStgGeneralNews:                      "Ipakita ang balita mula sa yaiol",
     btnNewsClose:                           "Isara",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buksan ang mga setting",
+    tipHdrSettings:                         "Mga Setting",
 
     // Prefix:Win - Scope:window bar (the app's own title bar)
     tipWinMinimize:                         "Paliitin",
@@ -4024,7 +4076,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Maliwanag",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ay isang template ng app ng yaiol Electron.",
+    msgStgAboutDesc:                        "Mag-browse, maghanap, at muling basahin ang bawat session ng Claude Code sa iyong makina, Windows at WSL, sa isang lugar.",
 
     // Prefix:Sessions - Scope:left pane - Claude Code session list
     ttlSessions:                            "Mga Sesyon",

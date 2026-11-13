@@ -11,7 +11,7 @@ import DOMPurify from 'dompurify';
 import pkg from '../package.json';
 import { useT, LANGUAGES } from './i18n-gen';
 import { getUrl } from './lib/site-url';
-import { UisNewsLoader } from './lib/uis-news-loader';
+import { UisNewsLoader, UisBtnUpdate, UisBtnNews } from './lib/uis-news-loader';
 import { UisAppHeader } from './lib/uis-header';
 import { UisBarWindow, LbsHokWindow } from './lib/uis-bar-window';
 import { UisIcoGithub } from './lib/uis-icons';
@@ -329,6 +329,8 @@ export default function App() {
         >
           <UisIcoGithub />
         </button>
+        <UisBtnUpdate t={t} />
+        <UisBtnNews t={t} />
       </UisBarWindow>
       {/* The name and the version are in the window bar, so the header holds the work buttons only. */}
       <UisAppHeader appName={APP_NAME} appVersion={APP_VERSION} bare>

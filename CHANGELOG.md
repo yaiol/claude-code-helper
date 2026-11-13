@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.9 — 2026-11-13
+
+- New reminder button in the title bar when a newer version is out: it stays after the new-version card is closed or hidden with Don't show again, and a click reopens the card with the release notes and the download link
+- New News button in the title bar while yaiol has an announcement for the app: a click reopens the announcements, including the ones hidden with Don't show again. It does not appear when Show news from yaiol is off
+- Don't show again can be undone: reopen a card from its title-bar button and untick the box, and it shows again at the next launch
+- The About page and the package now carry a one-line description of the app, and the Settings button's tooltip reads "Settings" instead of "Open settings"
+- Update the README screenshot
+
 ## 1.0.8 — 2026-11-12
 
 - Fix the session list staying empty with "Could not read Claude Desktop data": Claude Desktop moved its data to a new folder, and the app now reads it there (the previous location is still read for older Claude Desktop versions)
