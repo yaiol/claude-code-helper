@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* App-specific styles only. The palette and every shared class come from the catalog CSS files that load
+   before this one; the one colour defined here is this app's own. */
+:root, :root[data-theme="light"] { --source: #db5e0e; /* session source/store filter chips */ }
+:root[data-theme="dark"]         { --source: #ff9d57; /* session source/store filter chips */ }
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--uis-bg);
+  color: var(--uis-text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.sv-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+/* ─── Session viewer - two panes ──────────────────────────────────────────── */
+.sv-split {
+  flex: 1;
+  display: flex;
+  min-height: 0;        /* allow children to shrink + scroll */
+}
+
+/* Left pane - session list */
+.sv-list {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex; flex-direction: column;
+  min-height: 0;
+  /* surface comes from .uis-pnl (shared) — the app owns width/layout, not the fill */
+  border-right: 1px solid var(--uis-border);
+}
+.sv-list-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px;
+}
+.sv-list-title { font-weight: 700; font-size: 14px; color: var(--uis-text); }
+.sv-list-count { font-size: 11px; color: var(--uis-text-mute); }
+.sv-refresh { margin-left: auto; }  /* placement only — border comes from .uis-barh-grp */
+
+/* Search pill styling comes from the shared .uis-txt-search (catalog); only the
+   left-pane placement margin is local. */
+.sv-filter { margin: 0 12px 10px; }
+
+/* List filter chips - two stacked rows (sources above, categories below). `.on` = shown.
+   Chip styling comes from the shared chip; `--chip` sets the source orange. */
+.sv-filter-toggles { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 12px 10px; }
+.sv-filter-sources { margin-bottom: 6px; } /* sit closer to the category row below */
+/* Source filter chips carry orange (--source) via the shared chip's `--chip` custom property
+   (set inline on the button); category chips take the default accent. */
+.sv-toggle-n {
+  font-size: 10px; font-weight: 600;
+  background: var(--uis-bg-row); border-radius: 8px; padding: 0 5px;
+}
+
+.sv-list-scroll { flex: 1; overflow-y: auto; min-height: 0; }
+
+/* Session row: container / hover / SELECTED state + padding all come from the SHARED
+   list styles (.uis-lvw-item + .uis-lvw-item--stack, .uis-lvw-item-name) — standard size, no local
+   override. Only the app-specific path / meta / badge sub-lines stay local. */
+.sv-item-cwd {
+  font-size: 10px; color: var(--uis-text-mute);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sv-item-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sv-item-date { font-size: 10px; color: var(--uis-text-dim); }
+/* ⚠ list-row badges use the shared chip with NO `--chip` colour — intentionally
+   neutral; the source / lost / archived distinction is carried by the label text, not
+   colour (colour is reserved for the FILTER chips: source = orange, category = accent). */
+
+.sv-empty { padding: 24px 16px; color: var(--uis-text-mute); font-size: 13px; text-align: center; }
+.sv-empty-err { color: var(--uis-danger); }
+
+/* Right pane - decoded transcript */
+.sv-view { flex: 1; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.sv-view-empty {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  color: var(--uis-text-mute); font-size: 14px; padding: 24px;
+}
+.sv-view-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--uis-border);
+  flex-shrink: 0;
+}
+.sv-view-titlewrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sv-view-title {
+  font-size: 14px; font-weight: 700; color: var(--uis-text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sv-view-sub {
+  font-size: 10px; color: var(--uis-text-mute);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sv-md-scroll { flex: 1; overflow-y: auto; min-height: 0; }
+
+/* Chat thread - Claude-style: user bubble right, assistant full-width left */
+.sv-thread { max-width: 860px; margin: 0 auto; padding: 22px 24px 40px; }
+.sv-msg { display: flex; margin: 14px 0; }
+.sv-msg-user { justify-content: flex-end; }
+/* Tool calls hidden (the toolbar toggle): a run of calls is its own message, a call inside an answer is a
+   .sv-tool - both go, the conversation stays. */
+.sv-tools-hidden .sv-msg-tool, .sv-tools-hidden .sv-tool { display: none; }
+
+/* User: rounded tinted bubble, hugged to the right, capped width */
+.sv-msg-user .sv-bubble {
+  max-width: 80%;
+  background: var(--uis-bg-row);
+  border: 1px solid var(--uis-border);
+  border-radius: 16px;
+  padding: 2px 16px;
+}
+/* Assistant: no bubble - plain full-width text, like Claude's response column.
+   Column layout so the copy action row sits BELOW the content (end of message). */
+.sv-msg-assistant { flex-direction: column; }
+.sv-msg-assistant .sv-bubble { width: 100%; }
+
+/* Per-answer copy - a shared .uis-btn.ico, PLACEMENT only: in-flow row at the end of
+   the answer, hover-revealed (space stays reserved, so nothing shifts). */
+.sv-msg-copy { align-self: flex-start; margin-top: 4px; opacity: 0; transition: opacity .12s; }
+.sv-msg:hover .sv-msg-copy, .sv-msg-copy:focus-visible, .sv-msg-copy.active { opacity: 1; }
+
+/* Per-table copy - same pattern: the wrapper added around each table positions a shared
+   .uis-btn.ico over the table's top-right corner, revealed on table hover. */
+.sv-tblwrap { position: relative; width: fit-content; max-width: 100%; }
+.sv-tblcopy { position: absolute; top: 2px; right: 2px; opacity: 0; transition: opacity .12s; }
+.sv-tblwrap:hover .sv-tblcopy, .sv-tblcopy:focus-visible, .sv-tblcopy.active { opacity: 1; }
+/* Trim leading/trailing paragraph margins so bubbles sit tight */
+.sv-bubble > :first-child { margin-top: 0; }
+.sv-bubble > :last-child  { margin-bottom: 0; }
+
+/* Rendered markdown - a simple, readable document body */
+.sv-md { line-height: 1.6; color: var(--uis-text); }
+.sv-md h1, .sv-md h2, .sv-md h3 { line-height: 1.3; margin: 1.4em 0 .5em; }
+.sv-md h3 { font-size: 14px; color: var(--uis-accent); border-bottom: 1px solid var(--uis-border); padding-bottom: 4px; }
+.sv-md p { margin: .5em 0; }
+.sv-md hr { border: none; border-top: 1px solid var(--uis-border); margin: 18px 0; }
+.sv-md a { color: var(--uis-accent); }
+.sv-md code {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  background: var(--uis-bg-row); border: 1px solid var(--uis-border);
+  border-radius: 4px; padding: 1px 5px;
+}
+.sv-md pre {
+  background: var(--uis-bg-row); border: 1px solid var(--uis-border);
+  border-radius: 8px; padding: 12px 14px; overflow-x: auto;
+}
+.sv-md pre code { background: none; border: none; padding: 0; font-size: 12px; line-height: 1.5; }
+.sv-md blockquote {
+  margin: .6em 0; padding: 4px 12px;
+  border-left: 3px solid var(--uis-border-strong);
+  background: var(--uis-bg-row); border-radius: 0 6px 6px 0;
+  color: var(--uis-text-dim);
+}
+.sv-md blockquote code { background: var(--uis-bg-elev); }
+/* Collapsible tool call / result blocks - folded to a one-line summary by default */
+.sv-md .sv-tool {
+  margin: .5em 0; border: 1px solid var(--uis-border);
+  border-radius: 8px; background: var(--uis-bg-row); overflow: hidden;
+}
+.sv-md .sv-tool > summary {
+  cursor: pointer; user-select: none; list-style: none;
+  padding: 5px 12px; font-size: 12.5px; color: var(--uis-text-dim);
+  display: flex; align-items: baseline; gap: 4px;
+}
+.sv-md .sv-tool > summary::-webkit-details-marker { display: none; }
+.sv-md .sv-tool > summary::before {
+  content: "›"; color: var(--uis-text-mute);
+  transition: transform .12s; display: inline-block;
+}
+.sv-md .sv-tool[open] > summary::before { transform: rotate(90deg); }
+.sv-md .sv-tool[open] > summary { border-bottom: 1px solid var(--uis-border); }
+.sv-md .sv-tool > summary b { color: var(--uis-accent); font-weight: 600; }
+.sv-md .sv-tool > summary code {
+  background: none; border: none; padding: 0;
+  color: var(--uis-text-dim); font-size: 11.5px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.sv-md .sv-tool > pre { margin: 0; border: none; border-radius: 0; }
+/* The tool's own answer (its result), folded inside the same block, set off by a top rule */
+.sv-md .sv-tool .sv-tool-out { border-top: 1px solid var(--uis-border); }
+.sv-md .sv-tool .sv-tool-out > pre { margin: 0; border: none; border-radius: 0; }
+.sv-md .sv-tool .sv-tool-out.sv-tool-err { border-top-color: var(--uis-accent); }
+.sv-md ul, .sv-md ol { padding-left: 1.4em; margin: .5em 0; }
+.sv-md table { border-collapse: collapse; margin: .6em 0; }
+.sv-md th, .sv-md td { border: 1px solid var(--uis-border); padding: 5px 10px; }
+.sv-md img {
+  max-width: 100%; max-height: 420px; height: auto;
+  border: 1px solid var(--uis-border); border-radius: 8px;
+  margin: .4em 0; display: block;
+}
