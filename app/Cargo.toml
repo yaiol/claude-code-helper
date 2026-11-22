@@ -1,6 +1,6 @@
 [package]
 name = "claude-code-helper"
-version = "2.0.0"
+version = "2.0.1"
 edition = "2024"
 description = "Browse, search and re-read every Claude Code session on your machine, Windows and WSL, in one place."
 
